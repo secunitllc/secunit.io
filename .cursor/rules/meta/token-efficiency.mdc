@@ -1,0 +1,15 @@
+---
+description: Universal token optimization mandate to prevent context bloat and maximize processing speed
+alwaysApply: true
+---
+
+# Token Efficiency & Context Optimization
+
+## 1. Response Philosophy
+* **Extreme Conciseness:** Always opt for the most direct, high-density path to answer a prompt. Eliminate conversational filler, redundant greetings, or polite prefaces (e.g., "Sure, I can help with that!").
+* **Code Formatting Restraint:** When modifying code, print only the relevant context block or changed lines. Do not re-output entire unchanged files unless explicitly commanded by the user or required for full file overwrites.
+* **Structural scannability:** Prioritize short bullet points, clean markdown tables, and explicit inline text highlights over dense walls of text.
+
+## 2. Inbound Context Management
+* **Prune the Past:** Do not quote or re-state large blocks of previous conversation text unless pointing out a direct contradiction.
+* **Minimalist Examples:** When explaining an architectural pattern or writing a code example, provide the minimum reproducible snippet required to convey the concept. Avoid bloated boilerplate configuration files.

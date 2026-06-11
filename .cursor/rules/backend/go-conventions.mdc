@@ -1,0 +1,33 @@
+---
+description: Coding standards, architectural conventions, and performance guidelines for Go (Golang) development
+globs: ["**/*.go", "go.mod", "go.sum"]
+alwaysApply: false
+---
+
+# Go (Golang) Conventions & Coding Standards
+
+## 1. Code Style & Idioms
+* **Explicit Over Clever:** Write clear, boring, and highly readable Go code. Avoid clever tricks or excessive abstractions.
+* **Formatting:** Always run code through `go fmt` (or `goimports`). 
+* **Variable Naming:** Use short camelCase names for short-lived variables (e.g., `db`, `ctx`, `r`). Use descriptive names for global scope or exported identifiers.
+* **Acronyms:** Keep acronyms consistent in their casing (e.g., `apiURL` or `APIURL`, never `apiUrl`; `userID`, never `userId`).
+
+## 2. Error Handling
+* **Don't Ignore Errors:** Never assign errors to the blank identifier (`_`) unless absolutely harmless and explicitly documented.
+* **Wrap Errors:** Use `fmt.Errorf("context: %w", err)` to wrap upstream errors, allowing callers to use `errors.Is()` or `errors.As()`.
+* **Handle Once:** Log *or* return the error, never both, to avoid duplicated log pollution.
+* **Panic Recovery:** Avoid `panic` and `recover` for normal control flow. Use them strictly for unrecoverable system failures or top-level middleware panic recovery.
+
+## 3. Concurrency & Goroutines
+* **Goroutine Lifecycle:** Never start a goroutine without knowing exactly how and when it will terminate to prevent goroutine leaks.
+* **Data Races:** Always protect shared state. Use channels for communication or `sync.Mutex` / `sync.RWMutex` for low-level memory locking.
+* **Context Propagation:** Always accept `ctx context.Context` as the very first argument in functions executing I/O, network requests, or long-running operations. Respect `ctx.Done()`.
+
+## 4. Architecture & Packages
+* **Interface Segregation:** Keep interfaces small. Favor single-method interfaces (`io.Reader`, `io.Writer`) wherever possible. Define interfaces where they are *consumed*, not where they are implemented.
+* **Avoid `init()`:** Avoid using `init()` functions because they obfuscate execution order and make testing difficult. Use explicit initialization functions (e.g., `NewServer()`) instead.
+* **No Side-Effect Imports:** Avoid importing packages solely for side-effects (using the `_` import) unless completely necessary (like database drivers or pprof endpoints).
+
+## 5. Performance & Resource Management
+* **Defer Cleanups:** Always pair resource allocations (files, network connections, database handles, mutex locks) with an immediate `defer` statement to release resources.
+* **Slice/Map Allocation:** When the final size of a slice or map is known beforehand, pre-allocate memory using `make([]T, 0, capacity)` or `make(map[K]V, capacity)` to eliminate unnecessary memory reallocations.

@@ -1,0 +1,29 @@
+---
+description: Standards for GitHub Pull Requests, Issue templates, and GitHub Actions CI/CD workflows
+globs: [".github/**/*", "PULL_REQUEST_TEMPLATE.md"]
+alwaysApply: false
+---
+
+# GitHub Platform Conventions
+
+## 1. Pull Request (PR) Integrity
+* **Atomic Scope:** Keep Pull Requests narrowly focused on a single logical objective. Avoid mixing unrelated refactors or secondary features into a single review footprint to keep diffs legible.
+* **Structured Templates:** When creating a PR description, always supply a clear summary containing:
+  1. **Context:** What problem this resolves or what capability it introduces.
+  2. **Changes:** A high-level bulleted digest of structural modifications.
+  3. **Testing:** Explicit confirmation of testing validation paths.
+* **Link Issues:** Always link corresponding issues explicitly in the PR body using close keywords (e.g., `Closes #123` or `Fixes #456`) to ensure automated graph closure upon merging.
+
+## 2. GitHub Actions & CI/CD Pipelines
+* **Deterministic Steps:** Always pin GitHub Actions workflows to explicit versions or specific commit hashes (`uses: actions/checkout@v4`) rather than floating master/main tags to guarantee pipeline repeatability.
+* **Secret Hygiene:** Never print, echo, or leak sensitive API credentials or deployment tokens into workflow standard output logs. Rely strictly on encrypted Repository Secrets (`${{ secrets.API_TOKEN }}`).
+* **Targeted Triggers:** Optimize pipeline resource utilization by narrowing workflow execution path triggers:
+  ```yaml
+  on:
+    push:
+      branches: [ main ]
+      paths:
+        - 'src/**'
+        - 'package.json'
+  ```
+* **Caching Mechanisms:** Always implement step caching configurations for package managers (`actions/cache` or native `setup` flags for `bun`/`pnpm`) to keep build execution intervals highly optimized.

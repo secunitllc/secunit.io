@@ -1,96 +1,67 @@
 ---
-const navItems = [
- { label: "Services", href: "/services" },
- { label: "About", href: "/about" },
- { label: "Contact", href: "/contact" },
-];
-
-const currentPath = Astro.url.pathname;
+import ThemeToggle from "@/components/ThemeToggle.astro";
+import navConfig from "@/config/en/navData.json.ts";
 ---
-
-<header class="sticky top-0 z-50 border-b backdrop-blur-lg" style="border-color: rgba(255, 255, 255, 0.06); background-color: rgba(10, 10, 10, 0.9);">
- <div class="container">
-  <nav class="flex h-20 items-center justify-between md:h-24">
-   <!-- Logo -->
-   <a href="/" class="flex items-center">
-    <img
-     src="/images/brand/horizontal.png"
-     alt="Secunit Mercantile"
-     class="h-12 w-auto md:h-14"
-     loading="eager"
-    />
-   </a>
-
-   <!-- Desktop Navigation -->
-   <div class="hidden items-center gap-8 md:flex">
-    {navItems.map((item) => (
-     <a
-      href={item.href}
-      class:list={[
-       "font-medium transition-colors duration-200",
-       currentPath === item.href
-        ? "text-[#20E3B2]"
-        : "text-[#b4b4b4] hover:text-[#1bffce]"
-      ]}
-     >
-      {item.label}
-     </a>
-    ))}
-    <a href="/contact" class="btn-primary text-xs">
-     Let's Talk
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="/" class="site-wordmark" aria-label="Secunit Mercantile home">
+      <span>Secunit</span> Mercantile
     </a>
-   </div>
-
-   <!-- Mobile Menu Button -->
-   <button
-    id="mobile-menu-button"
-    class="flex h-10 w-10 items-center justify-center rounded-lg transition-colors md:hidden"
-    style="color: rgb(var(--color-text-secondary));"
-    aria-label="Toggle menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-   >
-    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-     <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-     <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-   </button>
-  </nav>
-
-  <!-- Mobile Navigation -->
-  <div id="mobile-menu" class="hidden border-t pb-4 md:hidden" style="border-color: rgba(255, 255, 255, 0.06);">
-   <div class="flex flex-col gap-4 pt-4">
-    {navItems.map((item) => (
-     <a
-      href={item.href}
-      class:list={[
-       "font-medium transition-colors duration-200",
-       currentPath === item.href
-        ? "text-[#20E3B2]"
-        : "text-[#b4b4b4] hover:text-[#1bffce]"
-      ]}
-     >
-      {item.label}
-     </a>
-    ))}
-    <a href="/contact" class="btn-primary mt-2 text-center text-xs">
-     Let's Talk
-    </a>
-   </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      {navConfig.map((item) => (
+        <a href={item.link} class="site-nav__link hidden md:inline-block">{item.text}</a>
+      ))}
+      <a href="/contact" class="site-nav__cta">
+        Let's Talk
+      </a>
+      <ThemeToggle />
+      <button
+        id="mobile-nav-toggle"
+        class="mobile-nav-toggle md:hidden"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <svg id="mobile-nav-open-icon" class="h-4.5 w-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+        <svg id="mobile-nav-close-icon" class="hidden h-4.5 w-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
   </div>
- </div>
+  <nav id="mobile-nav" class="mobile-nav md:hidden" aria-label="Mobile navigation" hidden>
+    {navConfig.map((item) => (
+      <a href={item.link} class="mobile-nav__link">{item.text}</a>
+    ))}
+    <a href="/contact" class="mobile-nav__link">Let's Talk</a>
+  </nav>
 </header>
 
 <script>
- const button = document.getElementById('mobile-menu-button');
- const menu = document.getElementById('mobile-menu');
- const menuIcon = document.getElementById('menu-icon');
- const closeIcon = document.getElementById('close-icon');
+  const toggle = document.getElementById("mobile-nav-toggle");
+  const panel = document.getElementById("mobile-nav");
+  const openIcon = document.getElementById("mobile-nav-open-icon");
+  const closeIcon = document.getElementById("mobile-nav-close-icon");
 
- button?.addEventListener('click', () => {
-  const isOpen = menu?.classList.toggle('hidden') === false;
-  menuIcon?.classList.toggle('hidden');
-  closeIcon?.classList.toggle('hidden');
-  button?.setAttribute('aria-expanded', String(isOpen));
- });
+  function setOpen(open: boolean) {
+    if (!toggle || !panel) return;
+    panel.hidden = !open;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    openIcon?.classList.toggle("hidden", open);
+    closeIcon?.classList.toggle("hidden", !open);
+  }
+
+  toggle?.addEventListener("click", () => {
+    setOpen(panel?.hidden === true);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel?.hidden === false) {
+      setOpen(false);
+      toggle?.focus();
+    }
+  });
 </script>

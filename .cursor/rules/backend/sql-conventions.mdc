@@ -1,0 +1,21 @@
+---
+description: Schema design, query orchestration, indexing layouts, and transaction management for relational SQL databases
+globs: ["**/*.sql", "**/migrations/**/*", "**/models/**/*", "**/schema/**/*"]
+alwaysApply: false
+---
+
+# Relational SQL Database Conventions
+
+## 1. Schema Design & Data Modeling
+* **Normalization:** Design database layouts to satisfy Third Normal Form (3NF) requirements unless explicit performance access strategies require denormalization.
+* **Keys:** Enforce strict Referential Integrity using explicit Primary and Foreign Keys. Use appropriate data types for keys (`UUIDv4` or big integers), ensuring indexes automatically map foreign connections.
+* **Naming:** Use lowercase `snake_case` for all table names, column layouts, indexes, and constraint assignments. Use plural naming conventions for tables (e.g., `users`, `audit_logs`).
+
+## 2. Query Architecture & Performance
+* **No `SELECT *`:** Always request explicit column profiles in queries. Avoid using wildcard asterisks (`*`) to eliminate unnecessary network parsing and ensure data serialization remains safe.
+* **Indexing Execution:** Every `WHERE`, `JOIN`, `ORDER BY`, or `GROUP BY` execution filter tracking high-cardinality records must be backed by a clean index. Avoid indexing low-cardinality columns (e.g., boolean flags).
+* **Prepared Statements:** Execute queries strictly through parameterized statements or modern ORM query builder boundaries to completely prevent SQL injection vulnerabilities.
+
+## 3. Transactions & Pooling
+* **Atomic Integrity:** Wrap multi-row write sequences (inserts, updates, deletes) inside explicit ACID transactions (`BEGIN` / `COMMIT`). If any step errors, immediately trigger a rollback.
+* **Connection Lifecycle:** Always use persistent connection pooling. Release database connection streams back to the pool instantly once operations conclude to avoid blocking the available pool capacity.

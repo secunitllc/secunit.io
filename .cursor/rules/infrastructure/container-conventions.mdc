@@ -1,0 +1,27 @@
+---
+description: Multi-stage Docker builds, image selection hierarchies, non-root execution safety, and Compose configurations
+alwaysApply: false
+globs: ["Dockerfile", "docker-compose.*", ".dockerignore"]
+---
+
+# Containerization & Docker Conventions
+
+## 1. Base Image Selection Hierarchy
+When selecting base images for runtime or final execution stages, strictly adhere to the following order of preference to ensure minimal attack surfaces and small image sizes:
+1. **`distroless`** (First choice: contains only your application and its runtime dependencies, omitting package managers and shells).
+2. **`-alpine`** (Second choice: if distroless is unavailable or incompatible, use a minimal Alpine Linux-based image).
+3. **`-slim`** (Third choice: if Alpine introduces compatibility issues, use a slimmed-down Debian/Ubuntu distribution).
+4. **Full Base Images** (Final fallback: only use heavy, standard base images if none of the optimized variants above are available or viable).
+
+## 2. Security & Non-Root Execution
+* **Run as Non-Root:** All processes inside the running container **must** execute as a non-root user. Never leave the container running under the default root account.
+* **User Implementation:** Explicitly create a dedicated system user/group (or leverage built-in non-root accounts like `node` in Node images or `nonroot` in Distroless) and activate it via the `USER` instruction before defining the container's entrypoint or command.
+
+## 3. Multi-Stage Dockerfiles
+* **Minimize Footprint:** Always design production Dockerfiles using multi-stage builds to keep build tools out of your deployment containers.
+* **Caching Optimization:** Order Dockerfile instructions to take advantage of build layer caching: copy dependency definitions (`package.json`, `go.mod`, `pyproject.toml`) and install packages *before* copying the remaining application source code.
+
+## 4. Docker Compose Standards
+* **Named Volumes:** Always use named, persistent volumes for databases or stateful storage engines instead of mapping anonymous local directory configurations.
+* **Explicit Networking:** Isolate related application containers inside explicit custom networks rather than defaulting to the global bridge network.
+* **Restart Resilience:** Configure sensible failure behavior tags (e.g., `restart: unless-stopped`) to protect persistent localized development infrastructure.

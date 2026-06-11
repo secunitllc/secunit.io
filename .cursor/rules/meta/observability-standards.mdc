@@ -1,0 +1,17 @@
+---
+description: Standards for structured logging, diagnostic metrics, and tracing instrumentation
+alwaysApply: false
+globs: ["**/*.go", "**/*.py", "**/*.ts", "**/*.js"]
+---
+
+# Observability & Logging Standards
+
+## 1. Structured Logging
+* **JSON Output:** In server environments, always emit logs in structured JSON format rather than raw text strings to allow effortless parsing by log aggregators.
+* **Contextual Metadata:** Include helpful tags in log payloads (e.g., `request_id`, `user_id`, `component`) instead of burying variables inside the text message string.
+
+## 2. Semantic Log Levels
+* **ERROR:** Reserve strictly for operational failures that require immediate attention (e.g., database connection dropped, third-party API down). Include full error objects or stack traces.
+* **WARN:** Use for unexpected behaviors that the application managed to recover from automatically (e.g., network retry successful, fallback cache triggered).
+* **INFO:** Track major lifecycle transitions (e.g., "Server starting on port 8080", "Payment processed successfully"). Do not log on every single minor loop iteration.
+* **DEBUG:** Use freely for deep structural tracing and payload dumps. Ensure debug logs are completely muted in production configurations.

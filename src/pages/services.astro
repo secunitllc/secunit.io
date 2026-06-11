@@ -1,462 +1,240 @@
 ---
 import Base from "@/layouts/Base.astro";
+
+// Local app icons in public/logos/ai/
+const aiTools = [
+ { name: "ChatGPT", logo: "chatgpt" },
+ { name: "Claude", logo: "claude" },
+ { name: "OpenClaw", logo: "openclaw" },
+ { name: "Copilot", logo: "copilot" },
+ { name: "Gemini", logo: "gemini" },
+ { name: "Grok", logo: "grok" },
+ { name: "xAI", logo: "xai" },
+ { name: "Ollama", logo: "ollama" },
+ { name: "DeepSeek", logo: "deepseek" },
+ { name: "Cursor", logo: "cursor" },
+ { name: "Perplexity", logo: "perplexity" },
+ { name: "Open WebUI", logo: "open-webui" },
+ { name: "Apple Intelligence", logo: "apple-intelligence" },
+ { name: "Meta AI", logo: "meta-ai" },
+];
 ---
 
 <Base 
  title="Services" 
  description="AI Enablement, FinOps, Virtual DevOps & SRE, and Virtual CISO services for small and mid-sized businesses."
 >
- <!-- Page Header -->
- <section class="section relative overflow-hidden" style="background-color: rgb(var(--color-bg-secondary));">
-  <!-- Background glow effects -->
-  <div class="absolute inset-0 -z-10">
-   <div class="absolute left-1/4 top-0 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-[#20E3B2]/10 blur-[100px]"></div>
-   <div class="absolute right-1/4 bottom-0 h-[300px] w-[300px] translate-y-1/2 rounded-full bg-[#20E3B2]/5 blur-[80px]"></div>
+ <section class="page-header" aria-labelledby="services-title">
+  <div class="page-header__copy">
+   <p class="home-kicker">Expertise On Demand</p>
+   <h1 id="services-title">Services Built for Growing Businesses</h1>
+   <p>
+    Flexible engagement models. Senior expertise. No bloated retainers.
+   </p>
+   <div class="page-header__stats">
+    <span class="page-header__stat">4 Core Services</span>
+    <span class="page-header__stat">Flexible Retainers</span>
+    <span class="page-header__stat">Senior-Level Only</span>
+   </div>
+   <div class="nav-pills">
+    <a href="#devops-sre" class="nav-pill">DevOps & SRE</a>
+    <a href="#ai-enablement" class="nav-pill">AI Enablement</a>
+    <a href="#finops" class="nav-pill">FinOps</a>
+    <a href="#virtual-ciso" class="nav-pill">Virtual CISO</a>
+   </div>
   </div>
+ </section>
 
-  <div class="container">
-   <div class="mx-auto max-w-3xl text-center">
-    <!-- Badge -->
-    <div class="mb-6 inline-flex items-center gap-2 badge">
-     <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-     </svg>
-     Expertise On Demand
-    </div>
-
-    <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
-     Services Built for
-     <span class="text-gradient-animated block mt-2">Growing Businesses</span>
-    </h1>
-
-    <p class="mx-auto mt-8 max-w-xl text-base leading-relaxed" style="color: rgb(var(--color-text-secondary))">
-     Flexible engagement models. Senior expertise. No bloated retainers.
-    </p>
-
-    <!-- Quick stats -->
-    <div class="mt-10 flex flex-wrap items-center justify-center gap-8">
-     <div class="flex items-center gap-2">
-      <div class="h-2 w-2 rounded-full bg-[#20E3B2] animate-pulse"></div>
-      <span class="text-sm font-medium text-white">4 Core Services</span>
-     </div>
-     <div class="flex items-center gap-2">
-      <div class="h-2 w-2 rounded-full bg-[#FFB020]"></div>
-      <span class="text-sm font-medium text-white">Flexible Retainers</span>
-     </div>
-     <div class="flex items-center gap-2">
-      <div class="h-2 w-2 rounded-full bg-[#20E3B2]"></div>
-      <span class="text-sm font-medium text-white">Senior-Level Only</span>
-     </div>
-    </div>
-
-    <!-- Navigation pills -->
-    <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
-     <a href="#ai-enablement" class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 hover:shadow-accent" style="background-color: rgb(var(--color-bg-elevated)); color: rgb(var(--color-text-secondary)); border: 1px solid rgba(255,255,255,0.06);">
-      <svg class="h-4 w-4 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
-      AI Enablement
-     </a>
-     <a href="#devops-sre" class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 hover:shadow-accent" style="background-color: rgb(var(--color-bg-elevated)); color: rgb(var(--color-text-secondary)); border: 1px solid rgba(255,255,255,0.06);">
-      <svg class="h-4 w-4 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-      </svg>
-      DevOps & SRE
-     </a>
-     <a href="#finops" class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 hover:shadow-accent" style="background-color: rgb(var(--color-bg-elevated)); color: rgb(var(--color-text-secondary)); border: 1px solid rgba(255,255,255,0.06);">
-      <svg class="h-4 w-4 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-      FinOps
-     </a>
-     <a href="#virtual-ciso" class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 hover:shadow-accent" style="background-color: rgb(var(--color-bg-elevated)); color: rgb(var(--color-text-secondary)); border: 1px solid rgba(255,255,255,0.06);">
-      <svg class="h-4 w-4 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
-      Virtual CISO
-     </a>
+ <!-- DevOps & SRE -->
+ <section id="devops-sre" class="service-detail">
+  <div class="service-detail__intro">
+   <p class="service-detail__tagline">Reliable systems. Faster delivery. Less noise.</p>
+   <h2>Virtual DevOps & Site Reliability Engineering</h2>
+   <p>
+    You need modern infrastructure practices, but a full-time DevOps or SRE hire might be overkill — or impossible to find.
+   </p>
+   <p>
+    Our virtual engineering services give you access to senior talent who've migrated hundreds of services to Kubernetes, reduced monthly alerts from 1,000+ to under 50, and built disaster recovery programs that actually work when you need them.
+   </p>
+  </div>
+  <div class="service-detail__aside">
+   <div class="callout">
+    <svg class="callout__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+    </svg>
+    <div>
+     <h3>SRE Reliability Audit</h3>
+     <p>
+      Not ready for a full engagement? Start with our self-serve reliability audit toolkit at
+      <a href="https://srex.secunit.io" rel="noopener" class="callout__link">srex.secunit.io</a>
+      — assess your architecture, telemetry, and recovery posture, then bring us the results.
+     </p>
     </div>
    </div>
+   <ul class="checklist">
+    <li>Design and implement CI/CD pipelines (GitHub Actions, Jenkins, ArgoCD)</li>
+    <li>Build infrastructure as code with Terraform, AWS CDK, or Helm</li>
+    <li>Architect Kubernetes deployments and container strategies</li>
+    <li>Implement observability (Prometheus, Grafana, Datadog)</li>
+    <li>Establish SLIs, SLOs, and incident response processes</li>
+    <li>Reduce alert fatigue and conduct blameless post-mortems</li>
+   </ul>
   </div>
  </section>
 
  <!-- AI Enablement -->
- <section id="ai-enablement" class="section scroll-mt-24">
-  <div class="container">
-   <div class="grid items-start gap-12 lg:grid-cols-2">
+ <section id="ai-enablement" class="service-detail">
+  <div class="service-detail__intro">
+   <p class="service-detail__tagline">Make sense of AI. Put it to work.</p>
+   <h2>AI Enablement</h2>
+   <p>
+    AI is everywhere — but most businesses are stuck between "we should do something with AI" and "we have no idea where to start."
+   </p>
+   <p>
+    We cut through the noise and help you identify high-impact use cases, evaluate tools without vendor bias, and implement workflows that actually integrate with your existing systems.
+   </p>
+  </div>
+  <div class="service-detail__aside">
+   <div class="callout">
+    <svg class="callout__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+    </svg>
     <div>
-     <div class="icon-container mb-4" style="width: 56px; height: 56px;">
-      <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
-     </div>
-     <h2 class="text-xl md:text-2xl font-bold text-white">AI Enablement</h2>
-     <p class="mt-2 text-sm font-medium text-[#20E3B2]">Make sense of AI. Put it to work.</p>
-
-     <div class="mt-6 space-y-4" style="color: rgb(var(--color-text-secondary))">
-      <p>
-       AI is everywhere — but most businesses are stuck between "we should do something with AI" and "we have no idea where to start."
-      </p>
-      <p>
-       We cut through the noise and help you identify high-impact use cases, evaluate tools without vendor bias, and implement workflows that actually integrate with your existing systems.
-      </p>
-     </div>
-    </div>
-
-    <div class="card">
-     <h3 class="text-lg font-semibold text-white">What We Help With</h3>
-     <ul class="mt-4 space-y-3">
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Identify high-impact AI use cases specific to your business</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Evaluate tools and platforms without vendor bias</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Implement AI workflows that integrate with your existing systems</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Train your team to use AI tools effectively and safely</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Establish governance and policies for responsible AI use</span>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </div>
- </section>
-
- <!-- Divider -->
- <div class="container"><hr style="border-color: rgba(255, 255, 255, 0.06);" /></div>
-
- <!-- DevOps & SRE -->
- <section id="devops-sre" class="section scroll-mt-24">
-  <div class="container">
-   <div class="grid items-start gap-12 lg:grid-cols-2">
-    <div class="lg:order-2">
-     <div class="icon-container mb-4" style="width: 56px; height: 56px;">
-      <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-      </svg>
-     </div>
-     <h2 class="text-xl md:text-2xl font-bold text-white">Virtual DevOps & Site Reliability Engineering</h2>
-     <p class="mt-2 text-sm font-medium text-[#20E3B2]">Reliable systems. Faster delivery. Less noise.</p>
-
-     <div class="mt-6 space-y-4" style="color: rgb(var(--color-text-secondary))">
-      <p>
-       You need modern infrastructure practices, but a full-time DevOps or SRE hire might be overkill — or impossible to find.
-      </p>
-      <p>
-       Our virtual engineering services give you access to senior talent who've migrated hundreds of services to Kubernetes, reduced monthly alerts from 1,000+ to under 50, and built disaster recovery programs that actually work when you need them.
-      </p>
-     </div>
-    </div>
-
-    <div class="card lg:order-1">
-     <h3 class="text-lg font-semibold text-white">What We Help With</h3>
-     <ul class="mt-4 space-y-3">
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Design and implement CI/CD pipelines (GitHub Actions, Jenkins, ArgoCD)</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Build infrastructure as code with Terraform, AWS CDK, or Helm</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Architect Kubernetes deployments and container strategies</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Implement observability (Prometheus, Grafana, Datadog)</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Establish SLIs, SLOs, and incident response processes</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Reduce alert fatigue and conduct blameless post-mortems</span>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </div>
- </section>
-
- <!-- Divider -->
- <div class="container"><hr style="border-color: rgba(255, 255, 255, 0.06);" /></div>
-
- <!-- FinOps -->
- <section id="finops" class="section scroll-mt-24">
-  <div class="container">
-   <div class="grid items-center gap-12 lg:grid-cols-2">
-    <div class="lg:order-2">
-     <div class="icon-container mb-4" style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(255, 176, 32, 0.15), rgba(255, 176, 32, 0.05)); color: #FFB020;">
-      <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-     </div>
-     <h2 class="text-xl md:text-2xl font-bold text-white">FinOps & Cloud Cost Optimization</h2>
-     <p class="mt-2 text-sm font-medium text-[#FFB020]">Reduce cloud spend without sacrificing performance.</p>
-
-     <div class="mt-6 space-y-4" style="color: rgb(var(--color-text-secondary))">
-      <p>
-       Cloud costs can spiral out of control — especially when you're scaling fast. But cutting costs blindly can break things or slow you down.
-      </p>
-      <p>
-       Our FinOps services evaluate your existing deployments to identify real cost savings opportunities. We analyze your infrastructure, usage patterns, and billing data to find waste, optimize resource sizing, and recommend changes that reduce spend while maintaining or improving performance.
-      </p>
-     </div>
-
-     <!-- Guarantee -->
-     <div class="mt-8 rounded-xl p-6" style="border: 2px solid rgba(255, 176, 32, 0.3); background-color: rgba(255, 176, 32, 0.05);">
-      <div class="flex items-start gap-4">
-       <div class="flex-shrink-0">
-        <svg class="h-6 w-6 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-       </div>
-       <div>
-        <h3 class="font-semibold text-[#FFB020]">Our Guarantee</h3>
-        <p class="mt-2 text-sm" style="color: rgb(var(--color-text-secondary))">
-         If we don't save you more than our billable hours, you don't pay. We're confident in our ability to find real cost savings in your cloud infrastructure.
-        </p>
-       </div>
+     <h3>Too Many Tools?</h3>
+     <p>
+      ChatGPT, Claude Code, OpenClaw, Copilot — we can help you make sense of all of these and pick the ones that actually fit your business.
+     </p>
+     <div class="callout-marquee" aria-hidden="true">
+      <div class="callout-marquee__track">
+       {[...aiTools, ...aiTools].map((tool) => (
+        <span class="callout-marquee__item">
+         <img
+          src={`/logos/ai/${tool.logo}.png`}
+          alt=""
+          title={tool.name}
+          width="44"
+          height="44"
+          loading="lazy"
+          decoding="async"
+         />
+        </span>
+       ))}
       </div>
      </div>
     </div>
-
-    <div class="card lg:order-1">
-     <h3 class="text-lg font-semibold text-white">What We Help With</h3>
-     <ul class="mt-4 space-y-3">
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Comprehensive cloud cost audits and spend analysis</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Identify and eliminate unused or underutilized resources</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Right-size compute, storage, and database resources</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Optimize reserved instances, savings plans, and spot instances</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Implement cost allocation and chargeback strategies</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Establish FinOps practices and cost monitoring dashboards</span>
-      </li>
-     </ul>
-    </div>
    </div>
+   <ul class="checklist">
+    <li>Identify high-impact AI use cases specific to your business</li>
+    <li>Evaluate tools and platforms without vendor bias</li>
+    <li>Implement AI workflows that integrate with your existing systems</li>
+    <li>Train your team to use AI tools effectively and safely</li>
+    <li>Establish governance and policies for responsible AI use</li>
+   </ul>
   </div>
  </section>
 
- <!-- Divider -->
- <div class="container"><hr style="border-color: rgba(255, 255, 255, 0.06);" /></div>
-
- <!-- Virtual CISO -->
- <section id="virtual-ciso" class="section scroll-mt-24">
-  <div class="container">
-   <div class="grid items-start gap-12 lg:grid-cols-2">
+ <!-- FinOps -->
+ <section id="finops" class="service-detail">
+  <div class="service-detail__intro">
+   <p class="service-detail__tagline">Reduce cloud spend without sacrificing performance.</p>
+   <h2>FinOps & Cloud Cost Optimization</h2>
+   <p>
+    Cloud costs can spiral out of control — especially when you're scaling fast. But cutting costs blindly can break things or slow you down.
+   </p>
+   <p>
+    Our FinOps services evaluate your existing deployments to identify real cost savings opportunities. We analyze your infrastructure, usage patterns, and billing data to find waste, optimize resource sizing, and recommend changes that reduce spend while maintaining or improving performance.
+   </p>
+  </div>
+  <div class="service-detail__aside">
+   <div class="callout">
+    <svg class="callout__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+    </svg>
     <div>
-     <div class="icon-container mb-4" style="width: 56px; height: 56px;">
-      <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
-     </div>
-     <h2 class="text-xl md:text-2xl font-bold text-white">Virtual CISO & Information Security</h2>
-     <p class="mt-2 text-sm font-medium text-[#20E3B2]">Security leadership without the full-time cost.</p>
-
-     <div class="mt-6 space-y-4" style="color: rgb(var(--color-text-secondary))">
-      <p>
-       Growing businesses face real security risks — but rarely have the budget for a dedicated CISO. Our virtual CISO services give you experienced security leadership on a flexible retainer.
-      </p>
-      <p>
-       Our founder holds an active CISSP (since 2017) and has served in acting CISO roles, working directly with executives while remaining hands-on with technical implementation.
-      </p>
-     </div>
-    </div>
-
-    <div class="card">
-     <h3 class="text-lg font-semibold text-white">What We Help With</h3>
-     <ul class="mt-4 space-y-3">
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Develop and maintain security policies and programs</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Achieve and maintain compliance (SOC2, FINRA, SEC, SOX)</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Conduct risk assessments and threat modeling</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Manage vulnerability programs and penetration testing</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Implement Zero Trust architectures and cloud security</span>
-      </li>
-      <li class="flex items-start gap-3">
-       <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-       </svg>
-       <span style="color: rgb(var(--color-text-secondary))">Respond to security incidents and prepare for audits</span>
-      </li>
-     </ul>
+     <h3>Our Guarantee</h3>
+     <p>
+      If we don't save you more than our billable hours, you don't pay. We're confident in our ability to find real cost savings in your cloud infrastructure.
+     </p>
     </div>
    </div>
+   <ul class="checklist">
+    <li>Comprehensive cloud cost audits and spend analysis</li>
+    <li>Identify and eliminate unused or underutilized resources</li>
+    <li>Right-size compute, storage, and database resources</li>
+    <li>Optimize reserved instances, savings plans, and spot instances</li>
+    <li>Implement cost allocation and chargeback strategies</li>
+    <li>Establish FinOps practices and cost monitoring dashboards</li>
+   </ul>
+  </div>
+ </section>
+
+ <!-- Virtual CISO -->
+ <section id="virtual-ciso" class="service-detail">
+  <div class="service-detail__intro">
+   <p class="service-detail__tagline">Security leadership without the full-time cost.</p>
+   <h2>Virtual CISO & Information Security</h2>
+   <p>
+    Growing businesses face real security risks — but rarely have the budget for a dedicated CISO. Our virtual CISO services give you experienced security leadership on a flexible retainer.
+   </p>
+   <p>
+    Our founder holds an active CISSP (since 2017) and has served in acting CISO roles, working directly with executives while remaining hands-on with technical implementation.
+   </p>
+  </div>
+  <div class="service-detail__aside">
+   <div class="callout">
+    <svg class="callout__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+    </svg>
+    <div>
+     <h3>Credentialed Leadership</h3>
+     <p>
+      Every security engagement is led by an active CISSP with acting-CISO experience in SOC2, FINRA, SEC, and SOX environments — executive-ready reporting included.
+     </p>
+    </div>
+   </div>
+   <ul class="checklist">
+    <li>Develop and maintain security policies and programs</li>
+    <li>Achieve and maintain compliance (SOC2, FINRA, SEC, SOX)</li>
+    <li>Conduct risk assessments and threat modeling</li>
+    <li>Manage vulnerability programs and penetration testing</li>
+    <li>Implement Zero Trust architectures and cloud security</li>
+    <li>Respond to security incidents and prepare for audits</li>
+   </ul>
   </div>
  </section>
 
  <!-- Engagement Models -->
- <section class="section" style="background-color: rgb(var(--color-bg-secondary));">
-  <div class="container">
-   <div class="mx-auto max-w-3xl text-center">
-    <h2 class="text-xl md:text-2xl font-bold text-white">Flexible Engagement Models</h2>
-    <p class="mt-4" style="color: rgb(var(--color-text-secondary))">
-     From hourly consulting to fixed-price projects — we offer options that fit your budget and avoid surprises.
-    </p>
+ <section class="engagement-section" aria-labelledby="engagement-title">
+  <div class="engagement-section__intro">
+   <h2 id="engagement-title">Flexible Engagement Models</h2>
+   <p>
+    From hourly consulting to fixed-price projects — we offer options that fit your budget and avoid surprises.
+   </p>
+  </div>
+  <div class="engagement-grid">
+   <div class="engagement-card">
+    <h3>Hourly</h3>
+    <p>Pay only for what you need. Ideal for ad-hoc consulting, reviews, or quick wins.</p>
    </div>
-
-   <div class="mt-12 grid gap-6 md:grid-cols-3 lg:grid-cols-5">
-    <!-- Hourly -->
-    <div class="card text-center">
-     <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full" style="background: linear-gradient(135deg, rgba(32, 227, 178, 0.15), rgba(32, 227, 178, 0.05));">
-      <svg class="h-6 w-6 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-     </div>
-     <h3 class="text-lg font-bold text-white">Hourly</h3>
-     <p class="mt-3 text-sm" style="color: rgb(var(--color-text-secondary))">
-      Pay only for what you need. Ideal for ad-hoc consulting, reviews, or quick wins.
-     </p>
-    </div>
-
-    <!-- Discovery -->
-    <div class="card text-center">
-     <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full" style="background: linear-gradient(135deg, rgba(32, 227, 178, 0.15), rgba(32, 227, 178, 0.05));">
-      <svg class="h-6 w-6 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-      </svg>
-     </div>
-     <h3 class="text-lg font-bold text-white">Discovery</h3>
-     <p class="mt-3 text-sm" style="color: rgb(var(--color-text-secondary))">
-      2-4 week assessment of your environment and opportunities. Deliverable: prioritized roadmap.
-     </p>
-    </div>
-
-    <!-- Fixed Price -->
-    <div class="card text-center">
-     <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full" style="background: linear-gradient(135deg, rgba(255, 176, 32, 0.15), rgba(255, 176, 32, 0.05));">
-      <svg class="h-6 w-6 text-[#FFB020]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-     </div>
-     <h3 class="text-lg font-bold text-white">Fixed Price</h3>
-     <p class="mt-3 text-sm" style="color: rgb(var(--color-text-secondary))">
-      No surprises. Defined scope, defined cost. Perfect for migrations, implementations, or audits.
-     </p>
-    </div>
-
-    <!-- Ongoing Retainer -->
-    <div class="card text-center">
-     <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full" style="background: linear-gradient(135deg, rgba(32, 227, 178, 0.15), rgba(32, 227, 178, 0.05));">
-      <svg class="h-6 w-6 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-      </svg>
-     </div>
-     <h3 class="text-lg font-bold text-white">Retainer</h3>
-     <p class="mt-3 text-sm" style="color: rgb(var(--color-text-secondary))">
-      Monthly hours for ongoing advisory, implementation, and support. Scale as needs change.
-     </p>
-    </div>
-
-    <!-- Project-Based -->
-    <div class="card text-center">
-     <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full" style="background: linear-gradient(135deg, rgba(32, 227, 178, 0.15), rgba(32, 227, 178, 0.05));">
-      <svg class="h-6 w-6 text-[#20E3B2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-     </div>
-     <h3 class="text-lg font-bold text-white">Project</h3>
-     <p class="mt-3 text-sm" style="color: rgb(var(--color-text-secondary))">
-      Time & materials for larger initiatives like compliance prep or cloud migration.
-     </p>
-    </div>
+   <div class="engagement-card">
+    <h3>Discovery</h3>
+    <p>2–4 week assessment of your environment and opportunities. Deliverable: prioritized roadmap.</p>
    </div>
-
-   <div class="mt-12 text-center">
-    <a href="/contact" class="btn-primary">
-     Let's Design Your Engagement
-     <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-     </svg>
-    </a>
+   <div class="engagement-card">
+    <h3>Fixed Price</h3>
+    <p>No surprises. Defined scope, defined cost. Perfect for migrations, implementations, or audits.</p>
    </div>
+   <div class="engagement-card">
+    <h3>Retainer</h3>
+    <p>Monthly hours for ongoing advisory, implementation, and support. Scale as needs change.</p>
+   </div>
+   <div class="engagement-card">
+    <h3>Project</h3>
+    <p>Time & materials for larger initiatives like compliance prep or cloud migration.</p>
+   </div>
+  </div>
+  <div class="home-actions engagement-section__actions">
+   <a class="home-button home-button--primary" href="/contact">Let's Design Your Engagement</a>
   </div>
  </section>
 </Base>

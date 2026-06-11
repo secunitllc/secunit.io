@@ -1,0 +1,35 @@
+---
+description: Component architecture, hooks management, and rendering optimization guidelines for React and Next.js applications
+globs: ["**/*.jsx", "**/*.tsx", "src/components/**/*", "src/app/**/*", "src/pages/**/*"]
+alwaysApply: false
+---
+
+# React & Next.js Conventions
+
+## 1. Package Management & Tools
+* **Runtime:** Prioritize `bun` for development servers, building, and installing dependencies. Fall back to `node` with `pnpm` only if encountering ecosystem compatibility barriers.
+
+## 2. Component Design & Architecture
+* **Functional Components:** Always write components as explicit functional components using arrow functions (`const MyComponent = () => {}`). Never use legacy class components.
+* **TypeScript Typing:** Explicitly type component props using `interface` or `type`. Avoid inline destructuring types.
+
+    interface ButtonProps {
+      label: string;
+      onClick: () => void;
+    }
+    export const Button = ({ label, onClick }: ButtonProps) => { ... }
+
+* **Strict Imports Layout:** Keep all imports cleanly structured at the top of the file. No inline dynamic imports inside components unless explicitly optimization-driven (e.g., `React.lazy()` or Next.js `dynamic()`) and properly handling loading boundaries.
+
+## 3. Server vs. Client Components (Next.js App Router)
+* **Server Default:** In Next.js environments, treat components as **Server Components** by default to minimize client-side JavaScript delivery.
+* **Isolated Client State:** Only add the `"use client"` directive at the very top of a file when a component explicitly requires interactivity, client-side hooks (`useState`, `useEffect`), or browser-only APIs. Keep client components as low down the component tree as possible.
+
+## 4. State Management & Hooks
+* **Custom Hooks Extraction:** Extract complex local state logic, data fetching, or side-effect orchestrations into custom, reusable hooks (e.g., `useAuth`, `useWindowSize`) to keep the UI view layer highly readable.
+* **Dependency Arrays:** Always include accurate dependency arrays for `useEffect`, `useCallback`, and `useMemo`. Never leave them blank or omit variables to bypass linting, as this creates subtle stale-closure bugs.
+* **Primitive State:** Favor granular `useState` primitives over massive single-object state pointers unless updating multiple tightly coupled fields simultaneously.
+
+## 5. Rendering Performance & UI
+* **List Keys:** Always provide a stable, unique string or number for the `key` prop when mapping over arrays to render elements. Never use the raw array index as a key unless the list is completely static and immutable.
+* **Tailwind CSS Organization:** When styling with Tailwind, group classes logically: Layout/Flex/Grid first, followed by Sizing/Spacing, Typography, and finally Interactivity/States (`hover:`, `focus:`). Keep conditional class strings clean using utilities like `clsx` or `tailwind-merge`.

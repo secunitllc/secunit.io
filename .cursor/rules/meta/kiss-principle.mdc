@@ -1,0 +1,13 @@
+---
+description: Prioritize simplicity, avoid over-engineering, and prioritize native solutions.
+alwaysApply: true
+---
+
+# K.I.S.S. Principle (Keep It Simple Stupid)
+
+## Core Philosophy
+Always prioritize simplicity over complexity. Avoid over-engineering, unnecessary abstractions, or introducing heavy external dependencies when a straightforward native solution exists.
+
+## Behavioral Mandates
+* **Evaluate First:** Identify the absolute simplest path to achieve the core intent.
+* **Propose Alternatives:** If an alternative approach exists that is significantly simpler to build or maintain, present that alternative to the user first before writing code.

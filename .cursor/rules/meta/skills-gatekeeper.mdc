@@ -1,0 +1,18 @@
+---
+description: Evaluates active file scopes to load domain-specific coding standards strictly on-demand
+alwaysApply: true
+---
+
+# Dynamic Skills & Context Gatekeeper
+
+## 1. Context Evaluation Mandate
+* **Analyze the Working Directory:** Before generating code or proposing solutions, inspect the exact file paths and file extensions currently in scope in the active workspace.
+* **Enforce Strict Isolation:** Apply *only* the specific syntax rules, style sheets, and design patterns that belong to that exact layer of the stack. Do not allow paradigms from one language or ecosystem to pollute another.
+
+## 2. Cross-Pollution Prevention Rules
+* **Frontend Isolation:** When editing a `.jsx` or `.tsx` file, completely ignore Go, Python, and SQL schema instructions. Do not suggest server-side optimizations while modifying client view layers.
+* **Backend Isolation:** When working inside a `FastAPI` router or Go module, completely mute frontend directives. Do not worry about styling, Tailwind classes, or hydration states.
+* **Infrastructure Isolation:** When altering `wrangler.toml`, Docker Compose configs, or GitHub Actions pipelines, evaluate the impact exclusively through an infrastructure lens. Do not refactor application code inside an infrastructure step.
+
+## 3. Dynamic On-Demand Activation
+* If a task transitions from building a database schema (`sql-conventions`) to building an API endpoint (`fastapi-conventions`), explicitly drop the strict database architectural constraints from your immediate memory loop to maximize reasoning space for the routing layout.

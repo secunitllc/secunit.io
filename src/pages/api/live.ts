@@ -1,5 +1,7 @@
 import type { APIRoute } from "astro";
 
+export const prerender = false;
+
 // Simple liveness check - just confirms the app is running
 // Used by Fly.io for basic health checks
 export const GET: APIRoute = async () => {

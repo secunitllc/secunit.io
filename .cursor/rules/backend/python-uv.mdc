@@ -1,0 +1,14 @@
+---
+description: Python development standards using uv package manager
+globs: ["**/*.py", "pyproject.toml", "uv.lock"]
+alwaysApply: false
+---
+
+# Python Development Standards
+
+## Tooling
+* Always use `uv` for python virtual environments, package management, and script execution.
+* Never use raw `pip` or standard `venv` calls directly.
+
+## Imports
+* Keep all imports strictly at the top of the file. No inline imports within function bodies or types unless required to handle circular dependencies.

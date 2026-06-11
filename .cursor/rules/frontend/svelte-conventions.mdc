@@ -1,0 +1,35 @@
+---
+description: Component architecture, reactivity, and SvelteKit routing conventions for Svelte applications
+globs: ["**/*.svelte", "src/routes/**/+*.svelte", "src/routes/**/+*.ts", "svelte.config.js"]
+alwaysApply: false
+---
+
+# Svelte & SvelteKit Conventions
+
+## 1. Package Management & Tools
+* **Runtime:** Prioritize `bun` for development servers, building, and installing dependencies. Fall back to `node` with `pnpm` only if encountering ecosystem compatibility barriers.
+
+## 2. Component Structure (`.svelte` files)
+* **TypeScript Default:** Always write script blocks using `<script lang="ts">`.
+* **Clean Layout:** Maintain a strict order in `.svelte` files:
+  1. `<script lang="ts">` (Imports, props, and reactivity)
+  2. HTML Markup (Template)
+  3. `<style>` (Component-scoped CSS)
+* **No Inline Imports:** Keep all module imports at the very top of the script tag.
+
+## 3. SvelteKit Routing & Data Loading
+* **Route Separation:** Respect SvelteKit's file-based routing boundary.
+  * Use `+page.svelte` strictly for the UI view.
+  * Use `+page.ts` for universal data fetching.
+  * Use `+page.server.ts` for secure data fetching (database queries, secrets) that must only run on the server.
+* **Form Actions:** Use SvelteKit Form Actions (`export const actions = {}` in `+page.server.ts`) for data mutations and submissions instead of writing manual `fetch` calls to standalone API routes, unless building a public-facing API.
+
+## 4. Reactivity & State
+* **Derived State:** If a value can be calculated from existing variables, do not create a new state variable. Use reactive declarations (`$:`) or Svelte 5 Runes (`$derived`) to compute it dynamically.
+* **Store Management:** Extract complex global state or shared data streams into external Svelte Stores (`writable`, `readable`, `derived`). Keep component-level state strictly local.
+* **Prop Definitions:** Explicitly type component props using `export let myProp: Type;` (or the equivalent `$props()` rune in Svelte 5).
+
+## 5. Templating & Logic Blocks
+* **Logic Blocks:** Use native Svelte control flow (`{#if}`, `{:else}`, `{#each}`, `{#await}`) cleanly. 
+* **Keyed Each Blocks:** Always provide a unique key in loop blocks: `{#each items as item (item.id)}` to optimize DOM updates.
+* **Class Directives:** Utilize Svelte's class directive (`class:active={isActive}`) for conditional styling instead of writing ternary operators inside the `class=""` attribute.

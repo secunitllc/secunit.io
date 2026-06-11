@@ -1,0 +1,15 @@
+---
+description: Document modeling, aggregation processing, and index configurations for NoSQL database architectures
+globs: ["**/schemas/nosql/**/*", "**/models/nosql/**/*", "**/db/mongo/**/*"]
+alwaysApply: false
+---
+
+# NoSQL & Document Store Conventions
+
+## 1. Modeling Strategy
+* **Application-Driven Design:** Model data structures strictly around your application's direct read and write access frequency patterns rather than theoretical relationships.
+* **Embedding vs. Referencing:** Prefer embedding sub-documents when child data structurally belongs exclusively to the parent record and doesn't expand without limits. Use explicit references (`IDs`) if child objects scale dynamically or are requested independently.
+
+## 2. Performance & Aggregations
+* **Query Scopes:** Ensure all frequently processed queries are completely covered by explicit indexes. Utilize compound indexes for filters targeting multiple document fields simultaneously.
+* **Aggregation Optimization:** When organizing complex multi-stage aggregation runs, place `$match` and `$sort` operators at the absolute front of the pipeline to filter out records before passing payloads down to heavy `$project` or `$lookup` steps.

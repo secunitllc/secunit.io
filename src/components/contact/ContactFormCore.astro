@@ -4,37 +4,67 @@ interface Props {
   submitClass?: string;
 }
 
-const { formClass = "space-y-6", submitClass = "btn-primary w-full" } = Astro.props;
+const { formClass = "space-y-6", submitClass = "contact-submit" } = Astro.props;
 ---
 
 <form id="contact-form" class={formClass} action="/api/contact" method="POST">
   <div>
-    <label for="name" class="mb-2 block text-xs font-medium text-dark dark:text-white">
-      Name <span class="text-red-500">*</span>
+    <label for="name" class="form-label">
+      Name <span class="form-label__required" aria-hidden="true">*</span>
     </label>
-    <input type="text" id="name" name="name" required class="input" placeholder="Your name" />
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      autocomplete="name"
+      class="input"
+      placeholder="Your name"
+    />
   </div>
 
   <div>
-    <label for="email" class="mb-2 block text-xs font-medium text-dark dark:text-white">
-      Email <span class="text-red-500">*</span>
+    <label for="email" class="form-label">
+      Email <span class="form-label__required" aria-hidden="true">*</span>
     </label>
-    <input type="email" id="email" name="email" required class="input" placeholder="you@company.com" />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      autocomplete="email"
+      class="input"
+      placeholder="you@company.com"
+    />
   </div>
 
   <div>
-    <label for="company" class="mb-2 block text-xs font-medium text-dark dark:text-white">Company</label>
-    <input type="text" id="company" name="company" class="input" placeholder="Your company name" />
+    <label for="company" class="form-label">Company</label>
+    <input
+      type="text"
+      id="company"
+      name="company"
+      autocomplete="organization"
+      class="input"
+      placeholder="Your company name"
+    />
   </div>
 
   <div>
-    <label for="phone" class="mb-2 block text-xs font-medium text-dark dark:text-white">Phone</label>
-    <input type="tel" id="phone" name="phone" class="input" placeholder="(555) 123-4567" />
+    <label for="phone" class="form-label">Phone</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      autocomplete="tel"
+      class="input"
+      placeholder="(555) 123-4567"
+    />
   </div>
 
   <div>
-    <label for="inquiry_type" class="mb-2 block text-xs font-medium text-dark dark:text-white">
-      How can we help? <span class="text-red-500">*</span>
+    <label for="inquiry_type" class="form-label">
+      How can we help? <span class="form-label__required" aria-hidden="true">*</span>
     </label>
     <select id="inquiry_type" name="inquiry_type" required class="select">
       <option value="">Select an option</option>
@@ -47,8 +77,8 @@ const { formClass = "space-y-6", submitClass = "btn-primary w-full" } = Astro.pr
   </div>
 
   <div>
-    <label for="message" class="mb-2 block text-xs font-medium text-dark dark:text-white">
-      Tell us more <span class="text-red-500">*</span>
+    <label for="message" class="form-label">
+      Tell us more <span class="form-label__required" aria-hidden="true">*</span>
     </label>
     <textarea
       id="message"
@@ -61,7 +91,7 @@ const { formClass = "space-y-6", submitClass = "btn-primary w-full" } = Astro.pr
   </div>
 
   <div>
-    <label for="referral_source" class="mb-2 block text-xs font-medium text-dark dark:text-white">
+    <label for="referral_source" class="form-label">
       How did you hear about us?
     </label>
     <select id="referral_source" name="referral_source" class="select">
@@ -80,7 +110,7 @@ const { formClass = "space-y-6", submitClass = "btn-primary w-full" } = Astro.pr
   <div>
     <button type="submit" class={submitClass}>
       <span id="submit-text">Send Message</span>
-      <svg id="submit-spinner" class="ml-2 hidden h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24">
+      <svg id="submit-spinner" class="ml-2 hidden h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
         <path
           class="opacity-75"
@@ -91,41 +121,36 @@ const { formClass = "space-y-6", submitClass = "btn-primary w-full" } = Astro.pr
     </button>
   </div>
 
-  <p class="text-center text-xs text-gray-500 dark:text-gray-400">
+  <p class="form-hint">
     We'll only use your information to respond to your inquiry. No spam, ever.
   </p>
 </form>
 
-<div id="success-message" class="hidden rounded-xl bg-green-50 p-8 text-center dark:bg-green-900/20">
-  <div
-    class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600 dark:bg-green-900/50 dark:text-green-400"
-  >
-    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<div id="success-message" class="form-panel form-panel--success hidden" role="status">
+  <div class="form-panel__icon" aria-hidden="true">
+    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
     </svg>
   </div>
-  <h3 class="text-lg font-bold text-green-800 dark:text-green-300">Message Sent!</h3>
-  <p class="mt-2 text-green-700 dark:text-green-400">
-    Thanks for reaching out. We'll get back to you within one business day.
-  </p>
+  <h3>Message sent</h3>
+  <p>Thanks for reaching out. We'll get back to you within one business day.</p>
 </div>
 
-<div id="error-message" class="hidden rounded-xl bg-red-50 p-8 text-center dark:bg-red-900/20">
-  <div
-    class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-100 text-red-600 dark:bg-red-900/50 dark:text-red-400"
-  >
-    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<div id="error-message" class="form-panel form-panel--error hidden" role="alert">
+  <div class="form-panel__icon" aria-hidden="true">
+    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
     </svg>
   </div>
-  <h3 class="text-lg font-bold text-red-800 dark:text-red-300">Something went wrong</h3>
-  <p class="mt-2 text-red-700 dark:text-red-400">
-    Please try again or email us directly at <a href="mailto:hello@secunit.io" class="underline">hello@secunit.io</a>
+  <h3>Something went wrong</h3>
+  <p>
+    Please try again or email us directly at <a href="mailto:hello@secunit.io">hello@secunit.io</a>
   </p>
 </div>
 
 <script>
   const form = document.getElementById("contact-form") as HTMLFormElement;
+  const submitButton = form?.querySelector("button[type='submit']") as HTMLButtonElement | null;
   const submitText = document.getElementById("submit-text");
   const submitSpinner = document.getElementById("submit-spinner");
   const successMessage = document.getElementById("success-message");
@@ -137,6 +162,7 @@ const { formClass = "space-y-6", submitClass = "btn-primary w-full" } = Astro.pr
     successMessage?.classList.add("hidden");
     errorMessage?.classList.add("hidden");
 
+    if (submitButton) submitButton.disabled = true;
     submitText!.textContent = "Sending...";
     submitSpinner?.classList.remove("hidden");
 
@@ -164,6 +190,7 @@ const { formClass = "space-y-6", submitClass = "btn-primary w-full" } = Astro.pr
     } catch (_error) {
       errorMessage?.classList.remove("hidden");
     } finally {
+      if (submitButton) submitButton.disabled = false;
       submitText!.textContent = "Send Message";
       submitSpinner?.classList.add("hidden");
     }

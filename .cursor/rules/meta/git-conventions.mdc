@@ -1,0 +1,27 @@
+---
+description: Standards for commit messages, branching strategies, and local repository hygiene
+globs: [".gitignore", ".gitattributes", "**/*"]
+alwaysApply: false
+---
+
+# Git Conventions & Repository Hygiene
+
+## 1. Commit Message Formatting
+* **Imperative Mood:** Always write commit summaries in the imperative, present-tense mood (e.g., `feat: add user authentication`, not `feat: added user authentication` or `feat: adds user authentication`). Think of it as giving an instruction to the codebase.
+* **Conventional Commits:** Enforce a strict structural prefix for all commit summaries:
+  * `feat:` for new features or user-facing capabilities.
+  * `fix:` for bug fixes.
+  * `docs:` for documentation changes.
+  * `style:` for formatting, semi-colons, etc. (no production code changes).
+  * `refactor:` for rearranging code without changing behavior or adding features.
+  * `test:` for adding or fixing test assertions.
+  * `chore:` for updating build tasks, package manager dependencies, or configurations.
+* **Character Limits:** Limit the summary line to 50 characters or less. If a deeper explanation is required, add a blank line after the summary and wrap the body text at 72 characters.
+
+## 2. Branching & Merging Habits
+* **Descriptive Branch Names:** Name local development branches using a clear classification prefix followed by a concise hyphenated description:
+  * `feature/` or `feat/` (e.g., `feat/oauth-login`)
+  * `bugfix/` or `fix/` (e.g., `fix/session-timeout`)
+  * `hotfix/` for emergency production alterations.
+* **Clean History:** Before merging down or submitting work, rebase local tracking branches against the primary branch upstream (`git fetch origin && git rebase origin/main`) to eliminate cluttered catch-up merge commits.
+* **No Large Binaries:** Never track massive runtime binaries, compiled packages, system logs, or environment build targets. All ephemeral runtimes must be explicitly captured in the `.gitignore` file.

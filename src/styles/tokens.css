@@ -1,0 +1,117 @@
+/* Hallmark tokens · Secunit Mercantile · Quiet modern-minimal
+ * Single source of truth for every design token (light + dark).
+ * Imported by global.css — do not duplicate these values elsewhere.
+ */
+:root {
+  --color-paper: oklch(96% 0.01 58);
+  --color-paper-2: oklch(91% 0.012 58);
+  --color-paper-3: oklch(86% 0.012 58);
+  --color-ink: oklch(18% 0.012 52);
+  --color-ink-2: oklch(34% 0.012 52);
+  --color-muted: oklch(46% 0.012 52);
+  --color-rule: oklch(78% 0.012 58);
+  --color-accent: oklch(66% 0.2 42);
+  --color-accent-ink: oklch(15% 0.012 52);
+  /* Accent tuned for small text on paper — ≥4.5:1 in each scheme,
+     hue nudged toward brand orange so light mode doesn't read rust-red */
+  --color-accent-text: oklch(55% 0.2 48);
+  --color-focus: oklch(62% 0.22 42);
+  --color-danger: oklch(57% 0.2 25);
+
+  --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-outlier: "Geist Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
+  --text-3xl: 3rem;
+  --text-display: clamp(2.75rem, 5vw + 0.75rem, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+  --rule-hair: 1px;
+  --radius-card: 0.875rem;
+  --radius-pill: 999px;
+
+  --page-gutter: clamp(1rem, 4vw, 3.5rem);
+  --page-max: 76rem;
+  --banner-height: 5rem;
+  --z-sticky-nav: 300;
+
+  /* shadcn/Tailwind compatibility variables (HSL triples) */
+  --background: 30 28% 94%;
+  --foreground: 24 18% 9%;
+  --card: 30 26% 98%;
+  --card-foreground: 24 18% 9%;
+  --popover: 30 26% 98%;
+  --popover-foreground: 24 18% 9%;
+  --primary: 18 100% 49%;
+  --primary-foreground: 24 18% 9%;
+  --secondary: 30 18% 88%;
+  --secondary-foreground: 24 18% 9%;
+  --muted: 30 18% 88%;
+  --muted-foreground: 24 10% 35%;
+  --accent: 18 100% 49%;
+  --accent-foreground: 24 18% 9%;
+  --destructive: 0 84% 45%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 30 14% 74%;
+  --input: 30 14% 74%;
+  --ring: 18 100% 45%;
+  --radius: 0.875rem;
+}
+
+.dark {
+  --color-paper: oklch(16% 0.012 52);
+  --color-paper-2: oklch(20% 0.014 52);
+  --color-paper-3: oklch(25% 0.014 52);
+  --color-ink: oklch(94% 0.008 58);
+  --color-ink-2: oklch(78% 0.01 58);
+  --color-muted: oklch(69% 0.012 58);
+  --color-rule: oklch(34% 0.012 52);
+  --color-accent: oklch(72% 0.18 42);
+  --color-accent-ink: oklch(16% 0.012 52);
+  --color-accent-text: oklch(74% 0.17 42);
+  --color-focus: oklch(75% 0.2 42);
+  --color-danger: oklch(68% 0.18 25);
+
+  --background: 30 20% 8%;
+  --foreground: 30 16% 92%;
+  --card: 30 18% 12%;
+  --card-foreground: 30 16% 92%;
+  --popover: 30 18% 12%;
+  --popover-foreground: 30 16% 92%;
+  --primary: 18 100% 62%;
+  --primary-foreground: 24 18% 8%;
+  --secondary: 30 12% 17%;
+  --secondary-foreground: 30 16% 92%;
+  --muted: 30 12% 17%;
+  --muted-foreground: 28 8% 72%;
+  --accent: 18 100% 62%;
+  --accent-foreground: 24 18% 8%;
+  --destructive: 0 62% 58%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 30 10% 26%;
+  --input: 30 10% 26%;
+  --ring: 18 100% 65%;
+}

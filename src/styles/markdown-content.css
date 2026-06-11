@@ -4,6 +4,7 @@
  * Apply styling with the "markdown-content" class
  * Cancel out the styling with the "not-content" class
  */
+@reference "./global.css";
 
 /* text coloring for most items */
 .markdown-content

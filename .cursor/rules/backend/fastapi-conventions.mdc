@@ -1,0 +1,25 @@
+---
+description: API architecture, schema validation, dependency injection, and async standards for FastAPI applications
+globs: ["**/routes/**/*.py", "**/api/**/*.py", "**/schemas/**/*.py", "main.py"]
+alwaysApply: false
+---
+
+# FastAPI Development Conventions
+
+## 1. Routing & Asynchronous Architecture
+* **Async by Default:** Use `async def` for route handlers (path operations) by default, particularly when performing I/O tasks, database queries, or calling external network APIs.
+* **Blocking Operations:** If a router function must call a heavy, blocking synchronous function or execution thread, define the route handler with standard `def` so FastAPI handles it safely in an external thread pool.
+* **Router Isolation:** Break complex application domains into separate modules using `APIRouter()`. Tag and prefix routes cleanly to maintain self-documenting OpenAPI endpoints.
+
+## 2. Data Validation & Pydantic Schemas
+* **Pydantic v2 Standards:** Utilize explicit Pydantic v2 modeling syntax for request bodies, query parameters, and response payloads.
+* **Strict Serialization:** Always define an explicit `response_model` or type annotation on route endpoints to ensure outbound payloads are sanitized, validated, and stripped of sensitive database internal keys.
+* **Field Restrictions:** Use Pydantic's `Field(..., description="...", example="...")` to enforce type constraints and auto-generate comprehensive OpenAPI docs.
+
+## 3. Dependency Injection & State
+* **FastAPI Depends:** Leverage FastAPI's native `Depends()` mechanism for managing database sessions, authentication contexts, security guards, and shared configurations.
+* **Context Lifespans:** Use the modern `lifespan` event handler configuration on the `FastAPI()` instance to handle startup and shutdown tasks (like connection pools or caching lifecycles) cleanly.
+
+## 4. Error Handling
+* **HTTP Exceptions:** Raise clean, explicit `from fastapi import HTTPException` errors inside core route validation layers, passing accurate semantic HTTP status codes.
+* **Custom Handlers:** Implement global exception handlers for domain-specific errors via `@app.exception_handler()` to transform internal logic failures into predictable, structured JSON responses.

@@ -27,3 +27,6 @@ pnpm-debug.log*
 .netlify
 .vercel
 .wrangler
+
+# antigravity skils override
+.agent/

@@ -1,0 +1,19 @@
+---
+description: Test generation standards, mocking policies, and verification requirements for all implementations
+alwaysApply: true
+---
+
+# Testing Conventions & Quality Assurance
+
+## 1. Test-Driven Mindset
+* **No Code Without Verification:** When introducing a new feature, endpoint, or utility, you must concurrently generate or update the corresponding test suite.
+* **Deterministic Tests:** Avoid writing tests that rely on live network calls, external APIs, or fluctuating time variables. Mock all external dependencies explicitly.
+
+## 2. Stack-Specific Testing Mandates
+* **Go:** Place test files alongside production code using the `_test.go` suffix. Use standard library `testing` structures or table-driven tests.
+* **Python/FastAPI:** Utilize `pytest` and `httpx.AsyncClient` for testing endpoints. Group tests in a dedicated `tests/` directory mirroring the application layout.
+* **TypeScript/React/Astro:** Prioritize `vitest` or `bun test` for unit logic. Ensure components are verified using lightweight rendering tests (e.g., Testing Library).
+
+## 3. Mocking & Boundary Rules
+* **Database Isolation:** Never execute tests against a live production database. Use SQLite in-memory modes (`:memory:`) or dedicated dockerized test instances.
+* **Spying and Mocking:** Mock deep network layers or third-party SDK calls explicitly so the test suite can run entirely offline and pass under 100ms.

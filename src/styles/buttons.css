@@ -1,4 +1,5 @@
 /* buttons, 4 variants: "primary", "secondary", "outline", "ghost" */
+@reference "./global.css";
 .button {
   @apply flex items-center justify-center px-8 py-4 text-center transition duration-300;
   @apply tracking-2xl text-primary-foreground flex w-fit min-w-[8rem] rounded-full outline-none;

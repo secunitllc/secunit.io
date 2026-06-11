@@ -1,101 +1,62 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  darkMode: "class",
+  darkMode: 'class',
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
+      },
       colors: {
-        // GoWipeMe Refined Theme Colors
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
         primary: {
-          DEFAULT: "rgb(var(--color-primary) / <alpha-value>)",
-          light: "rgb(var(--color-primary-light) / <alpha-value>)",
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
         },
-        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
-        body: "rgb(var(--color-body) / <alpha-value>)",
-        border: "rgb(var(--color-border) / <alpha-value>)",
-        dark: "rgb(var(--color-dark) / <alpha-value>)",
-
-        // GoWipeMe specific colors
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
         accent: {
-          primary: "#20E3B2",
-          secondary: "#14b89f",
-          hover: "#1bffce",
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
         },
-        danger: "#FF6B6B",
-        warning: "#FFB020",
-        success: "#20E3B2",
-
-        // Background shades
-        "bg-primary": "#0a0a0a",
-        "bg-secondary": "#121212",
-        "bg-tertiary": "#1a1a1a",
-        "bg-elevated": "#1e1e1e",
-
-        // Text shades
-        "text-primary": "#ffffff",
-        "text-secondary": "#b4b4b4",
-        "text-tertiary": "#787878",
-
-        // Legacy dark mode colors
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
+        },
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        // Legacy colors to fix build for old components
+        body: "var(--color-ink)",
+        dark: "var(--color-paper-3)",
         darkmode: {
-          body: "rgb(var(--color-darkmode-body) / <alpha-value>)",
-          border: "rgb(var(--color-darkmode-border) / <alpha-value>)",
-          primary: "rgb(var(--color-darkmode-primary) / <alpha-value>)",
-          secondary: "rgb(var(--color-darkmode-secondary) / <alpha-value>)",
+          body: "var(--color-ink)",
+          border: "var(--color-rule)",
+          primary: "var(--color-paper)",
+          secondary: "var(--color-paper-2)",
         },
       },
       fontFamily: {
-        // Inter for body text, JetBrains Mono for code
-        sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "system-ui", "sans-serif"],
-        heading: ["Inter", "-apple-system", "BlinkMacSystemFont", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
-      },
-      borderRadius: {
-        // GoWipeMe uses larger border radii
-        'gw-sm': '6px',
-        'gw-md': '8px',
-        'gw-lg': '12px',
-        'gw-xl': '16px',
-        'gw-2xl': '20px',
-        'gw-3xl': '24px',
-      },
-      boxShadow: {
-        // GoWipeMe glow shadows
-        'accent': '0 8px 24px rgba(32, 227, 178, 0.15)',
-        'accent-strong': '0 8px 32px rgba(32, 227, 178, 0.25)',
-        'glow': '0 0 20px rgba(32, 227, 178, 0.3)',
-        'glow-strong': '0 0 40px rgba(32, 227, 178, 0.4)',
-      },
-      animation: {
-        'float': 'float 3s ease-in-out infinite',
-        'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
-        'gradient-shift': 'gradient-shift 3s ease-in-out infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
-        'glow-pulse': {
-          '0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
-          '50%': { opacity: '1', transform: 'scale(1.05)' },
-        },
-        'gradient-shift': {
-          '0%': { backgroundPosition: '0% center' },
-          '50%': { backgroundPosition: '100% center' },
-          '100%': { backgroundPosition: '0% center' },
-        },
-      },
-      transitionDuration: {
-        '300': '300ms',
-      },
-      transitionTimingFunction: {
-        'gw': 'cubic-bezier(0.4, 0, 0.2, 1)',
+        sans: ['"Geist"', 'system-ui', 'sans-serif'],
+        display: ['"Geist"', 'system-ui', 'sans-serif'],
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
-  ],
 };

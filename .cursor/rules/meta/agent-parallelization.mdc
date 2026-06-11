@@ -1,0 +1,30 @@
+# Agent Parallelization & Modular Architecture Rule
+
+## Core Philosophy
+You are an expert software architect designing a system to be built by multiple autonomous AI agents working in parallel. Every architectural decision, file creation, and refactoring effort must strictly adhere to the "Shared-State, Isolated-Scope" principle to eliminate merge conflicts, overlapping responsibilities, and tight coupling.
+
+## 1. Architectural Mandates
+* **Strict Decoupling:** Break large features or projects into independent, self-contained modules, components, or packages.
+* **Interface-Driven Development:** Define public interfaces, APIs, or data contracts *before* implementing internal logic. Agents must match the interface without altering it.
+* **Single Source of Truth:** Shared state, global configurations, or database schemas must reside in a single, dedicated core directory. Individual feature agents are strictly prohibited from modifying this core directly.
+* **Zero Lateral Dependencies:** Feature modules may depend on the core/shared layer, but feature modules must *never* depend directly on other feature modules. Communicate across modules via events, hooks, or interfaces.
+
+## 2. Execution Plan (The Parallelization Blueprint)
+Before writing any implementation code for a large task or project, you must output a **Parallelization Blueprint** using the following layout:
+
+### 🧱 Architectural Boundaries
+* **Shared/Core Layer (Read-Only for features):** [Define schemas, interfaces, shared types, or common utilities]
+* **Module A (Agent 1 Scope):** [Explicit file paths and boundaries]
+* **Module B (Agent 2 Scope):** [Explicit file paths and boundaries]
+
+### 📜 Integration Contracts
+* [Define the exact function signatures, API endpoints, or event types that connect Module A and Module B]
+
+### 🚧 Parallel Execution Rules
+* **Agent 1 (Module A) Restrictions:** May only create/modify files under `[path/to/module_a]`. Cannot touch `[path/to/module_b]`.
+* **Agent 2 (Module B) Restrictions:** May only create/modify files under `[path/to/module_b]`. Cannot touch `[path/to/module_a]`.
+
+## 3. Implementation Rules
+* **No Omnipresent Files:** Avoid central "dumping ground" files (e.g., a massive single `utils.ts`, `helpers.py`, or `routes.go`). If a utility is specific to a feature, keep it inside that feature's directory.
+* **Granular Exports:** Use explicitly scoped export files (like `index.ts` barrels or clean package entry points) to expose *only* the defined interface to the rest of the application.
+* **Mockability:** Ensure all interfaces can be easily mocked so Agent 2 can build against Agent 1's interface before Agent 1 even finishes writing the implementation.

@@ -1,0 +1,18 @@
+---
+description: WAL performance tuning, structural schema adjustments, and connection rules for SQLite databases
+globs: ["**/*.db", "**/*.sqlite", "**/*.sqlite3", "**/sqlite/**/*"]
+alwaysApply: false
+---
+
+# SQLite Database Conventions
+
+## 1. Core Engine Tuning (PRAGMA Configurations)
+Whenever initializing a local SQLite connection string, the engine initialization logic **must** execute the following performance optimizations immediately:
+* `PRAGMA journal_mode = WAL;` (Enables Write-Ahead Logging to permit concurrent reads while a write transaction processes).
+* `PRAGMA synchronous = NORMAL;` (Balances file durability against disk I/O performance under WAL architecture).
+* `PRAGMA foreign_keys = ON;` (Forces the engine to strictly validate and enforce foreign key constraints).
+* `PRAGMA busy_timeout = 5000;` (Prevents immediate crash failures on locked files by forcing the query operation to wait up to 5000ms for active locks to clear).
+
+## 2. Concurrent Access Constraints
+* **Single-Writer Enforcement:** SQLite only permits a single execution stream to write to the file at a time. Ensure connection engines utilize an architecture that locks down a single, shared connection manager for write mutations to prevent "database is locked" errors.
+* **Memory Optimization:** For memory-intensive local operations or ephemeral testing runs, use the explicit memory connection path (`:memory:`) to completely eliminate disk write delays.

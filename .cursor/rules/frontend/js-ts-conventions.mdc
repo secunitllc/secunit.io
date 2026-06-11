@@ -1,0 +1,31 @@
+---
+description: Coding standards, runtime preferences, and type-safety guidelines for JavaScript and TypeScript development
+globs: ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "package.json", "tsconfig.json", "bun.lockb", "pnpm-lock.yaml"]
+alwaysApply: false
+---
+
+# JavaScript & TypeScript Conventions
+
+## 1. Package Management & Runtime Environment
+* **Runtime & Dependency Control:** * Always check if `bun` is supported or compatible with the target environment first.
+  * If fully compatible, prioritize using `bun` for the runtime, script execution, and package management.
+  * If `bun` cannot be used due to compatibility issues, fall back to native `node` and use `pnpm` exclusively as the package manager. Never mix package managers within the same workspace.
+
+## 2. TypeScript & Type Safety
+* **No Implicit `any`:** Avoid using the `any` type. If a type is truly unknown or dynamic, explicitly use `unknown` and implement type guards or assertions before interacting with the data.
+* **Strict Type Safety:** Leverage strict type inference wherever possible, but explicitly define return types for public-facing module functions, API endpoints, and complex hooks.
+* **Type vs. Interface:** Prefer `interface` for object structures that can be extended or implemented, and `type` for unions, intersections, primitives, or tuple definitions.
+
+## 3. Code Style & Modern Syntax
+* **Imports Hierarchy:** Always place all import statements strictly at the top of the file. No inline imports within function bodies, type annotations, or interface fields unless resolving an explicit, documented circular dependency.
+* **Optional Chaining & Nullish Coalescing:** Favor optional chaining (`?.`) and nullish coalescing (`??`) over clumsy nested logical `&&` or ternary operators when checking for null or undefined values.
+* **Object / Array Destructuring:** Utilize modern destructuring assignment for extraction where it improves readability, particularly when pulling variables out of function parameters or configuration payloads.
+
+## 4. Asynchronous Architecture
+* **Async/Await:** Use `async/await` syntax for all asynchronous operations instead of raw `.then()` and `.catch()` chains.
+* **Error Isolation:** Wrap all asynchronous operations in `try/catch` blocks to capture rejections cleanly. Ensure errors are re-thrown, converted to custom types, or handled gracefully so they do not crash the runtime process.
+* **Parallel Execution:** When executing multiple independent asynchronous tasks, use `Promise.all()` or `Promise.allSettled()` to process them concurrently rather than awaiting them sequentially.
+
+## 5. Exports & Module Boundaries
+* **Clean Entry Points:** Keep utility files targeted and single-purpose. Avoid monolithic "junk drawer" files (e.g., `utils.ts` or `helpers.ts`).
+* **Barrel Exports:** Use clear entry points (such as an explicit `index.ts` or scoped module exports) to isolate internal implementation details from public consumption.

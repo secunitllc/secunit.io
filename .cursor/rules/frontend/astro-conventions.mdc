@@ -1,0 +1,35 @@
+---
+description: Development standards, component architecture, and rendering optimization for Astro projects
+globs: ["**/*.astro", "astro.config.*", "src/content/config.*"]
+alwaysApply: false
+---
+
+# Astro Conventions & Coding Standards
+
+## 1. Runtime & Package Management
+* **Runtime Selection:** * Prioritize `bun` for the runtime, running development servers, and package management.
+  * If compatibility issues arise with specific Astro integrations or plugins, fall back to `node` with `pnpm` exclusively. Never mix lockfiles.
+
+## 2. Component Structure (`.astro` files)
+* **Code Fence (Frontmatter Script):** * Keep the `---` code fence block highly organized: Imports at the absolute top, followed by TypeScript type/interface definitions (e.g., `Props`), and finally component logic/variable assignments.
+  * Never use inline imports inside the template; everything must be declared in the code fence.
+* **Component Template:** * Write clean, semantic HTML5 in the template layout.
+  * Use Astro JSX expressions (`{condition && <Component />}`) for dynamic rendering. Remember that Astro templates support standard HTML comments `` as well as JS comments `{/* */}` inside expressions.
+
+## 3. Island Architecture & Hydration
+* **Server-First Default:** Render components statically on the server by default. Do not hydrate a framework component (Svelte, React, etc.) unless it requires client-side interactivity.
+* **Explicit Hydration Directives:** When client-side JS is necessary, use the most restrictive hydration directive applicable:
+  * `client:load` - Only for critical, immediate interactive UI (e.g., global navigation toggles).
+  * `client:idle` - For lower-priority interactive elements (e.g., chat widgets, complex carousels).
+  * `client:visible` - For components lower on the page that don't need execution until scrolled into view.
+  * `client:only="framework"` - Use strictly when a component relies entirely on browser-only APIs that break server-side rendering (SSR).
+
+## 4. Content Collections
+* **Type-Safe Content:** Always use Astro's native Content Collections system (`src/content/`) for managing Markdown or MDX content schemas.
+* **Schema Validation:** Define strict Zod schemas inside `src/content/config.ts` to validate frontmatter metadata at build time. Avoid bypasses like `z.any()`.
+* **Data Fetching:** Use `getCollection()` or `getEntry()` to safely fetch structured content rather than arbitrary `Astro.glob()` file lookups.
+
+## 5. Routing & Performance
+* **Asset Optimization:** Always use Astro's native `<Image />` component from `astro:assets` for local and remote images to automatically enforce modern formats (WebP/AVIF), responsive sizing, and optimization.
+* **Scoped Styling:** Keep styles scoped to the component using native `<style>` tags. Do not reach for heavy global utility layers unless absolutely necessary for design tokens.
+* **Dynamic Routes:** When using Static Site Generation (SSG), ensure dynamic route parameters implement a strict, clean `getStaticPaths()` mapping logic.

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1778328475003,
-  "projectRoot": "/Users/mat/Documents/code/secunit-website",
+  "lastScanned": 1780870066318,
+  "projectRoot": "/Users/mat/Documents/code/consulting_projects/secunit-website",
   "techStack": {
     "languages": [
       {
@@ -24,17 +24,17 @@
     "frameworks": [
       {
         "name": "astro",
-        "version": "6.0.6",
+        "version": "6.4.4",
         "category": "fullstack"
       },
       {
         "name": "react",
-        "version": "19.2.4",
+        "version": "19.2.7",
         "category": "frontend"
       },
       {
         "name": "react-dom",
-        "version": "19.2.4",
+        "version": "19.2.7",
         "category": "frontend"
       }
     ],
@@ -42,7 +42,7 @@
     "runtime": "Node.js 24.0.0"
   },
   "build": {
-    "buildCommand": "pnpm run build 2>&1 | tail -30",
+    "buildCommand": "pnpm build",
     "testCommand": null,
     "lintCommand": "pnpm lint",
     "devCommand": "pnpm dev",
@@ -82,7 +82,7 @@
       "path": "deploy",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1778328474966,
+      "lastAccessed": 1780870066270,
       "keyFiles": [
         "README.md",
         "secunit-io.service"
@@ -91,15 +91,21 @@
     "dist": {
       "path": "dist",
       "purpose": "Distribution/build output",
-      "fileCount": 0,
-      "lastAccessed": 1778328474967,
-      "keyFiles": []
+      "fileCount": 8,
+      "lastAccessed": 1780870066271,
+      "keyFiles": [
+        "404.html",
+        "favicon.svg",
+        "index.html",
+        "robots.txt",
+        "rss.xml"
+      ]
     },
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1778328474991,
+      "lastAccessed": 1780870066293,
       "keyFiles": [
         "brand-guardrails.md"
       ]
@@ -108,7 +114,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 3,
-      "lastAccessed": 1778328474992,
+      "lastAccessed": 1780870066294,
       "keyFiles": [
         "favicon.svg",
         "robots.txt"
@@ -118,7 +124,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 3,
-      "lastAccessed": 1778328474993,
+      "lastAccessed": 1780870066294,
       "keyFiles": [
         "config-i18n.js",
         "remove-keystatic.js",
@@ -129,7 +135,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1778328474994,
+      "lastAccessed": 1780870066298,
       "keyFiles": [
         "content.config.ts",
         "env.d.ts"
@@ -139,18 +145,29 @@
       "path": "ui-kit",
       "purpose": null,
       "fileCount": 3,
-      "lastAccessed": 1778328474994,
+      "lastAccessed": 1780870066298,
       "keyFiles": [
         "hacker_green_advanced_components.png",
         "hacker_green_ui_kit_reference.png",
         "product_requirements_document.md"
       ]
     },
+    "dist/api": {
+      "path": "dist/api",
+      "purpose": "API routes",
+      "fileCount": 3,
+      "lastAccessed": 1780870066298,
+      "keyFiles": [
+        "contact",
+        "health",
+        "live"
+      ]
+    },
     "scripts/utils": {
       "path": "scripts/utils",
       "purpose": "Utility functions",
       "fileCount": 1,
-      "lastAccessed": 1778328474996,
+      "lastAccessed": 1780870066301,
       "keyFiles": [
         "detect-package-manager.js"
       ]
@@ -159,14 +176,14 @@
       "path": "src/assets",
       "purpose": "Static assets",
       "fileCount": 0,
-      "lastAccessed": 1778328474996,
+      "lastAccessed": 1780870066302,
       "keyFiles": []
     },
     "src/components": {
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 3,
-      "lastAccessed": 1778328474999,
+      "lastAccessed": 1780870066308,
       "keyFiles": [
         "Footer.astro",
         "Header.astro",
@@ -177,7 +194,7 @@
       "path": "src/config",
       "purpose": "Configuration files",
       "fileCount": 2,
-      "lastAccessed": 1778328474999,
+      "lastAccessed": 1780870066311,
       "keyFiles": [
         "siteSettings.json.ts",
         "translationData.json.ts"
@@ -187,14 +204,14 @@
       "path": "src/data",
       "purpose": "Data files",
       "fileCount": 0,
-      "lastAccessed": 1778328475000,
+      "lastAccessed": 1780870066313,
       "keyFiles": []
     },
     "src/pages": {
       "path": "src/pages",
       "purpose": "Page components",
       "fileCount": 13,
-      "lastAccessed": 1778328475001,
+      "lastAccessed": 1780870066314,
       "keyFiles": [
         "404.astro",
         "[...page].astro",

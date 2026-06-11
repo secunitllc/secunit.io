@@ -1,0 +1,24 @@
+---
+description: Utility class organization, layout standards, and configuration habits for Tailwind CSS
+globs: ["tailwind.config.*", "**/*.css", "**/*.jsx", "**/*.tsx", "**/*.vue", "**/*.svelte", "**/*.astro"]
+alwaysApply: false
+---
+
+# Tailwind CSS Conventions
+
+## 1. Class Organization & Ordering
+* **Consistent Hierarchy:** Always group utility classes in a consistent, logical order to maintain scannability:
+  1. Layout / Positioning (`flex`, `grid`, `absolute`, `z-index`)
+  2. Box Model / Sizing (`w-`, `h-`, `p-`, `m-`)
+  3. Typography (`text-`, `font-`, `leading-`)
+  4. Visuals (`bg-`, `border-`, `rounded-`, `shadow-`)
+  5. Interactive States / Modifiers (`hover:`, `focus:`, `dark:`, `md:`)
+* **No Inline Class Bloat:** For complex conditional styles, never concatenate strings manually. Always use the `clsx` or `tailwind-merge` (`twMerge`) utilities to safely merge or override styles dynamically.
+
+## 2. Configuration & Design Tokens
+* **Theme Extension:** Always extend the theme inside `tailwind.config.js` (or `.ts`) rather than overriding it entirely, unless explicitly resetting the color palette or typography tokens.
+* **Avoid Arbitrary Values:** Minimize the use of arbitrary values (e.g., `h-[432px]` or `text-[#f32021]`). Use configuration theme variables or design tokens instead. Reserve arbitrary brackets strictly for one-off layout constraints.
+
+## 3. Performance & Optimization
+* **Purge-Friendly Classes:** Never write dynamically constructed class names via string interpolation (e.g., `text-${color}-500`). Tailwind's static analysis compiler will miss them, resulting in missing styles in production. Always write out full class names completely.
+* **Component Extraction:** If a set of Tailwind classes repeats constantly across a project, extract them into a reusable component or framework piece rather than duplicating raw strings or relying heavily on `@apply` in global CSS files.

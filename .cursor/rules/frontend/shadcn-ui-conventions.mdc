@@ -1,0 +1,19 @@
+---
+description: Architecture, installation, and modification guidelines for shadcn/ui components
+globs: ["components.json", "src/components/ui/**/*", "components/ui/**/*"]
+alwaysApply: false
+---
+
+# shadcn/ui Conventions
+
+## 1. Component Ownership & Modification
+* **Modify Directly:** Treat shadcn/ui components as part of the local codebase. You are explicitly encouraged to open, modify, extend, or alter the component file under `components/ui/` to meet specific design requirements or feature mandates.
+* **Keep Core Primitives:** When modifying a component, ensure you do not break the underlying Radix UI accessible primitive hooks or structural requirements (like `forwardRef` or accessibility tags).
+
+## 2. Installation & Directory Layout
+* **CLI Management:** Always use your designated package manager prefix (e.g., `bun x shadcn-ui add [component]`) to pull down new primitives rather than manually copy-pasting code from the documentation site.
+* **Isolation:** Keep primitive UI elements locked strictly inside the `components/ui/` subfolder. Composite components or complex layout structures (e.g., `Navbar`, `Sidebar`) must live outside the `ui/` boundary.
+
+## 3. Consistency & Styling
+* **Utility Synergy:** Leverage the existing global `cn()` utility (which wraps `clsx` and `tailwind-merge`) whenever adding or passing dynamic external class overrides down to a shadcn primitive.
+* **Design Consistent Variants:** When adding custom button styles, badges, or sizes, update the `cva` (Class Variance Authority) configurations at the top of the component file instead of layering messy conditionals inside the TSX/JSX block.

@@ -1,5 +1,7 @@
 import type { APIRoute } from "astro";
 
+export const prerender = false;
+
 interface HealthCheckResult {
   status: "healthy" | "degraded" | "unhealthy";
   timestamp: string;

@@ -1,0 +1,21 @@
+---
+description: Architecture standards, Wrangler configurations, and edge runtime constraints for Cloudflare Workers, Pages, R2, and D1
+globs: ["wrangler.toml", "functions/**/*", "src/worker.**", "package.json"]
+alwaysApply: false
+---
+
+# Cloudflare Edge Infrastructure Conventions
+
+## 1. Tooling & Execution Environment
+* **Runtime:** Prioritize `bun` for managing project dependencies, executing local tests, and deploying via Wrangler CLI commands (`bunx wrangler deploy`).
+* **Edge Compatibility:** Never use native Node.js APIs (like `fs`, `crypto`, or `path`) unless explicitly utilizing Cloudflare's `node_compat` flag or matching edge polyfills. Write code targeted strictly for the V8 isolate edge runtime.
+
+## 2. Infrastructure Bindings (`wrangler.toml`)
+* **Explicit Declarations:** All Cloudflare resources must be explicitly bound in the `wrangler.toml` file. Never attempt to reference unbound environment components.
+* **Environment Separation:** Maintain clean separation between `[env.production]` and local development bindings.
+
+## 3. Product Integration Rules
+* **Cloudflare Workers:** Structure modules around ES modules export syntax using the `fetch(request, env, ctx)` handler mechanism.
+* **Cloudflare Pages:** Utilize file-system routing inside the `functions/` directory for full-stack builds, separating asset layouts from compute scripts.
+* **R2 Object Storage:** Ensure all object mutations utilize streaming architectures (`readableStream`) rather than pulling entire large files completely into memory buffers.
+* **D1 SQL Database:** Route database migrations strictly through the Wrangler CLI (`wrangler d1 migrations`). Execute multiple queries concurrently using `db.batch()` to reduce edge-network turnarounds.

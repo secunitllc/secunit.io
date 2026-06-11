@@ -2,7 +2,6 @@
 import "@/styles/global.css";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import ThemeToggle from "@/components/ThemeToggle.astro";
 
 interface Props {
  title: string;
@@ -12,71 +11,82 @@ interface Props {
 
 const { 
  title, 
- description = "Enterprise-grade security, DevOps, SRE, and AI consulting for small and mid-sized businesses. Fractional senior expertise without the enterprise price tag.",
- ogImage = "/og-image.png"
+ description = "Enterprise-grade security, DevOps, SRE, and AI consulting for small and mid-sized businesses.",
+ ogImage = "/images/og-image.png"
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const jsonLd = {
+ "@context": "https://schema.org",
+ "@type": "ProfessionalService",
+ name: "Secunit Mercantile",
+ url: Astro.site?.toString(),
+ description:
+  "Enterprise-grade security, DevOps, SRE, and AI consulting for small and mid-sized businesses.",
+ email: "hello@secunit.io",
+ address: {
+  "@type": "PostalAddress",
+  addressLocality: "Charlotte",
+  addressRegion: "NC",
+  addressCountry: "US",
+ },
+ areaServed: "US",
+ sameAs: ["https://linkedin.com/company/secunit-mercantile", "https://github.com/x86txt"],
+ knowsAbout: [
+  "AI Enablement",
+  "FinOps & Cloud Cost Optimization",
+  "DevOps & Site Reliability Engineering",
+  "Virtual CISO & Information Security",
+ ],
+};
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
  <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <link rel="icon" type="image/png" href="/images/brand/icon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/images/brand/icon.png" />
   <link rel="canonical" href={canonicalURL} />
   
-  <!-- Primary Meta Tags -->
   <title>{title} | Secunit Mercantile</title>
-  <meta name="title" content={`${title} | Secunit Mercantile`} />
   <meta name="description" content={description} />
   
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:title" content={`${title} | Secunit Mercantile`} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={new URL(ogImage, Astro.site)} />
   
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={canonicalURL} />
   <meta property="twitter:title" content={`${title} | Secunit Mercantile`} />
   <meta property="twitter:description" content={description} />
   <meta property="twitter:image" content={new URL(ogImage, Astro.site)} />
   
-  <!-- Fonts - Inter for body, JetBrains Mono for code -->
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Theme script (dark mode by default for GoWipeMe aesthetic) -->
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;650;750&family=Geist+Mono:wght@500;650&display=swap" rel="stylesheet" />
+  
   <script is:inline>
-   // GoWipeMe aesthetic defaults to dark mode
-   const theme = (() => {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-     return localStorage.getItem('theme');
-    }
-    // Default to dark mode for the refined dark aesthetic
-    return 'dark';
-   })();
-
-   if (theme === 'dark') {
-    document.documentElement.classList.add('dark');
-   } else {
-    document.documentElement.classList.remove('dark');
-   }
+    (function () {
+      const t = localStorage.getItem('theme') || 'system';
+      const d = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+      if (d) document.documentElement.classList.add('dark');
+    })();
   </script>
  </head>
  <body class="min-h-screen flex flex-col">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:rounded-lg focus:px-4 focus:py-2 focus:text-sm focus:font-semibold" style="background-color: rgb(var(--color-accent-primary)); color: rgb(var(--color-bg-primary));">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <Header />
-  <main id="main-content" class="flex-1">
+  <main id="main-content" class="flex-1" tabindex="-1">
    <slot />
   </main>
   <Footer />
-  <ThemeToggle />
  </body>
 </html>

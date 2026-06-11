@@ -1,0 +1,23 @@
+---
+description: Critical security mandates across application code, secret handling, data validation, and infrastructure configuration
+alwaysApply: true
+---
+
+# Comprehensive Security Guidance
+
+## 1. Secrets & Sensitive Data Hygiene
+* **Zero Secret Leakage:** Never hardcode API keys, passwords, bearer tokens, private keys, or webhook URLs into code or configuration files. Rely strictly on environment variables or secure vault/secrets managers.
+* **Git Prohibitions:** Ensure all configuration targets hosting local secrets (like `.env`, `*.pem`, or service account JSON files) are explicitly tracked in the root `.gitignore` file.
+* **Log Sanitization:** Filter and sanitize log outputs. Never emit Personally Identifiable Information (PII), authentication tokens, credit card details, or raw passwords to standard out or external logging pipelines.
+
+## 2. Secure Application Development
+* **Input Validation & Sanitization:** Treat all inbound user or external API data as hostile. Implement strict type validations, length constraints, and schema checks using libraries like Pydantic or Zod before processing.
+* **Output Encoding:** Encode or sanitize data rendered in UI views to prevent Cross-Site Scripting (XSS) injections.
+* **Parameterized Queries:** Execute database mutations strictly through parameterized statements or modern ORMs to completely block SQL injection channels.
+* **Dependency Auditing:** Avoid pulling in obscure, unmaintained external packages. Prioritize native language solutions to minimize supply-chain surface vulnerabilities.
+
+## 3. Infrastructure & Network Security
+* **Principle of Least Privilege:** Configure service roles, database users, and cloud API access tokens with the minimum permissions required to perform their discrete function.
+* **HTTPS/TLS Mandate:** Enforce TLS 1.2 or 1.3 for all production network communication. Ensure web servers, edge workers, and APIs include headers forcing HTTP Strict Transport Security (HSTS).
+* **Secure CORS Policies:** Avoid configuring overly permissive Cross-Origin Resource Sharing (CORS) headers like `Access-Control-Allow-Origin: *` on private or sensitive API endpoints. Explicitly whitelist trusted origins.
+* **Fail Securely:** When an application encounters a runtime failure or throws an exception, catch it gracefully. Never leak raw backend stack traces or internal environment variables to public-facing client error screens.

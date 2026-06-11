@@ -1,0 +1,31 @@
+---
+description: Development standards, Composition API usage, and architecture for Vue 3 and Nuxt applications
+globs: ["**/*.vue", "nuxt.config.*", "vite.config.*"]
+alwaysApply: false
+---
+
+# Vue 3 & Nuxt Conventions
+
+## 1. Package Management & Tools
+* **Runtime:** Prioritize `bun` for development servers, building, and installing dependencies. Fall back to `node` with `pnpm` only if encountering ecosystem compatibility barriers.
+
+## 2. Component Architecture
+* **Composition API Only:** Always use Vue 3's Composition API via `<script setup>`. Never write legacy Options API (`data()`, `methods`, `computed` inside an export default object).
+* **TypeScript Integration:** Always use TypeScript by defining the script block as `<script setup lang="ts">`.
+* **Component Structure:** Maintain a strict top-to-bottom order in `.vue` files:
+  1. `<script setup lang="ts">` (Logic)
+  2. `<template>` (Markup)
+  3. `<style scoped>` (Styling)
+
+## 3. Reactivity & State
+* **Ref vs. Reactive:** Favor `ref()` for primitive values and `reactive()` for complex, deeply nested objects.
+* **Composables:** Extract reusable logic, API calls, or shared state into custom Composables (e.g., `useAuth.ts`, `useFetch.ts`). Keep the `.vue` component script focused on wiring data to the template.
+* **Prop Definitions:** Use `defineProps<{}>()` with pure TypeScript interfaces rather than runtime prop declarations. 
+
+## 4. Templating & Directives
+* **Shorthand Syntax:** Always use shorthand syntax for directives: `:` for `v-bind`, `@` for `v-on`, and `#` for `v-slot`.
+* **Keyed Iteration:** Always include a unique `:key` when using `v-for`. Never use the array index as a key unless the list is immutable.
+* **Conditional Rendering:** Use `v-if`/`v-else` for structural DOM changes and `v-show` for elements that toggle visibility frequently to avoid expensive re-mounting.
+
+## 5. Styling
+* **Scoped Styles:** Always use `<style scoped>` to prevent CSS bleed. If using Tailwind CSS, apply utility classes directly in the template and avoid writing custom CSS in the style block unless absolutely necessary.

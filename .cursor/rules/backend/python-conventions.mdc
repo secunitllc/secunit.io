@@ -1,0 +1,23 @@
+---
+description: Coding standards, tooling mandates, and module layout for Python development
+globs: ["**/*.py", "pyproject.toml", "uv.lock", "requirements.txt"]
+alwaysApply: false
+---
+
+# Python Conventions & Tooling Standards
+
+## 1. Package Management & Tooling
+* **Package Manager Mandate:** Always use `uv` for all Python project initializations, dependency management, virtual environments, and script executions.
+* **Execution:** Run scripts or tools using `uv run <command>`. Never invoke raw `pip` or standard `venv` activations directly.
+* **Lockfiles:** Ensure the `uv.lock` and `pyproject.toml` files serve as the absolute single source of truth for dependencies.
+
+## 2. Imports Layout
+* **Top of File Only:** Place all import statements strictly at the top of the file.
+* **No Inline Imports:** Prohibit inline imports within function bodies, methods, or type-checking scopes unless a strict circular dependency requires it.
+* **Documentation Exception:** If an inline import must be used to resolve a circular dependency, it must be accompanied by an explicit code comment documenting why it was required.
+* **Grouping:** Group imports logically: standard library first, third-party packages second, and local modules last, separated by a blank line.
+
+## 3. Code Style & Idioms
+* **Type Hinting:** Write explicit type hints for all function arguments, method signatures, and return values to ensure strict static analysis parsing.
+* **Naming Conventions:** Enforce PEP 8 naming standards: `snake_case` for variables, functions, and methods; `PascalCase` for classes; `UPPER_CASE` for constants.
+* **Docstrings:** Document modules, public classes, and non-trivial functions using clean Google-style or Sphinx-style docstrings.
