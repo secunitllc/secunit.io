@@ -20,35 +20,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Version comes from package.json "packageManager" (no duplicate "version" here).
-      - uses: pnpm/action-setup@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.14
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "24"
-          cache: pnpm
+          node-version: "26"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
       - name: Build
-        run: pnpm run build
+        run: bun run build
         env:
           ASTRO_SITE_URL: https://secunit.io
 
       # Standalone server still resolves some packages from node_modules at runtime (e.g. piccolore).
-      # Exclude manifests + node_modules from rsync --delete so pnpm install output is not wiped.
+      # Exclude manifests + node_modules from rsync --delete so bun install output is not wiped.
       # Assumes /opt/secunit.io (secunit home) and children web/ + bin/ already exist and are writable.
       - name: Publish dist, production deps, and restart script
         run: |
           rsync -a --delete \
             --exclude node_modules \
             --exclude package.json \
-            --exclude pnpm-lock.yaml \
-            --exclude .npmrc \
+            --exclude bun.lock \
             ./dist/ "${DEPLOY_PATH}/"
-          cp package.json pnpm-lock.yaml .npmrc "${DEPLOY_PATH}/"
-          (cd "${DEPLOY_PATH}" && pnpm install --prod --frozen-lockfile)
+          cp package.json bun.lock "${DEPLOY_PATH}/"
+          (cd "${DEPLOY_PATH}" && bun install --production --frozen-lockfile)
           cp scripts/restart.sh "${RESTART_SCRIPT}"
           chmod +x "${RESTART_SCRIPT}"
 

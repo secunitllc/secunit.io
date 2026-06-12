@@ -2,17 +2,17 @@
 
 TLS termination and reverse proxy (e.g. Caddy) for `secunit.io` live in your **separate infra / edge repo** — not in this project.
 
-**Runtime:** **[Node.js](https://nodejs.org/en/about/previous-releases)** (see `engines` in `package.json`) runs the `@astrojs/node` server (`dist/server/entry.mjs`). **pnpm** is used locally and in CI (`packageManager` in `package.json`).
+**Runtime:** **[Node.js](https://nodejs.org/en/about/previous-releases)** (see `engines` in `package.json`) runs the `@astrojs/node` server (`dist/server/entry.mjs`). **Bun** is used locally and in CI (`packageManager` in `package.json`).
 
 Paths on the server:
 
 | Purpose        | Path                         |
 | -------------- | ---------------------------- |
-| App root (build output + deps) | `/opt/secunit.io/web` — `server/`, `client/`, **`node_modules/`**, `package.json`, `pnpm-lock.yaml`, `.npmrc` |
+| App root (build output + deps) | `/opt/secunit.io/web` — `server/`, `client/`, **`node_modules/`**, `package.json`, `bun.lock` |
 | Node.js        | e.g. nvm path or `/usr/bin/node` (systemd `ExecStart`; match `engines.node` in `package.json`) |
 | Restart script | `/opt/secunit.io/bin/restart.sh` |
 
-The deploy workflow rsyncs **`dist/`** into `web/`, copies **`package.json`**, **`pnpm-lock.yaml`**, **`.npmrc`**, then runs **`pnpm install --prod`** in `web/` so runtime imports (e.g. from the Astro standalone server) resolve. **`rsync --delete` excludes `node_modules`** so production deps are not removed each run.
+The deploy workflow rsyncs **`dist/`** into `web/`, copies **`package.json`** and **`bun.lock`**, then runs **`bun install --production`** in `web/` so runtime imports (e.g. from the Astro standalone server) resolve. **`rsync --delete` excludes `node_modules`** so production deps are not removed each run.
 
 Create **`web/`** and **`bin/`** under `/opt/secunit.io` once (if missing) so the deploy job never has to create the home directory itself:
 
@@ -29,7 +29,7 @@ Deploy uses a **self-hosted runner** on this host (see `.github/workflows/deploy
 1. [Add a self-hosted runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners) to this repository.
 2. The workflow uses **`runs-on: [self-hosted, Linux, X64]`**, which matches the default labels on a Linux x64 runner. The runner **name** in the UI (e.g. `hetzner`) is only cosmetic — jobs match **labels**, not the name. Add a custom label later if you get a second runner and need to target only this one.
 3. Ensure **`rsync`** is installed (`sudo apt install rsync` on Debian/Ubuntu).
-4. The runner needs **Node.js 24+** and **pnpm** (the workflow uses `actions/setup-node` + `pnpm/action-setup`). Run the runner service as user **`secunit`** so it can write to `/opt/secunit.io/web`, update `/opt/secunit.io/bin/restart.sh`, and run `restart.sh` (sudoers for `systemctl restart secunit-io.service`).
+4. The runner needs **Node.js 26+** and **Bun** (the workflow uses `actions/setup-node` + `oven-sh/setup-bun`). Run the runner service as user **`secunit`** so it can write to `/opt/secunit.io/web`, update `/opt/secunit.io/bin/restart.sh`, and run `restart.sh` (sudoers for `systemctl restart secunit-io.service`).
 
 **Security:** Self-hosted runners should not run workflows from untrusted forks. In the repo’s **Actions → General** settings, use **“Require approval for all outside collaborators”** or disable fork workflows as appropriate.
 

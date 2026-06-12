@@ -11,5 +11,6 @@ database_name = "secunit-contacts"
 database_id = "4b4a4589-119f-4a2b-aff7-0de7402ade8d"
 
 [vars]
-NODE_VERSION = "24"
+NODE_VERSION = "26"
+BUN_VERSION = "1.3"
 CONTACT_EMAIL = "whyhellothere@secunit.io"

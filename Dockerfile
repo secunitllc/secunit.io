@@ -1,20 +1,18 @@
-# Build stage: Node + pnpm (matches package.json packageManager)
-FROM node:24-alpine AS builder
-
-RUN corepack enable pnpm
+# Build stage: Bun (matches package.json packageManager)
+FROM oven/bun:1.3-alpine AS builder
 
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json bun.lock ./
 
-RUN pnpm install --frozen-lockfile
+RUN bun install --frozen-lockfile
 
 COPY . .
 
-RUN pnpm run build
+RUN bun run build
 
-# Production: distroless Node (matches engines.node >= 24)
-FROM gcr.io/distroless/nodejs24-debian13:nonroot AS runner
+# Production: distroless Node (matches engines.node >= 26)
+FROM gcr.io/distroless/nodejs26-debian13:nonroot AS runner
 
 WORKDIR /app
 

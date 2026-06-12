@@ -1,6 +1,8 @@
 import fs from "fs";
 function detectPackageManager() {
     const lockFiles = {
+        "bun.lock": "bun",
+        "bun.lockb": "bun",
         "pnpm-lock.yaml": "pnpm",
         "yarn.lock": "yarn",
         "package-lock.json": "npm",

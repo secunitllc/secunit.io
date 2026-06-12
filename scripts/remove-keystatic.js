@@ -9,6 +9,7 @@ const destinationDir = join("scripts", "deleted");
 const destinationPath = join(destinationDir, sourcePath);
 function getUninstallCommand(packageManager, packages) {
     const commands = {
+        bun: `bun remove ${packages.join(" ")}`,
         npm: `npm uninstall ${packages.join(" ")}`,
         yarn: `yarn remove ${packages.join(" ")}`,
         pnpm: `pnpm remove ${packages.join(" ")}`,

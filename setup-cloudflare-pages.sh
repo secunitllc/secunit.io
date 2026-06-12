@@ -26,7 +26,7 @@ PRODUCTION_BRANCH="main"
 ZONE="secunit.io"
 APEX_DOMAIN="secunit.io"
 WWW_DOMAIN="www.secunit.io"
-BUILD_CMD="pnpm run build"
+BUILD_CMD="bun run build"
 OUTPUT_DIR="dist/client"
 
 # ── Validate token ──────────────────────────────────────────────────────────
@@ -111,12 +111,14 @@ CREATE_RESP=$(curl -sS -X POST \
     \"deployment_configs\": {
       \"production\": {
         \"env_vars\": {
-          \"NODE_VERSION\": { \"type\": \"plain_text\", \"value\": \"24\" }
+          \"NODE_VERSION\": { \"type\": \"plain_text\", \"value\": \"26\" },
+          \"BUN_VERSION\": { \"type\": \"plain_text\", \"value\": \"1.3\" }
         }
       },
       \"preview\": {
         \"env_vars\": {
-          \"NODE_VERSION\": { \"type\": \"plain_text\", \"value\": \"24\" }
+          \"NODE_VERSION\": { \"type\": \"plain_text\", \"value\": \"26\" },
+          \"BUN_VERSION\": { \"type\": \"plain_text\", \"value\": \"1.3\" }
         }
       }
     }
@@ -154,7 +156,7 @@ if [[ "$PROJECT_SOURCE_TYPE" != "github" ]]; then
   exit 1
 fi
 
-if [[ "$PROJECT_BUILD_COMMAND" != "$BUILD_CMD" || "$PROJECT_NODE_VERSION" != "24" ]]; then
+if [[ "$PROJECT_BUILD_COMMAND" != "$BUILD_CMD" || "$PROJECT_NODE_VERSION" != "26" ]]; then
   echo "✗ Pages project '$PAGES_PROJECT' was created but build settings are incomplete." >&2
   echo "$PROJECT_CHECK" | jq '{build_config: .result.build_config, production_env: .result.deployment_configs.production.env_vars}' >&2
   exit 1
