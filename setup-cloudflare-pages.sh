@@ -27,7 +27,7 @@ ZONE="secunit.io"
 APEX_DOMAIN="secunit.io"
 WWW_DOMAIN="www.secunit.io"
 BUILD_CMD="pnpm run build"
-OUTPUT_DIR="dist"
+OUTPUT_DIR="dist/client"
 
 # ── Validate token ──────────────────────────────────────────────────────────
 CLOUDFLARE_AUTH_VALUE="${CLOUDFLARE_TOKEN:-${CLOUDFLARE_API_KEY:-}}"

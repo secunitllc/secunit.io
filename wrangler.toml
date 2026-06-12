@@ -1,7 +1,8 @@
 name = "secunit-io"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "dist"
+# @astrojs/node writes prerendered HTML to dist/client/, not dist/
+pages_build_output_dir = "dist/client"
 
 # D1 Database binding for contact form submissions
 [[d1_databases]]
