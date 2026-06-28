@@ -4,7 +4,7 @@
 Contact: mailto:security@secunit.io
 Contact: mailto:runmatt@pm.me
 
-Expires: 2027-06-28T00:00:00.000Z
+Expires: 2027-06-28T23:59:59Z
 
 Encryption: https://secunit.io/security/ecc.txt
 Encryption: https://secunit.io/security/rsa.txt
