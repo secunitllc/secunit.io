@@ -1,0 +1,106 @@
+---
+import Base from "@/layouts/Base.astro";
+---
+
+<Base title="Security Disclosure Policy">
+ <div class="prose-page">
+  <h1>Security Disclosure Policy</h1>
+  <p class="lead">Last updated: June 28, 2026</p>
+
+  <h2>Overview</h2>
+  <p>
+   Secunit Mercantile LLC takes the security of our website and the trust of our clients seriously.
+   If you believe you have found a security vulnerability in our systems, we encourage you to tell us
+   so we can fix it. We commit to working with security researchers in good faith and resolving confirmed
+   issues promptly.
+  </p>
+  <p>
+   This policy follows the coordinated vulnerability disclosure framework described in
+   <a href="https://www.rfc-editor.org/rfc/rfc9116" rel="noopener">RFC 9116</a>.
+   A machine-readable <code>security.txt</code> is available at
+   <a href="/.well-known/security.txt">/.well-known/security.txt</a>.
+  </p>
+
+  <h2>Scope</h2>
+  <p>This policy applies to security vulnerabilities in:</p>
+  <ul>
+   <li>secunit.io and all subdomains (e.g., subdomain.secunit.io);</li>
+   <li>Secunit Mercantile's publicly accessible web applications and APIs; and</li>
+   <li>Configuration or software we directly control.</li>
+  </ul>
+  <p>The following are out of scope:</p>
+  <ul>
+   <li>Third-party services we do not control (Cloudflare, Resend, Proton, etc.);</li>
+   <li>Social engineering or phishing attacks against our personnel;</li>
+   <li>Denial-of-service (DoS/DDoS) attacks;</li>
+   <li>Automated scanner findings without demonstrated proof of exploitability; and</li>
+   <li>Physical security.</li>
+  </ul>
+
+  <h2>How to Report</h2>
+  <p>
+   Send a detailed report to <a href="mailto:security@secunit.io">security@secunit.io</a>.
+   If the report contains sensitive details, please encrypt it using one of our public keys listed below.
+   For an additional contact channel, you may also reach us at
+   <a href="mailto:runmatt@pm.me">runmatt@pm.me</a>.
+  </p>
+  <p>Please include the following in your report:</p>
+  <ul>
+   <li>A clear description of the vulnerability and its potential impact;</li>
+   <li>The affected URL, endpoint, or component;</li>
+   <li>Step-by-step reproduction instructions or a proof-of-concept (PoC);</li>
+   <li>Any screenshots, HTTP traces, or supporting evidence; and</li>
+   <li>Your name or alias and preferred contact method for follow-up.</li>
+  </ul>
+
+  <h2>Our Commitments</h2>
+  <ul>
+   <li><strong>Acknowledgment</strong> — We will acknowledge receipt of your report within 3 business days.</li>
+   <li><strong>Assessment</strong> — We will assess the severity and scope within 10 business days and keep you informed of our progress.</li>
+   <li><strong>Remediation</strong> — We will work to remediate confirmed vulnerabilities as quickly as the severity warrants, prioritizing critical and high findings.</li>
+   <li><strong>Coordination</strong> — We will coordinate any public disclosure timeline with you. We ask for a reasonable embargo period (typically 90 days) to allow time for patching.</li>
+   <li><strong>No legal action</strong> — We will not pursue legal action against researchers who discover and report vulnerabilities in good faith in accordance with this policy.</li>
+  </ul>
+
+  <h2>Researcher Guidelines</h2>
+  <p>We ask that you:</p>
+  <ul>
+   <li>Avoid accessing, modifying, or deleting data that does not belong to you;</li>
+   <li>Avoid disrupting our services or the experience of other users;</li>
+   <li>Limit your testing to the minimum necessary to confirm the vulnerability;</li>
+   <li>Do not publicly disclose the vulnerability before we have had a reasonable opportunity to remediate it; and</li>
+   <li>Act in good faith — research conducted in compliance with this policy will be treated as authorized.</li>
+  </ul>
+
+  <h2>Encryption Keys</h2>
+  <p>
+   For sensitive communications, please use one of the following GPG public keys to encrypt your report.
+  </p>
+
+  <h3>ECC Key (preferred)</h3>
+  <p>UID: <code>runmatt@pm.me</code> — held by the maintainer who controls <code>security@secunit.io</code>.</p>
+  <ul>
+   <li><a href="/security/ecc.txt">secunit.io/security/ecc.txt</a></li>
+   <li><a href="https://drive.proton.me/urls/ZCT38S06DC#MLabIOOv8E4H" rel="noopener noreferrer">Proton Drive mirror</a></li>
+  </ul>
+
+  <h3>RSA Key</h3>
+  <ul>
+   <li><a href="/security/rsa.txt">secunit.io/security/rsa.txt</a></li>
+   <li><a href="https://drive.proton.me/urls/CYP40Y7A6C#7APglnZ0vfla" rel="noopener noreferrer">Proton Drive mirror</a></li>
+  </ul>
+
+  <h2>Recognition</h2>
+  <p>
+   We do not currently offer a monetary bug bounty program. However, we genuinely appreciate the work of
+   security researchers and will publicly acknowledge your contribution (with your permission) once a
+   vulnerability is resolved.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+   Security inquiries: <a href="mailto:security@secunit.io">security@secunit.io</a><br />
+   Backup contact: <a href="mailto:runmatt@pm.me">runmatt@pm.me</a>
+  </p>
+ </div>
+</Base>
