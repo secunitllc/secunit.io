@@ -1,4 +1,4 @@
-# Design — Secunit Mercantile
+# Design — secunit, llc
 
 A locked design system for this app. Every page redesign reads this file before
 emitting code. Do not regenerate per page — extend or amend this file when the
@@ -52,7 +52,7 @@ clamp(1rem, 4vw, 3.5rem).
 - Copy pattern: short imperatives — "Let's Talk", "View Services", "Get in Touch"
 
 ## What pages MUST share
-- The `Secunit Mercantile` wordmark (mono, accent on "Secunit")
+- The `secunit, llc` wordmark (mono, accent on "Secunit")
 - Hairline `--color-rule` section dividers
 - The accent hue and its restraint (≤5% per viewport; small accent text uses `--color-accent-text`)
 - Geist display + body, Geist Mono outliers
