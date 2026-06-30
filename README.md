@@ -1,4 +1,4 @@
-# Secunit Mercantile Website
+# secunit, llc Website
 
 Enterprise-grade security, DevOps, and AI consulting for small and mid-sized businesses.
 
@@ -73,4 +73,4 @@ wrangler d1 execute secunit-contacts --command="SELECT * FROM contacts WHERE sta
 
 ## License
 
-© 2025 Secunit Mercantile LLC. All rights reserved.
+© 2025 secunit, llc. All rights reserved.

@@ -1,7 +1,7 @@
 {
   "name": "secunit-website",
   "version": "1.0.0",
-  "description": "Secunit Mercantile - Security, DevOps & AI Consulting",
+  "description": "secunit, llc - Security, DevOps & AI Consulting",
   "private": true,
   "type": "module",
   "packageManager": "bun@1.3.14",

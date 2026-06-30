@@ -1,4 +1,4 @@
-# Secunit Mercantile LLC — Security Disclosure
+# secunit, llc — Security Disclosure
 # RFC 9116 — https://www.rfc-editor.org/rfc/rfc9116
 
 Contact: mailto:security@secunit.io

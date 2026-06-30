@@ -4,7 +4,7 @@ import { type FaqItem } from "../types/configDataTypes";
 export const faqData: FaqItem[] = [
   {
     question: "Qui êtes-vous?",
-    answer: `Secunit Mercantile fournit des conseils en sécurité, DevOps et IA de niveau entreprise aux petites et moyennes entreprises.`,
+    answer: `secunit, llc fournit des conseils en sécurité, DevOps et IA de niveau entreprise aux petites et moyennes entreprises.`,
   },
 ];
 

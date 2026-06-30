@@ -1,8 +1,8 @@
 import { type SiteDataProps } from "../types/configDataTypes";
 
 const siteData: SiteDataProps = {
-  name: "Secunit Mercantile",
-  title: "Conseil en Sécurité, DevOps et IA | Secunit Mercantile",
+  name: "secunit, llc",
+  title: "Conseil en Sécurité, DevOps et IA | secunit, llc",
   description:
     "Conseil en sécurité, DevOps et IA de niveau entreprise par des ingénieurs seniors qui ont opéré à grande échelle - maintenant disponible pour les entreprises en croissance comme la vôtre.",
 
@@ -14,7 +14,7 @@ const siteData: SiteDataProps = {
 
   defaultImage: {
     src: "/images/og-image.png",
-    alt: "Secunit Mercantile - Expertise de Niveau Entreprise. Tarification PME.",
+    alt: "secunit, llc - Expertise de Niveau Entreprise. Tarification PME.",
   },
 };
 
