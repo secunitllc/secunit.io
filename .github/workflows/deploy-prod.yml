@@ -1,5 +1,6 @@
-# Self-hosted runner on the production VPS: build and copy into place (no SSH/rsync from GitHub).
-# `runs-on` matches labels (self-hosted, Linux, X64), not the runner display name (e.g. hetzner).
+# GitHub-hosted runner: build the Astro site and deploy to Cloudflare Pages with Wrangler.
+# Production is the Cloudflare Pages project "secunit-io" (see wrangler.toml / setup-cloudflare-pages.sh).
+# Requires repo secrets: CLOUDFLARE_API_TOKEN (Pages:Edit) and CLOUDFLARE_ACCOUNT_ID.
 
 name: Deploy to Production
 
@@ -8,10 +9,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-
-env:
-  DEPLOY_PATH: /opt/secunit.io/web
-  RESTART_SCRIPT: /opt/secunit.io/bin/restart.sh
 
 jobs:
   deploy:
@@ -36,20 +33,11 @@ jobs:
         env:
           ASTRO_SITE_URL: https://secunit.io
 
-      # Standalone server still resolves some packages from node_modules at runtime (e.g. piccolore).
-      # Exclude manifests + node_modules from rsync --delete so bun install output is not wiped.
-      # Assumes /opt/secunit.io (secunit home) and children web/ + bin/ already exist and are writable.
-      - name: Publish dist, production deps, and restart script
-        run: |
-          rsync -a --delete \
-            --exclude node_modules \
-            --exclude package.json \
-            --exclude bun.lock \
-            ./dist/ "${DEPLOY_PATH}/"
-          cp package.json bun.lock "${DEPLOY_PATH}/"
-          (cd "${DEPLOY_PATH}" && bun install --production --frozen-lockfile)
-          cp scripts/restart.sh "${RESTART_SCRIPT}"
-          chmod +x "${RESTART_SCRIPT}"
-
-      - name: Restart application
-        run: "${RESTART_SCRIPT}"
+      # @astrojs/node writes the prerendered static output to dist/client/ (see wrangler.toml
+      # pages_build_output_dir). Direct-upload that directory to the Pages project.
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist/client --project-name=secunit-io --branch=main
