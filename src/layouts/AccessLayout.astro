@@ -1,0 +1,126 @@
+---
+import "@/styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  kicker: string;
+  tone?: "default" | "danger";
+}
+
+const { title, description, kicker, tone = "default" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/png" href="/images/brand/icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/images/brand/icon.png" />
+
+    <title>{title} | Secunit</title>
+    <meta name="description" content={description} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;650;750&family=Geist+Mono:wght@500;650&display=swap"
+      rel="stylesheet"
+    />
+
+    <script is:inline>
+      (function () {
+        const t = localStorage.getItem("theme") || "system";
+        const d =
+          t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        if (d) document.documentElement.classList.add("dark");
+      })();
+    </script>
+  </head>
+  <body class="access-body">
+    <main class="access-shell">
+      <a
+        href="https://secunit.io"
+        class="site-wordmark access-brand"
+        aria-label="Secunit Mercantile home"
+      >
+        <span>Secunit</span> Mercantile
+      </a>
+
+      <div class="access-card" data-tone={tone}>
+        <p class="home-kicker access-kicker">[ {kicker} ]</p>
+        <slot />
+      </div>
+
+      <p class="access-footnote">
+        Need help? <a href="mailto:security@secunit.io">security@secunit.io</a>
+      </p>
+    </main>
+
+    <style>
+      .access-body {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-paper);
+        color: var(--color-ink);
+        font-family: var(--font-body);
+        padding: var(--space-lg);
+      }
+
+      .access-shell {
+        display: grid;
+        gap: var(--space-lg);
+        width: min(100%, 26rem);
+        justify-items: center;
+      }
+
+      .access-brand {
+        font-size: var(--text-base);
+      }
+
+      .access-card {
+        width: 100%;
+        display: grid;
+        gap: var(--space-md);
+        border: var(--rule-hair) solid var(--color-rule);
+        border-radius: var(--radius-card);
+        background: var(--color-paper-2);
+        padding: var(--space-xl);
+      }
+
+      .access-card[data-tone="danger"] {
+        border-color: color-mix(in oklch, var(--color-danger) 45%, var(--color-rule));
+      }
+
+      .access-kicker {
+        color: var(--color-muted);
+      }
+
+      .access-card[data-tone="danger"] .access-kicker {
+        color: var(--color-danger);
+      }
+
+      .access-footnote {
+        color: var(--color-muted);
+        font-size: var(--text-xs);
+        text-align: center;
+      }
+
+      .access-footnote a {
+        color: var(--color-accent-text);
+        text-decoration: none;
+        border-bottom: var(--rule-hair) solid
+          color-mix(in oklch, var(--color-accent) 40%, transparent);
+      }
+
+      .access-footnote a:hover {
+        border-color: var(--color-accent);
+      }
+    </style>
+  </body>
+</html>
