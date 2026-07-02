@@ -1,0 +1,158 @@
+---
+import AccessLayout from "@/layouts/AccessLayout.astro";
+
+// Friendly labels for the Gateway "policy context" query parameters that get
+// appended to this page's URL when the matching HTTP/DNS policy has
+// "Send policy context" turned on. Only params Gateway actually sends for a
+// given block are rendered — unrecognized cf_* params still show up with an
+// auto-generated label so this page stays correct if Cloudflare adds fields.
+const knownFields: Record<string, string> = {
+  cf_user_email: "Signed in as",
+  cf_site_uri: "Requested URL",
+  cf_request_categories: "Category",
+  cf_action: "Action taken",
+  cf_rule_names: "Matched rule",
+  cf_policy_name: "Matched policy",
+  cf_device_id: "Device",
+};
+---
+
+<AccessLayout
+  title="Access blocked"
+  description="This request was blocked by Secunit's network security policy."
+  kicker="Gateway"
+  tone="danger"
+>
+  <h1 class="access-h1">Request blocked</h1>
+  <p class="access-lead">
+    Secunit's network security policy blocked this request. If you believe this is a mistake,
+    contact your administrator with the details below.
+  </p>
+
+  <dl id="block-details" class="access-details" hidden></dl>
+
+  <div class="access-actions">
+    <a href="mailto:security@secunit.io" class="access-idp-button">Request access</a>
+    <button type="button" id="go-back" class="access-idp-button access-idp-button--secondary"
+      >Go back</button
+    >
+  </div>
+</AccessLayout>
+
+<script define:vars={{ knownFields }}>
+  const params = new URLSearchParams(window.location.search);
+  const details = document.getElementById("block-details");
+
+  params.forEach((value, key) => {
+    if (!key.startsWith("cf_") || !value || !details) return;
+    const label =
+      knownFields[key] ||
+      key
+        .replace(/^cf_/, "")
+        .replace(/_/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+    const dt = document.createElement("dt");
+    dt.textContent = label;
+    const dd = document.createElement("dd");
+    dd.textContent = value;
+    details.append(dt, dd);
+    details.hidden = false;
+  });
+
+  document.getElementById("go-back")?.addEventListener("click", () => {
+    if (window.history.length > 1) window.history.back();
+    else window.location.href = "https://secunit.io";
+  });
+</script>
+
+<style>
+  .access-h1 {
+    margin: 0;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 750;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  .access-lead {
+    margin: 0;
+    color: var(--color-ink-2);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+  }
+
+  .access-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-2xs) var(--space-md);
+    border: var(--rule-hair) solid var(--color-rule);
+    border-radius: calc(var(--radius-card) - 0.25rem);
+    background: var(--color-paper);
+    padding: var(--space-md);
+    font-size: var(--text-sm);
+  }
+
+  .access-details dt {
+    color: var(--color-muted);
+    font-weight: 650;
+  }
+
+  .access-details dd {
+    margin: 0;
+    color: var(--color-ink);
+    overflow-wrap: anywhere;
+  }
+
+  .access-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .access-idp-button {
+    display: inline-flex;
+    min-height: 2.75rem;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    border: var(--rule-hair) solid var(--color-ink);
+    border-radius: var(--radius-pill);
+    background: var(--color-ink);
+    color: var(--color-paper);
+    font-size: var(--text-sm);
+    font-weight: 650;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+      background-color var(--dur-short) var(--ease-out),
+      border-color var(--dur-short) var(--ease-out),
+      transform 100ms var(--ease-out);
+  }
+
+  .access-idp-button:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-accent-ink);
+    transform: translateY(-1px);
+  }
+
+  .access-idp-button:active {
+    transform: translateY(1px);
+  }
+
+  .access-idp-button--secondary {
+    background: transparent;
+    border-color: var(--color-rule);
+    color: var(--color-ink);
+  }
+
+  .access-idp-button--secondary:hover {
+    border-color: var(--color-accent);
+    background: transparent;
+    color: var(--color-accent-text);
+  }
+</style>
