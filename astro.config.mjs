@@ -19,7 +19,10 @@ export default defineConfig({
   },
   integrations: [
     react(),
-    sitemap(),
+    sitemap({
+      // Cloudflare Access/Gateway custom pages are infrastructure, not content.
+      filter: (page) => !page.includes("/access/"),
+    }),
     mdx(),
     icon(),
   ],
