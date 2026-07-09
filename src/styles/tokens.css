@@ -1,10 +1,10 @@
-/* Contemporary design tokens · Secunit Mercantile
+/* Contemporary design tokens · secunit, llc
  * Skill: contemporary — Jost + Overpass Mono, magenta/pink accent, bento surfaces.
  * Imported by global.css — single source of truth.
  */
 :root {
   --color-primary: #c800df;
-  --color-secondary: #e60076;
+  --color-secondary: #c6538c;
   --color-success: #16a34a;
   --color-warning: #d97706;
   --color-danger: #dc2626;
@@ -84,7 +84,7 @@
   --popover-foreground: 220 26% 10%;
   --primary: 292 100% 43%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 330 100% 45%;
+  --secondary: 330 51% 55%;
   --secondary-foreground: 0 0% 100%;
   --muted: 220 14% 94%;
   --muted-foreground: 220 9% 46%;
@@ -125,7 +125,7 @@
   --popover-foreground: 210 20% 98%;
   --primary: 292 85% 58%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 330 85% 55%;
+  --secondary: 330 51% 58%;
   --secondary-foreground: 0 0% 100%;
   --muted: 240 6% 14%;
   --muted-foreground: 220 8% 65%;

@@ -9,9 +9,7 @@ const year = new Date().getFullYear();
 
   <div class="site-footer__directory">
     <section class="site-footer__brand" aria-labelledby="footer-brand">
-      <a href="/" class="site-wordmark" id="footer-brand" aria-label="Secunit Mercantile home">
-        <span>Secunit</span> Mercantile
-      </a>
+      <a href="/" class="site-wordmark" id="footer-brand" aria-label="secunit, llc home"><span>secunit</span>, llc</a>
       <p>
         Security, DevOps, SRE, and AI consulting from <a href="https://secunit.io" rel="noopener">secunit, llc</a>.
       </p>
@@ -39,6 +37,7 @@ const year = new Date().getFullYear();
           </a>
         </li>
       </ul>
+      <p class="site-footer__copyright">&copy; {year} secunit, llc &middot; secunit.io</p>
     </section>
 
     <section class="site-footer__col" aria-labelledby="footer-channels">
@@ -71,17 +70,32 @@ const year = new Date().getFullYear();
       </ul>
     </section>
 
-    <section class="site-footer__col" aria-labelledby="footer-tools">
-      <p id="footer-tools" class="site-footer__kicker">[ Tools ]</p>
-      <ul>
-        <li>
-          <a href="https://srex.secunit.io" rel="noopener">
-            <span class="site-footer__tag">SRE</span>
-            <span>Reliability Audit</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <div class="site-footer__stack">
+      <section class="site-footer__col" aria-labelledby="footer-site">
+        <p id="footer-site" class="site-footer__kicker">[ Site ]</p>
+        <ul>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/technologies">Technologies</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Let's Talk</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+          <li><a href="/security">Security</a></li>
+        </ul>
+      </section>
+
+      <section class="site-footer__col" aria-labelledby="footer-tools">
+        <p id="footer-tools" class="site-footer__kicker">[ Tools ]</p>
+        <ul>
+          <li>
+            <a href="https://srex.secunit.io" rel="noopener">
+              <span class="site-footer__tag">SRE</span>
+              <span>Reliability Audit</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="site-footer__col" aria-labelledby="footer-security">
       <p id="footer-security" class="site-footer__kicker">[ Security ]</p>
@@ -112,18 +126,5 @@ const year = new Date().getFullYear();
         </li>
       </ul>
     </section>
-  </div>
-
-  <div class="site-footer__meta">
-    <p>&copy; {year} secunit, llc &middot; secunit.io</p>
-    <nav aria-label="Footer navigation">
-      <a href="/services">Services</a>
-      <a href="/technologies">Technologies</a>
-      <a href="/about">About</a>
-      <a href="/contact">Let's Talk</a>
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
-      <a href="/security">Security</a>
-    </nav>
   </div>
 </footer>

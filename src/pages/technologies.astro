@@ -1,10 +1,13 @@
 ---
 import Base from "@/layouts/Base.astro";
 
-// Dashboard icons base URL
+// Dashboard icons base URL; entries with `src` come from Iconify instead
+// (used where homarr has no icon — full-color / brand-colored variants verified).
 const iconBaseUrl = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@main/svg";
+const iconify = "https://api.iconify.design";
 
-const categories = [
+type Tech = { name: string; logo?: string; src?: string };
+const categories: { name: string; kicker: string; technologies: Tech[] }[] = [
  {
   name: "Cloud Platforms",
   kicker: "Infrastructure",
@@ -37,7 +40,7 @@ const categories = [
    { name: "GitLab CI", logo: "gitlab" },
    { name: "ArgoCD", logo: "argo-cd" },
    { name: "Jenkins", logo: "jenkins" },
-   { name: "CircleCI", logo: "circleci" },
+   { name: "CircleCI", src: `${iconify}/logos/circleci.svg` },
    { name: "Flux", logo: "flux-cd" },
   ],
  },
@@ -46,7 +49,7 @@ const categories = [
   kicker: "Automation",
   technologies: [
    { name: "Terraform", logo: "terraform" },
-   { name: "Pulumi", logo: "pulumi" },
+   { name: "Pulumi", src: `${iconify}/logos/pulumi-icon.svg` },
    { name: "Ansible", logo: "ansible" },
    { name: "AWS CDK", logo: "amazon-web-services" },
    { name: "Crossplane", logo: "crossplane" },
@@ -60,7 +63,7 @@ const categories = [
    { name: "Prometheus", logo: "prometheus" },
    { name: "Grafana", logo: "grafana" },
    { name: "Datadog", logo: "datadog" },
-   { name: "New Relic", logo: "new-relic" },
+   { name: "New Relic", src: `${iconify}/logos/new-relic-icon.svg` },
    { name: "Elastic Stack", logo: "elasticsearch" },
    { name: "Jaeger", logo: "jaeger" },
   ],
@@ -70,9 +73,9 @@ const categories = [
   kicker: "Protection",
   technologies: [
    { name: "Vault", logo: "vault" },
-   { name: "Snyk", logo: "snyk" },
-   { name: "Trivy", logo: "trivy" },
-   { name: "Falco", logo: "falco" },
+   { name: "Snyk", src: `${iconify}/simple-icons/snyk.svg?color=%234C4A73` },
+   { name: "Trivy", src: `${iconify}/simple-icons/trivy.svg?color=%231904DA` },
+   { name: "Falco", src: `${iconify}/simple-icons/falco.svg?color=%2300AEC7` },
    { name: "Wazuh", logo: "wazuh" },
    { name: "CrowdStrike", logo: "crowdstrike" },
   ],
@@ -84,7 +87,7 @@ const categories = [
    { name: "OpenAI", logo: "openai" },
    { name: "Anthropic", logo: "anthropic" },
    { name: "Hugging Face", logo: "hugging-face" },
-   { name: "LangChain", logo: "langchain" },
+   { name: "LangChain", src: `${iconify}/simple-icons/langchain.svg?color=%231C3C3C` },
    { name: "AWS Bedrock", logo: "amazon-web-services" },
    { name: "Ollama", logo: "ollama" },
   ],
@@ -109,20 +112,20 @@ const categories = [
    { name: "Go", logo: "go" },
    { name: "TypeScript", logo: "typescript" },
    { name: "Rust", logo: "rust" },
-   { name: "Node.js", logo: "node-js" },
-   { name: "Bash", logo: "bash" },
+   { name: "Node.js", logo: "nodejs" },
+   { name: "Bash", src: `${iconify}/simple-icons/gnubash.svg?color=%234EAA25` },
   ],
  },
  {
   name: "Messaging & Streaming",
   kicker: "Events",
   technologies: [
-   { name: "Kafka", logo: "apache-kafka" },
+   { name: "Kafka", logo: "kafka" },
    { name: "RabbitMQ", logo: "rabbitmq" },
-   { name: "NATS", logo: "nats" },
-   { name: "AWS SQS", logo: "amazon-sqs" },
+   { name: "NATS", src: `${iconify}/logos/nats-icon.svg` },
+   { name: "AWS SQS", src: `${iconify}/logos/aws-sqs.svg` },
    { name: "Redis Streams", logo: "redis" },
-   { name: "Pulsar", logo: "apache-pulsar" },
+   { name: "Pulsar", src: `${iconify}/devicon/pulsar.svg` },
   ],
  },
 ];
@@ -153,7 +156,7 @@ const categories = [
      {category.technologies.map((tech) => (
       <li class="tech-chip">
        <img
-        src={`${iconBaseUrl}/${tech.logo}.svg`}
+        src={tech.src ?? `${iconBaseUrl}/${tech.logo}.svg`}
         alt=""
         width="22"
         height="22"
@@ -180,19 +183,3 @@ const categories = [
   </div>
  </section>
 </Base>
-
-<style>
-  .tech-chip img {
-    filter: grayscale(20%);
-    transition: filter 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .tech-chip:hover img {
-    filter: grayscale(0%);
-  }
-  :global(.dark) .tech-chip img {
-    filter: grayscale(20%) brightness(0.95);
-  }
-  :global(.dark) .tech-chip:hover img {
-    filter: grayscale(0%) brightness(1.05);
-  }
-</style>

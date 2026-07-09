@@ -120,7 +120,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "package_scripts",
-      "community": 13,
+      "community": 2,
       "norm_label": "scripts"
     },
     {
@@ -130,7 +130,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_scripts_dev",
-      "community": 13,
+      "community": 2,
       "norm_label": "dev"
     },
     {
@@ -140,7 +140,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "package_scripts_build",
-      "community": 13,
+      "community": 2,
       "norm_label": "build"
     },
     {
@@ -150,7 +150,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "package_scripts_preview",
-      "community": 13,
+      "community": 2,
       "norm_label": "preview"
     },
     {
@@ -160,7 +160,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_scripts_start",
-      "community": 13,
+      "community": 2,
       "norm_label": "start"
     },
     {
@@ -170,7 +170,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "package_scripts_astro",
-      "community": 13,
+      "community": 2,
       "norm_label": "astro"
     },
     {
@@ -180,7 +180,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "package_scripts_format",
-      "community": 13,
+      "community": 2,
       "norm_label": "format"
     },
     {
@@ -411,7 +411,7 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "contact_contactformcore",
-      "community": 1,
+      "community": 13,
       "norm_label": "@/components/contact/contactformcore.astro"
     },
     {
@@ -421,7 +421,7 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "contact_contactformcore_submittext",
-      "community": 1,
+      "community": 13,
       "norm_label": "submittext"
     },
     {
@@ -431,7 +431,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "contact_contactformcore_submitspinner",
-      "community": 1,
+      "community": 13,
       "norm_label": "submitspinner"
     },
     {
@@ -441,7 +441,7 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "contact_contactformcore_successmessage",
-      "community": 1,
+      "community": 13,
       "norm_label": "successmessage"
     },
     {
@@ -451,7 +451,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "contact_contactformcore_errormessage",
-      "community": 1,
+      "community": 13,
       "norm_label": "errormessage"
     },
     {
@@ -545,6 +545,27 @@
       "norm_label": "d1execresult"
     },
     {
+      "label": "@/layouts/AccessLayout.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/AccessLayout.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "layouts_accesslayout",
+      "community": 11,
+      "norm_label": "@/layouts/accesslayout.astro"
+    },
+    {
+      "label": "@/styles/global.css",
+      "file_type": "code",
+      "source_file": "src/styles/global.css",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_mat_documents_code_secunit_io_src_styles_global_css",
+      "community": 11,
+      "norm_label": "@/styles/global.css"
+    },
+    {
       "label": "@/layouts/Base.astro",
       "file_type": "code",
       "source_file": "src/layouts/Base.astro",
@@ -576,16 +597,6 @@
       "norm_label": "jsonld"
     },
     {
-      "label": "@/styles/global.css",
-      "file_type": "code",
-      "source_file": "src/styles/global.css",
-      "confidence": "EXTRACTED",
-      "_origin": "ast",
-      "id": "users_mat_documents_code_secunit_io_src_styles_global_css",
-      "community": 1,
-      "norm_label": "@/styles/global.css"
-    },
-    {
       "label": "404.astro",
       "file_type": "code",
       "source_file": "src/pages/404.astro",
@@ -604,6 +615,86 @@
       "id": "pages_about",
       "community": 1,
       "norm_label": "about.astro"
+    },
+    {
+      "label": "icons",
+      "file_type": "code",
+      "source_file": "src/pages/about.astro",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "pages_about_icons",
+      "community": 1,
+      "norm_label": "icons"
+    },
+    {
+      "label": "mattPhotos",
+      "file_type": "code",
+      "source_file": "src/pages/about.astro",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "pages_about_mattphotos",
+      "community": 1,
+      "norm_label": "mattphotos"
+    },
+    {
+      "label": "blocked.astro",
+      "file_type": "code",
+      "source_file": "src/pages/access/blocked.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "access_blocked",
+      "community": 11,
+      "norm_label": "blocked.astro"
+    },
+    {
+      "label": "string",
+      "file_type": "code",
+      "source_file": "src/pages/access/blocked.astro",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "access_blocked_string",
+      "community": 11,
+      "norm_label": "string"
+    },
+    {
+      "label": "details",
+      "file_type": "code",
+      "source_file": "src/pages/access/blocked.astro",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "access_blocked_details",
+      "community": 11,
+      "norm_label": "details"
+    },
+    {
+      "label": "login.astro",
+      "file_type": "code",
+      "source_file": "src/pages/access/login.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "access_login",
+      "community": 11,
+      "norm_label": "login.astro"
+    },
+    {
+      "label": "identityProviders",
+      "file_type": "code",
+      "source_file": "src/pages/access/login.astro",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "access_login_identityproviders",
+      "community": 11,
+      "norm_label": "identityproviders"
+    },
+    {
+      "label": "redirectUrl",
+      "file_type": "code",
+      "source_file": "src/pages/access/login.astro",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "access_login_redirecturl",
+      "community": 11,
+      "norm_label": "redirecturl"
     },
     {
       "label": "contact.ts",
@@ -732,7 +823,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pages_contact",
-      "community": 1,
+      "community": 13,
       "norm_label": "contact.astro"
     },
     {
@@ -742,7 +833,7 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_mat_documents_code_secunit_io_src_assets_images_brands_proton_svg",
-      "community": 1,
+      "community": 13,
       "norm_label": "@/assets/images/brands/proton.svg"
     },
     {
@@ -752,7 +843,7 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_mat_documents_code_secunit_io_src_assets_images_brands_protondrive_svg",
-      "community": 1,
+      "community": 13,
       "norm_label": "@/assets/images/brands/protondrive.svg"
     },
     {
@@ -774,6 +865,16 @@
       "id": "pages_privacy",
       "community": 1,
       "norm_label": "privacy.astro"
+    },
+    {
+      "label": "security.astro",
+      "file_type": "code",
+      "source_file": "src/pages/security.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_security",
+      "community": 1,
+      "norm_label": "security.astro"
     },
     {
       "label": "services.astro",
@@ -1246,14 +1347,14 @@
       "norm_label": ".github-profile-readme.md"
     },
     {
-      "label": "Secunit Mercantile",
+      "label": "secunit, llc",
       "file_type": "document",
       "source_file": ".github-profile-README.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "github_profile_readme_secunit_mercantile",
+      "id": "github_profile_readme_secunit_llc",
       "community": 7,
-      "norm_label": "secunit mercantile"
+      "norm_label": "secunit, llc"
     },
     {
       "label": "What We Do",
@@ -1306,14 +1407,14 @@
       "norm_label": "\ud83e\udd16 ai enablement"
     },
     {
-      "label": "Why Secunit Mercantile?",
+      "label": "Why secunit, llc?",
       "file_type": "document",
       "source_file": ".github-profile-README.md",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "github_profile_readme_why_secunit_mercantile",
+      "id": "github_profile_readme_why_secunit_llc",
       "community": 7,
-      "norm_label": "why secunit mercantile?"
+      "norm_label": "why secunit, llc?"
     },
     {
       "label": "Trusted By Teams At",
@@ -1386,14 +1487,14 @@
       "norm_label": "context.md"
     },
     {
-      "label": "CONTEXT.md - Secunit Mercantile Website",
+      "label": "CONTEXT.md - secunit, llc Website",
       "file_type": "document",
       "source_file": "CONTEXT.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "context_context_md_secunit_mercantile_website",
+      "id": "context_context_md_secunit_llc_website",
       "community": 0,
-      "norm_label": "context.md - secunit mercantile website"
+      "norm_label": "context.md - secunit, llc website"
     },
     {
       "label": "\ud83d\udccb Table of Contents",
@@ -1712,7 +1813,7 @@
       "source_location": "L442",
       "_origin": "ast",
       "id": "context_deployment",
-      "community": 0,
+      "community": 32,
       "norm_label": "\ud83d\ude80 deployment"
     },
     {
@@ -1722,7 +1823,7 @@
       "source_location": "L444",
       "_origin": "ast",
       "id": "context_fly_io",
-      "community": 0,
+      "community": 32,
       "norm_label": "fly.io"
     },
     {
@@ -1732,7 +1833,7 @@
       "source_location": "L484",
       "_origin": "ast",
       "id": "context_build_process_484",
-      "community": 0,
+      "community": 32,
       "norm_label": "build process"
     },
     {
@@ -1742,7 +1843,7 @@
       "source_location": "L506",
       "_origin": "ast",
       "id": "context_docker_build",
-      "community": 0,
+      "community": 32,
       "norm_label": "docker build"
     },
     {
@@ -1902,7 +2003,7 @@
       "source_location": "L671",
       "_origin": "ast",
       "id": "context_known_issues_todos",
-      "community": 0,
+      "community": 31,
       "norm_label": "\ud83d\udc1b known issues & todos"
     },
     {
@@ -1912,7 +2013,7 @@
       "source_location": "L673",
       "_origin": "ast",
       "id": "context_completed_cleanup_dec_17_2025",
-      "community": 0,
+      "community": 31,
       "norm_label": "\u2705 completed cleanup (dec 17, 2025)"
     },
     {
@@ -1922,7 +2023,7 @@
       "source_location": "L693",
       "_origin": "ast",
       "id": "context_cleanup_items",
-      "community": 0,
+      "community": 31,
       "norm_label": "cleanup items"
     },
     {
@@ -1932,7 +2033,7 @@
       "source_location": "L706",
       "_origin": "ast",
       "id": "context_feature_todos",
-      "community": 0,
+      "community": 31,
       "norm_label": "feature todos"
     },
     {
@@ -1942,7 +2043,7 @@
       "source_location": "L723",
       "_origin": "ast",
       "id": "context_content_todos",
-      "community": 0,
+      "community": 31,
       "norm_label": "content todos"
     },
     {
@@ -1982,7 +2083,7 @@
       "source_location": "L778",
       "_origin": "ast",
       "id": "context_configuration_files",
-      "community": 11,
+      "community": 0,
       "norm_label": "\ud83d\udd27 configuration files"
     },
     {
@@ -1992,7 +2093,7 @@
       "source_location": "L780",
       "_origin": "ast",
       "id": "context_astro_config_mjs",
-      "community": 11,
+      "community": 0,
       "norm_label": "`astro.config.mjs`"
     },
     {
@@ -2002,7 +2103,7 @@
       "source_location": "L787",
       "_origin": "ast",
       "id": "context_fly_toml",
-      "community": 11,
+      "community": 0,
       "norm_label": "`fly.toml`"
     },
     {
@@ -2012,7 +2113,7 @@
       "source_location": "L795",
       "_origin": "ast",
       "id": "context_fly_dev_toml",
-      "community": 11,
+      "community": 0,
       "norm_label": "`fly.dev.toml`"
     },
     {
@@ -2022,7 +2123,7 @@
       "source_location": "L803",
       "_origin": "ast",
       "id": "context_tailwind_config_mjs",
-      "community": 11,
+      "community": 0,
       "norm_label": "`tailwind.config.mjs`"
     },
     {
@@ -2032,7 +2133,7 @@
       "source_location": "L810",
       "_origin": "ast",
       "id": "context_tsconfig_json",
-      "community": 11,
+      "community": 0,
       "norm_label": "`tsconfig.json`"
     },
     {
@@ -2042,7 +2143,7 @@
       "source_location": "L814",
       "_origin": "ast",
       "id": "context_wrangler_toml",
-      "community": 11,
+      "community": 0,
       "norm_label": "`wrangler.toml`"
     },
     {
@@ -2052,7 +2153,7 @@
       "source_location": "L819",
       "_origin": "ast",
       "id": "context_starwind_config_json",
-      "community": 11,
+      "community": 0,
       "norm_label": "`starwind.config.json`"
     },
     {
@@ -2062,7 +2163,7 @@
       "source_location": "L826",
       "_origin": "ast",
       "id": "context_design_system",
-      "community": 19,
+      "community": 0,
       "norm_label": "\ud83c\udfaf design system"
     },
     {
@@ -2072,7 +2173,7 @@
       "source_location": "L828",
       "_origin": "ast",
       "id": "context_typography",
-      "community": 19,
+      "community": 0,
       "norm_label": "typography"
     },
     {
@@ -2082,7 +2183,7 @@
       "source_location": "L845",
       "_origin": "ast",
       "id": "context_colors",
-      "community": 19,
+      "community": 0,
       "norm_label": "colors"
     },
     {
@@ -2092,7 +2193,7 @@
       "source_location": "L872",
       "_origin": "ast",
       "id": "context_spacing",
-      "community": 19,
+      "community": 0,
       "norm_label": "spacing"
     },
     {
@@ -2102,7 +2203,7 @@
       "source_location": "L879",
       "_origin": "ast",
       "id": "context_shadows",
-      "community": 19,
+      "community": 0,
       "norm_label": "shadows"
     },
     {
@@ -2386,14 +2487,14 @@
       "norm_label": "readme.md"
     },
     {
-      "label": "Secunit Mercantile Website",
+      "label": "secunit, llc Website",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme_secunit_mercantile_website",
+      "id": "readme_secunit_llc_website",
       "community": 8,
-      "norm_label": "secunit mercantile website"
+      "norm_label": "secunit, llc website"
     },
     {
       "label": "Tech Stack",
@@ -2496,44 +2597,44 @@
       "norm_label": "readme.md"
     },
     {
-      "label": "Production (Hetzner)",
+      "label": "Production (Cloudflare Pages)",
       "file_type": "document",
       "source_file": "deploy/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "deploy_readme_production_hetzner",
+      "id": "deploy_readme_production_cloudflare_pages",
       "community": 20,
-      "norm_label": "production (hetzner)"
+      "norm_label": "production (cloudflare pages)"
     },
     {
-      "label": "GitHub Actions (self-hosted runner)",
+      "label": "GitHub Actions (GitHub-hosted runner)",
       "file_type": "document",
       "source_file": "deploy/README.md",
-      "source_location": "L25",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "deploy_readme_github_actions_self_hosted_runner",
+      "id": "deploy_readme_github_actions_github_hosted_runner",
       "community": 20,
-      "norm_label": "github actions (self-hosted runner)"
+      "norm_label": "github actions (github-hosted runner)"
     },
     {
-      "label": "Systemd",
+      "label": "One-time Cloudflare Pages setup",
       "file_type": "document",
       "source_file": "deploy/README.md",
-      "source_location": "L36",
+      "source_location": "L20",
       "_origin": "ast",
-      "id": "deploy_readme_systemd",
+      "id": "deploy_readme_one_time_cloudflare_pages_setup",
       "community": 20,
-      "norm_label": "systemd"
+      "norm_label": "one-time cloudflare pages setup"
     },
     {
-      "label": "Manual restart",
+      "label": "Bindings",
       "file_type": "document",
       "source_file": "deploy/README.md",
-      "source_location": "L42",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "deploy_readme_manual_restart",
+      "id": "deploy_readme_bindings",
       "community": 20,
-      "norm_label": "manual restart"
+      "norm_label": "bindings"
     },
     {
       "label": "design.md",
@@ -2546,144 +2647,104 @@
       "norm_label": "design.md"
     },
     {
-      "label": "Design \u2014 Secunit Mercantile",
+      "label": "Design \u2014 secunit, llc",
       "file_type": "document",
       "source_file": "design.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "design_design_secunit_mercantile",
+      "id": "design_design_secunit_llc",
       "community": 6,
-      "norm_label": "design \u2014 secunit mercantile"
+      "norm_label": "design \u2014 secunit, llc"
     },
     {
       "label": "Genre",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L7",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "design_genre",
       "community": 6,
       "norm_label": "genre"
     },
     {
-      "label": "Macrostructure family",
+      "label": "Macrostructure",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L10",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "design_macrostructure_family",
+      "id": "design_macrostructure",
       "community": 6,
-      "norm_label": "macrostructure family"
+      "norm_label": "macrostructure"
     },
     {
-      "label": "Theme \u2014 Quiet (warm paper \u00b7 single warm accent)",
+      "label": "Theme",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L15",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "design_theme_quiet_warm_paper_single_warm_accent",
+      "id": "design_theme",
       "community": 6,
-      "norm_label": "theme \u2014 quiet (warm paper \u00b7 single warm accent)"
+      "norm_label": "theme"
     },
     {
       "label": "Typography",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L27",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "design_typography",
       "community": 6,
       "norm_label": "typography"
     },
     {
-      "label": "Spacing",
+      "label": "Spacing & surfaces",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L33",
+      "source_location": "L30",
       "_origin": "ast",
-      "id": "design_spacing",
+      "id": "design_spacing_surfaces",
       "community": 6,
-      "norm_label": "spacing"
+      "norm_label": "spacing & surfaces"
     },
     {
       "label": "Motion",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L38",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "design_motion",
       "community": 6,
       "norm_label": "motion"
     },
     {
-      "label": "Microinteractions stance",
-      "file_type": "document",
-      "source_file": "design.md",
-      "source_location": "L44",
-      "_origin": "ast",
-      "id": "design_microinteractions_stance",
-      "community": 6,
-      "norm_label": "microinteractions stance"
-    },
-    {
       "label": "CTA voice",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L49",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "design_cta_voice",
       "community": 6,
       "norm_label": "cta voice"
     },
     {
-      "label": "What pages MUST share",
+      "label": "Shared across pages",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L54",
+      "source_location": "L46",
       "_origin": "ast",
-      "id": "design_what_pages_must_share",
+      "id": "design_shared_across_pages",
       "community": 6,
-      "norm_label": "what pages must share"
+      "norm_label": "shared across pages"
     },
     {
-      "label": "What pages MAY differ on",
+      "label": "May differ",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L62",
+      "source_location": "L52",
       "_origin": "ast",
-      "id": "design_what_pages_may_differ_on",
+      "id": "design_may_differ",
       "community": 6,
-      "norm_label": "what pages may differ on"
-    },
-    {
-      "label": "Per-page allowances",
-      "file_type": "document",
-      "source_file": "design.md",
-      "source_location": "L66",
-      "_origin": "ast",
-      "id": "design_per_page_allowances",
-      "community": 6,
-      "norm_label": "per-page allowances"
-    },
-    {
-      "label": "Exports",
-      "file_type": "document",
-      "source_file": "design.md",
-      "source_location": "L70",
-      "_origin": "ast",
-      "id": "design_exports",
-      "community": 6,
-      "norm_label": "exports"
-    },
-    {
-      "label": "tokens.css",
-      "file_type": "document",
-      "source_file": "design.md",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "design_tokens_css",
-      "community": 6,
-      "norm_label": "tokens.css"
+      "norm_label": "may differ"
     },
     {
       "label": "brand-guardrails.md",
@@ -2734,6 +2795,66 @@
       "id": "docs_brand_guardrails_copy_voice",
       "community": 21,
       "norm_label": "copy voice"
+    },
+    {
+      "label": "cloudflare-access-custom-pages.md",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_cloudflare_access_custom_pages",
+      "community": 19,
+      "norm_label": "cloudflare-access-custom-pages.md"
+    },
+    {
+      "label": "Cloudflare Access & Gateway custom pages",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
+      "community": 19,
+      "norm_label": "cloudflare access & gateway custom pages"
+    },
+    {
+      "label": "1. Login page",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "docs_cloudflare_access_custom_pages_1_login_page",
+      "community": 19,
+      "norm_label": "1. login page"
+    },
+    {
+      "label": "2. App Launcher",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "docs_cloudflare_access_custom_pages_2_app_launcher",
+      "community": 19,
+      "norm_label": "2. app launcher"
+    },
+    {
+      "label": "3. Gateway block page",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "docs_cloudflare_access_custom_pages_3_gateway_block_page",
+      "community": 19,
+      "norm_label": "3. gateway block page"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "docs_cloudflare_access_custom_pages_notes",
+      "community": 19,
+      "norm_label": "notes"
     }
   ],
   "links": [
@@ -2743,9 +2864,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_dependencies",
-      "confidence_score": 1.0
+      "target": "package_dependencies"
     },
     {
       "relation": "contains",
@@ -2753,9 +2874,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_description",
-      "confidence_score": 1.0
+      "target": "package_description"
     },
     {
       "relation": "contains",
@@ -2763,9 +2884,9 @@
       "source_file": "package.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_devdependencies",
-      "confidence_score": 1.0
+      "target": "package_devdependencies"
     },
     {
       "relation": "contains",
@@ -2773,9 +2894,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_engines",
-      "confidence_score": 1.0
+      "target": "package_engines"
     },
     {
       "relation": "contains",
@@ -2783,9 +2904,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_name",
-      "confidence_score": 1.0
+      "target": "package_name"
     },
     {
       "relation": "contains",
@@ -2793,9 +2914,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_packagemanager",
-      "confidence_score": 1.0
+      "target": "package_packagemanager"
     },
     {
       "relation": "contains",
@@ -2803,9 +2924,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_private",
-      "confidence_score": 1.0
+      "target": "package_private"
     },
     {
       "relation": "contains",
@@ -2813,9 +2934,9 @@
       "source_file": "package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_scripts",
-      "confidence_score": 1.0
+      "target": "package_scripts"
     },
     {
       "relation": "contains",
@@ -2823,9 +2944,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_type",
-      "confidence_score": 1.0
+      "target": "package_type"
     },
     {
       "relation": "contains",
@@ -2833,9 +2954,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_version",
-      "confidence_score": 1.0
+      "target": "package_version"
     },
     {
       "relation": "contains",
@@ -2843,9 +2964,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_engines",
-      "target": "package_engines_node",
-      "confidence_score": 1.0
+      "target": "package_engines_node"
     },
     {
       "relation": "contains",
@@ -2853,9 +2974,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_astro",
-      "confidence_score": 1.0
+      "target": "package_scripts_astro"
     },
     {
       "relation": "contains",
@@ -2863,9 +2984,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_build",
-      "confidence_score": 1.0
+      "target": "package_scripts_build"
     },
     {
       "relation": "contains",
@@ -2873,9 +2994,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -2883,9 +3004,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_format",
-      "confidence_score": 1.0
+      "target": "package_scripts_format"
     },
     {
       "relation": "contains",
@@ -2893,9 +3014,9 @@
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_preview",
-      "confidence_score": 1.0
+      "target": "package_scripts_preview"
     },
     {
       "relation": "contains",
@@ -2903,9 +3024,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_start",
-      "confidence_score": 1.0
+      "target": "package_scripts_start"
     },
     {
       "relation": "contains",
@@ -2913,9 +3034,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_astro",
-      "confidence_score": 1.0
+      "target": "package_dependencies_astro"
     },
     {
       "relation": "contains",
@@ -2923,9 +3044,9 @@
       "source_file": "package.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_astrojs_node",
-      "confidence_score": 1.0
+      "target": "package_dependencies_astrojs_node"
     },
     {
       "relation": "contains",
@@ -2933,9 +3054,9 @@
       "source_file": "package.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_astrojs_sitemap",
-      "confidence_score": 1.0
+      "target": "package_dependencies_astrojs_sitemap"
     },
     {
       "relation": "contains",
@@ -2943,9 +3064,9 @@
       "source_file": "package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tailwindcss",
-      "confidence_score": 1.0
+      "target": "package_dependencies_tailwindcss"
     },
     {
       "relation": "contains",
@@ -2953,9 +3074,9 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tw_animate_css",
-      "confidence_score": 1.0
+      "target": "package_dependencies_tw_animate_css"
     },
     {
       "relation": "contains",
@@ -2963,9 +3084,9 @@
       "source_file": "package.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_prettier",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_prettier"
     },
     {
       "relation": "contains",
@@ -2973,9 +3094,9 @@
       "source_file": "package.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_prettier_plugin_astro",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_prettier_plugin_astro"
     },
     {
       "relation": "contains",
@@ -2983,9 +3104,9 @@
       "source_file": "package.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_prettier_plugin_tailwindcss",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_prettier_plugin_tailwindcss"
     },
     {
       "relation": "contains",
@@ -2993,9 +3114,9 @@
       "source_file": "package.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss_vite",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_tailwindcss_vite"
     },
     {
       "relation": "contains",
@@ -3003,9 +3124,9 @@
       "source_file": "package.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_typescript"
     },
     {
       "relation": "contains",
@@ -3013,9 +3134,9 @@
       "source_file": "scripts/restart.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_restart",
-      "target": "users_mat_documents_code_secunit_io_scripts_restart_sh__entry",
-      "confidence_score": 1.0
+      "target": "users_mat_documents_code_secunit_io_scripts_restart_sh__entry"
     },
     {
       "relation": "contains",
@@ -3023,9 +3144,9 @@
       "source_file": "setup-cloudflare-pages.sh",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "setup_cloudflare_pages",
-      "target": "users_mat_documents_code_secunit_io_setup_cloudflare_pages_sh__entry",
-      "confidence_score": 1.0
+      "target": "users_mat_documents_code_secunit_io_setup_cloudflare_pages_sh__entry"
     },
     {
       "relation": "imports_from",
@@ -3034,17 +3155,17 @@
       "source_file": "src/layouts/Base.astro",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "layouts_base",
-      "target": "components_footer",
-      "confidence_score": 1.0
+      "target": "components_footer"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Header.astro",
+      "confidence_score": 1.0,
       "source": "components_header",
-      "target": "components_themetoggle",
-      "confidence_score": 1.0
+      "target": "components_themetoggle"
     },
     {
       "relation": "imports_from",
@@ -3053,9 +3174,9 @@
       "source_file": "src/components/Header.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_header",
-      "target": "en_navdata_json",
-      "confidence_score": 1.0
+      "target": "en_navdata_json"
     },
     {
       "relation": "imports_from",
@@ -3064,9 +3185,9 @@
       "source_file": "src/layouts/Base.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "layouts_base",
-      "target": "components_header",
-      "confidence_score": 1.0
+      "target": "components_header"
     },
     {
       "relation": "contains",
@@ -3074,9 +3195,9 @@
       "source_file": "src/config/en/navData.json.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "en_navdata_json",
-      "target": "en_navdata_json_navconfig",
-      "confidence_score": 1.0
+      "target": "en_navdata_json_navconfig"
     },
     {
       "relation": "contains",
@@ -3084,9 +3205,9 @@
       "source_file": "src/config/en/navData.json.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "en_navdata_json",
-      "target": "en_navdata_json_navitem",
-      "confidence_score": 1.0
+      "target": "en_navdata_json_navitem"
     },
     {
       "relation": "contains",
@@ -3094,9 +3215,9 @@
       "source_file": "src/components/contact/ContactFormCore.astro",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "contact_contactformcore",
-      "target": "contact_contactformcore_errormessage",
-      "confidence_score": 1.0
+      "target": "contact_contactformcore_errormessage"
     },
     {
       "relation": "contains",
@@ -3104,9 +3225,9 @@
       "source_file": "src/components/contact/ContactFormCore.astro",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "contact_contactformcore",
-      "target": "contact_contactformcore_submitspinner",
-      "confidence_score": 1.0
+      "target": "contact_contactformcore_submitspinner"
     },
     {
       "relation": "contains",
@@ -3114,9 +3235,9 @@
       "source_file": "src/components/contact/ContactFormCore.astro",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "contact_contactformcore",
-      "target": "contact_contactformcore_submittext",
-      "confidence_score": 1.0
+      "target": "contact_contactformcore_submittext"
     },
     {
       "relation": "contains",
@@ -3124,17 +3245,17 @@
       "source_file": "src/components/contact/ContactFormCore.astro",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "contact_contactformcore",
-      "target": "contact_contactformcore_successmessage",
-      "confidence_score": 1.0
+      "target": "contact_contactformcore_successmessage"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/contact.astro",
+      "confidence_score": 1.0,
       "source": "pages_contact",
-      "target": "contact_contactformcore",
-      "confidence_score": 1.0
+      "target": "contact_contactformcore"
     },
     {
       "relation": "contains",
@@ -3142,9 +3263,9 @@
       "source_file": "src/env.d.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_env_d",
-      "target": "src_env_d_d1database",
-      "confidence_score": 1.0
+      "target": "src_env_d_d1database"
     },
     {
       "relation": "contains",
@@ -3152,9 +3273,9 @@
       "source_file": "src/env.d.ts",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_env_d",
-      "target": "src_env_d_d1execresult",
-      "confidence_score": 1.0
+      "target": "src_env_d_d1execresult"
     },
     {
       "relation": "contains",
@@ -3162,9 +3283,9 @@
       "source_file": "src/env.d.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_env_d",
-      "target": "src_env_d_d1preparedstatement",
-      "confidence_score": 1.0
+      "target": "src_env_d_d1preparedstatement"
     },
     {
       "relation": "contains",
@@ -3172,9 +3293,9 @@
       "source_file": "src/env.d.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_env_d",
-      "target": "src_env_d_d1result",
-      "confidence_score": 1.0
+      "target": "src_env_d_d1result"
     },
     {
       "relation": "contains",
@@ -3182,9 +3303,9 @@
       "source_file": "src/env.d.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_env_d",
-      "target": "src_env_d_importmeta",
-      "confidence_score": 1.0
+      "target": "src_env_d_importmeta"
     },
     {
       "relation": "contains",
@@ -3192,9 +3313,41 @@
       "source_file": "src/env.d.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_env_d",
-      "target": "src_env_d_importmetaenv",
+      "target": "src_env_d_importmetaenv"
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/access/blocked.astro",
+      "source": "access_blocked",
+      "target": "layouts_accesslayout",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/access/login.astro",
+      "source": "access_login",
+      "target": "layouts_accesslayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/AccessLayout.astro",
+      "source": "layouts_accesslayout",
+      "target": "users_mat_documents_code_secunit_io_src_styles_global_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "confidence_score": 1.0,
+      "source": "layouts_base",
+      "target": "users_mat_documents_code_secunit_io_src_styles_global_css"
     },
     {
       "relation": "contains",
@@ -3202,9 +3355,9 @@
       "source_file": "src/layouts/Base.astro",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "layouts_base",
-      "target": "layouts_base_canonicalurl",
-      "confidence_score": 1.0
+      "target": "layouts_base_canonicalurl"
     },
     {
       "relation": "contains",
@@ -3212,25 +3365,17 @@
       "source_file": "src/layouts/Base.astro",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "layouts_base",
-      "target": "layouts_base_jsonld",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "confidence": "EXTRACTED",
-      "source_file": "src/layouts/Base.astro",
-      "source": "layouts_base",
-      "target": "users_mat_documents_code_secunit_io_src_styles_global_css",
-      "confidence_score": 1.0
+      "target": "layouts_base_jsonld"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/about.astro",
+      "confidence_score": 1.0,
       "source": "pages_about",
-      "target": "layouts_base",
-      "confidence_score": 1.0
+      "target": "layouts_base"
     },
     {
       "relation": "imports_from",
@@ -3239,23 +3384,31 @@
       "source_file": "src/pages/contact.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contact",
-      "target": "layouts_base",
-      "confidence_score": 1.0
+      "target": "layouts_base"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/index.astro",
+      "confidence_score": 1.0,
       "source": "pages_index",
-      "target": "layouts_base",
-      "confidence_score": 1.0
+      "target": "layouts_base"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/privacy.astro",
+      "confidence_score": 1.0,
       "source": "pages_privacy",
+      "target": "layouts_base"
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/security.astro",
+      "source": "pages_security",
       "target": "layouts_base",
       "confidence_score": 1.0
     },
@@ -3263,24 +3416,84 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/services.astro",
+      "confidence_score": 1.0,
       "source": "pages_services",
-      "target": "layouts_base",
-      "confidence_score": 1.0
+      "target": "layouts_base"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/technologies.astro",
+      "confidence_score": 1.0,
       "source": "pages_technologies",
-      "target": "layouts_base",
-      "confidence_score": 1.0
+      "target": "layouts_base"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/terms.astro",
+      "confidence_score": 1.0,
       "source": "pages_terms",
-      "target": "layouts_base",
+      "target": "layouts_base"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/about.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pages_about",
+      "target": "pages_about_icons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/about.astro",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "pages_about",
+      "target": "pages_about_mattphotos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/access/blocked.astro",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "access_blocked",
+      "target": "access_blocked_details",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/access/blocked.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "access_blocked",
+      "target": "access_blocked_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/access/login.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "access_login",
+      "target": "access_login_identityproviders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/access/login.astro",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "access_login",
+      "target": "access_login_redirecturl",
       "confidence_score": 1.0
     },
     {
@@ -3289,9 +3502,9 @@
       "source_file": "src/pages/api/contact.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_contact",
-      "target": "api_contact_contactform",
-      "confidence_score": 1.0
+      "target": "api_contact_contactform"
     },
     {
       "relation": "contains",
@@ -3299,9 +3512,9 @@
       "source_file": "src/pages/api/contact.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_contact",
-      "target": "api_contact_d1response",
-      "confidence_score": 1.0
+      "target": "api_contact_d1response"
     },
     {
       "relation": "contains",
@@ -3309,9 +3522,9 @@
       "source_file": "src/pages/api/contact.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_contact",
-      "target": "api_contact_executed1query",
-      "confidence_score": 1.0
+      "target": "api_contact_executed1query"
     },
     {
       "relation": "contains",
@@ -3319,9 +3532,9 @@
       "source_file": "src/pages/api/contact.ts",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_contact",
-      "target": "api_contact_post",
-      "confidence_score": 1.0
+      "target": "api_contact_post"
     },
     {
       "relation": "calls",
@@ -3330,9 +3543,9 @@
       "source_file": "src/pages/api/contact.ts",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_contact_post",
-      "target": "api_contact_executed1query",
-      "confidence_score": 1.0
+      "target": "api_contact_executed1query"
     },
     {
       "relation": "contains",
@@ -3340,9 +3553,9 @@
       "source_file": "src/pages/api/health.ts",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_health",
-      "target": "api_health_d1response",
-      "confidence_score": 1.0
+      "target": "api_health_d1response"
     },
     {
       "relation": "contains",
@@ -3350,9 +3563,9 @@
       "source_file": "src/pages/api/health.ts",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_health",
-      "target": "api_health_executed1query",
-      "confidence_score": 1.0
+      "target": "api_health_executed1query"
     },
     {
       "relation": "contains",
@@ -3360,9 +3573,9 @@
       "source_file": "src/pages/api/health.ts",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_health",
-      "target": "api_health_get",
-      "confidence_score": 1.0
+      "target": "api_health_get"
     },
     {
       "relation": "contains",
@@ -3370,9 +3583,9 @@
       "source_file": "src/pages/api/health.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_health",
-      "target": "api_health_healthcheckresult",
-      "confidence_score": 1.0
+      "target": "api_health_healthcheckresult"
     },
     {
       "relation": "calls",
@@ -3381,9 +3594,9 @@
       "source_file": "src/pages/api/health.ts",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_health_get",
-      "target": "api_health_executed1query",
-      "confidence_score": 1.0
+      "target": "api_health_executed1query"
     },
     {
       "relation": "contains",
@@ -3391,9 +3604,9 @@
       "source_file": "src/pages/api/live.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_live",
-      "target": "api_live_get",
-      "confidence_score": 1.0
+      "target": "api_live_get"
     },
     {
       "relation": "imports_from",
@@ -3402,9 +3615,9 @@
       "source_file": "src/pages/contact.astro",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contact",
-      "target": "users_mat_documents_code_secunit_io_src_assets_images_brands_proton_svg",
-      "confidence_score": 1.0
+      "target": "users_mat_documents_code_secunit_io_src_assets_images_brands_proton_svg"
     },
     {
       "relation": "imports_from",
@@ -3413,9 +3626,9 @@
       "source_file": "src/pages/contact.astro",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contact",
-      "target": "users_mat_documents_code_secunit_io_src_assets_images_brands_protondrive_svg",
-      "confidence_score": 1.0
+      "target": "users_mat_documents_code_secunit_io_src_assets_images_brands_protondrive_svg"
     },
     {
       "relation": "contains",
@@ -3423,9 +3636,9 @@
       "source_file": "src/pages/services.astro",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_services",
-      "target": "pages_services_aitools",
-      "confidence_score": 1.0
+      "target": "pages_services_aitools"
     },
     {
       "relation": "contains",
@@ -3433,9 +3646,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_compileroptions",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions"
     },
     {
       "relation": "contains",
@@ -3443,9 +3656,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_exclude",
-      "confidence_score": 1.0
+      "target": "tsconfig_exclude"
     },
     {
       "relation": "contains",
@@ -3453,9 +3666,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_extends",
-      "confidence_score": 1.0
+      "target": "tsconfig_extends"
     },
     {
       "relation": "contains",
@@ -3463,9 +3676,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig",
-      "target": "tsconfig_include",
-      "confidence_score": 1.0
+      "target": "tsconfig_include"
     },
     {
       "relation": "contains",
@@ -3473,9 +3686,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_baseurl",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_baseurl"
     },
     {
       "relation": "contains",
@@ -3483,9 +3696,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_paths",
-      "confidence_score": 1.0
+      "target": "tsconfig_compileroptions_paths"
     },
     {
       "relation": "contains",
@@ -3493,9 +3706,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions_paths",
-      "target": "tsconfig_paths",
-      "confidence_score": 1.0
+      "target": "tsconfig_paths"
     },
     {
       "relation": "contains",
@@ -3503,9 +3716,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions_paths",
-      "target": "tsconfig_paths_components",
-      "confidence_score": 1.0
+      "target": "tsconfig_paths_components"
     },
     {
       "relation": "contains",
@@ -3513,9 +3726,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions_paths",
-      "target": "tsconfig_paths_images",
-      "confidence_score": 1.0
+      "target": "tsconfig_paths_images"
     },
     {
       "relation": "contains",
@@ -3523,9 +3736,9 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tsconfig_compileroptions_paths",
-      "target": "tsconfig_paths_layouts",
-      "confidence_score": 1.0
+      "target": "tsconfig_paths_layouts"
     },
     {
       "relation": "contains",
@@ -3533,9 +3746,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal"
     },
     {
       "relation": "contains",
@@ -3543,9 +3756,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_accessibility",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_accessibility"
     },
     {
       "relation": "contains",
@@ -3553,9 +3766,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_brand",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_brand"
     },
     {
       "relation": "contains",
@@ -3563,9 +3776,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_component_rule_expectations",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_component_rule_expectations"
     },
     {
       "relation": "contains",
@@ -3573,9 +3786,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_example_constraint_language",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_example_constraint_language"
     },
     {
       "relation": "contains",
@@ -3583,9 +3796,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_expected_behavior",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_expected_behavior"
     },
     {
       "relation": "contains",
@@ -3593,9 +3806,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow"
     },
     {
       "relation": "contains",
@@ -3603,9 +3816,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_mission",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_mission"
     },
     {
       "relation": "contains",
@@ -3613,9 +3826,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_quality_gates",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_quality_gates"
     },
     {
       "relation": "contains",
@@ -3623,9 +3836,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_required_output_structure",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_required_output_structure"
     },
     {
       "relation": "contains",
@@ -3633,9 +3846,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_rules_do",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_rules_do"
     },
     {
       "relation": "contains",
@@ -3643,9 +3856,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_rules_don_t",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_rules_don_t"
     },
     {
       "relation": "contains",
@@ -3653,9 +3866,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_style_foundations",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_style_foundations"
     },
     {
       "relation": "contains",
@@ -3663,9 +3876,9 @@
       "source_file": ".agents/skills/design-system/SKILL.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "agents_skills_design_system_skill_md_design_system_skill_writing_tone",
-      "confidence_score": 1.0
+      "target": "agents_skills_design_system_skill_md_design_system_skill_writing_tone"
     },
     {
       "relation": "contains",
@@ -3673,9 +3886,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal"
     },
     {
       "relation": "contains",
@@ -3683,9 +3896,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_accessibility",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_accessibility"
     },
     {
       "relation": "contains",
@@ -3693,9 +3906,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_brand",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_brand"
     },
     {
       "relation": "contains",
@@ -3703,9 +3916,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_component_rule_expectations",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_component_rule_expectations"
     },
     {
       "relation": "contains",
@@ -3713,9 +3926,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_example_constraint_language",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_example_constraint_language"
     },
     {
       "relation": "contains",
@@ -3723,9 +3936,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_expected_behavior",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_expected_behavior"
     },
     {
       "relation": "contains",
@@ -3733,9 +3946,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow"
     },
     {
       "relation": "contains",
@@ -3743,9 +3956,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_mission",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_mission"
     },
     {
       "relation": "contains",
@@ -3753,9 +3966,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_quality_gates",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_quality_gates"
     },
     {
       "relation": "contains",
@@ -3763,9 +3976,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_required_output_structure",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_required_output_structure"
     },
     {
       "relation": "contains",
@@ -3773,9 +3986,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_rules_do",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_rules_do"
     },
     {
       "relation": "contains",
@@ -3783,9 +3996,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_rules_don_t",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_rules_don_t"
     },
     {
       "relation": "contains",
@@ -3793,9 +4006,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_style_foundations",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_style_foundations"
     },
     {
       "relation": "contains",
@@ -3803,9 +4016,9 @@
       "source_file": ".cursor/skills/design-system/SKILL.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
-      "target": "cursor_skills_design_system_skill_md_design_system_skill_writing_tone",
-      "confidence_score": 1.0
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_writing_tone"
     },
     {
       "relation": "contains",
@@ -3814,7 +4027,7 @@
       "source_location": "L5",
       "weight": 1.0,
       "source": "github_profile_readme",
-      "target": "github_profile_readme_secunit_mercantile",
+      "target": "github_profile_readme_secunit_llc",
       "confidence_score": 1.0
     },
     {
@@ -3823,7 +4036,7 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L61",
       "weight": 1.0,
-      "source": "github_profile_readme_secunit_mercantile",
+      "source": "github_profile_readme_secunit_llc",
       "target": "github_profile_readme_engagement_models",
       "confidence_score": 1.0
     },
@@ -3833,7 +4046,7 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L71",
       "weight": 1.0,
-      "source": "github_profile_readme_secunit_mercantile",
+      "source": "github_profile_readme_secunit_llc",
       "target": "github_profile_readme_get_in_touch",
       "confidence_score": 1.0
     },
@@ -3843,7 +4056,7 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L47",
       "weight": 1.0,
-      "source": "github_profile_readme_secunit_mercantile",
+      "source": "github_profile_readme_secunit_llc",
       "target": "github_profile_readme_trusted_by_teams_at",
       "confidence_score": 1.0
     },
@@ -3853,7 +4066,7 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L15",
       "weight": 1.0,
-      "source": "github_profile_readme_secunit_mercantile",
+      "source": "github_profile_readme_secunit_llc",
       "target": "github_profile_readme_what_we_do",
       "confidence_score": 1.0
     },
@@ -3863,8 +4076,8 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L33",
       "weight": 1.0,
-      "source": "github_profile_readme_secunit_mercantile",
-      "target": "github_profile_readme_why_secunit_mercantile",
+      "source": "github_profile_readme_secunit_llc",
+      "target": "github_profile_readme_why_secunit_llc",
       "confidence_score": 1.0
     },
     {
@@ -3873,9 +4086,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_what_we_do",
-      "target": "github_profile_readme_ai_enablement",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_ai_enablement"
     },
     {
       "relation": "contains",
@@ -3883,9 +4096,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_what_we_do",
-      "target": "github_profile_readme_finops_cloud_cost_optimization",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_finops_cloud_cost_optimization"
     },
     {
       "relation": "contains",
@@ -3893,9 +4106,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_what_we_do",
-      "target": "github_profile_readme_virtual_ciso_information_security",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_virtual_ciso_information_security"
     },
     {
       "relation": "contains",
@@ -3903,9 +4116,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_what_we_do",
-      "target": "github_profile_readme_virtual_devops_site_reliability_engineering",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_virtual_devops_site_reliability_engineering"
     },
     {
       "relation": "contains",
@@ -3913,9 +4126,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_environment",
-      "confidence_score": 1.0
+      "target": "claude_environment"
     },
     {
       "relation": "contains",
@@ -3923,9 +4136,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_testing",
-      "confidence_score": 1.0
+      "target": "claude_testing"
     },
     {
       "relation": "contains",
@@ -3934,7 +4147,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "context",
-      "target": "context_context_md_secunit_mercantile_website",
+      "target": "context_context_md_secunit_llc_website",
       "confidence_score": 1.0
     },
     {
@@ -3943,7 +4156,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L394",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_api_routes",
       "confidence_score": 1.0
     },
@@ -3953,7 +4166,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L78",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_architecture",
       "confidence_score": 1.0
     },
@@ -3963,7 +4176,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L734",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_component_inventory",
       "confidence_score": 1.0
     },
@@ -3973,7 +4186,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L778",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_configuration_files",
       "confidence_score": 1.0
     },
@@ -3983,7 +4196,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L296",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_contact_form",
       "confidence_score": 1.0
     },
@@ -3993,7 +4206,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L195",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_content_management_195",
       "confidence_score": 1.0
     },
@@ -4003,7 +4216,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L442",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_deployment",
       "confidence_score": 1.0
     },
@@ -4013,7 +4226,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L826",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_design_system",
       "confidence_score": 1.0
     },
@@ -4023,7 +4236,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L522",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_development_workflow",
       "confidence_score": 1.0
     },
@@ -4033,7 +4246,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L648",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_internationalization",
       "confidence_score": 1.0
     },
@@ -4043,7 +4256,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L607",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_key_features",
       "confidence_score": 1.0
     },
@@ -4053,7 +4266,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L671",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_known_issues_todos",
       "confidence_score": 1.0
     },
@@ -4063,7 +4276,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L896",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_notes_for_future_development",
       "confidence_score": 1.0
     },
@@ -4073,7 +4286,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L28",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_project_overview",
       "confidence_score": 1.0
     },
@@ -4083,7 +4296,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L110",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_project_structure",
       "confidence_score": 1.0
     },
@@ -4093,7 +4306,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L252",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_styling_system",
       "confidence_score": 1.0
     },
@@ -4103,7 +4316,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L887",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_support_contact",
       "confidence_score": 1.0
     },
@@ -4113,7 +4326,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L9",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_table_of_contents",
       "confidence_score": 1.0
     },
@@ -4123,7 +4336,7 @@
       "source_file": "CONTEXT.md",
       "source_location": "L48",
       "weight": 1.0,
-      "source": "context_context_md_secunit_mercantile_website",
+      "source": "context_context_md_secunit_llc_website",
       "target": "context_tech_stack",
       "confidence_score": 1.0
     },
@@ -4133,9 +4346,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_tech_stack",
-      "target": "context_build_tools",
-      "confidence_score": 1.0
+      "target": "context_build_tools"
     },
     {
       "relation": "contains",
@@ -4143,9 +4356,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_tech_stack",
-      "target": "context_content_management",
-      "confidence_score": 1.0
+      "target": "context_content_management"
     },
     {
       "relation": "contains",
@@ -4153,9 +4366,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_tech_stack",
-      "target": "context_core_framework",
-      "confidence_score": 1.0
+      "target": "context_core_framework"
     },
     {
       "relation": "contains",
@@ -4163,9 +4376,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_tech_stack",
-      "target": "context_deployment_backend",
-      "confidence_score": 1.0
+      "target": "context_deployment_backend"
     },
     {
       "relation": "contains",
@@ -4173,9 +4386,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_tech_stack",
-      "target": "context_styling",
-      "confidence_score": 1.0
+      "target": "context_styling"
     },
     {
       "relation": "contains",
@@ -4183,9 +4396,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_architecture",
-      "target": "context_build_process",
-      "confidence_score": 1.0
+      "target": "context_build_process"
     },
     {
       "relation": "contains",
@@ -4193,9 +4406,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_architecture",
-      "target": "context_data_flow",
-      "confidence_score": 1.0
+      "target": "context_data_flow"
     },
     {
       "relation": "contains",
@@ -4203,9 +4416,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_architecture",
-      "target": "context_rendering_strategy",
-      "confidence_score": 1.0
+      "target": "context_rendering_strategy"
     },
     {
       "relation": "contains",
@@ -4213,9 +4426,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_content_management_195",
-      "target": "context_adding_new_blog_post",
-      "confidence_score": 1.0
+      "target": "context_adding_new_blog_post"
     },
     {
       "relation": "contains",
@@ -4223,9 +4436,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_content_management_195",
-      "target": "context_content_collections",
-      "confidence_score": 1.0
+      "target": "context_content_collections"
     },
     {
       "relation": "contains",
@@ -4233,9 +4446,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L218",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_content_management_195",
-      "target": "context_querying_content",
-      "confidence_score": 1.0
+      "target": "context_querying_content"
     },
     {
       "relation": "contains",
@@ -4243,9 +4456,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_styling_system",
-      "target": "context_custom_css_classes",
-      "confidence_score": 1.0
+      "target": "context_custom_css_classes"
     },
     {
       "relation": "contains",
@@ -4253,9 +4466,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L287",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_styling_system",
-      "target": "context_dark_mode",
-      "confidence_score": 1.0
+      "target": "context_dark_mode"
     },
     {
       "relation": "contains",
@@ -4263,9 +4476,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L254",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_styling_system",
-      "target": "context_tailwind_configuration",
-      "confidence_score": 1.0
+      "target": "context_tailwind_configuration"
     },
     {
       "relation": "contains",
@@ -4273,9 +4486,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L317",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_contact_form",
-      "target": "context_backend_src_pages_api_contact_ts",
-      "confidence_score": 1.0
+      "target": "context_backend_src_pages_api_contact_ts"
     },
     {
       "relation": "contains",
@@ -4283,9 +4496,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L347",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_contact_form",
-      "target": "context_database_schema",
-      "confidence_score": 1.0
+      "target": "context_database_schema"
     },
     {
       "relation": "contains",
@@ -4293,9 +4506,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L368",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_contact_form",
-      "target": "context_environment_variables",
-      "confidence_score": 1.0
+      "target": "context_environment_variables"
     },
     {
       "relation": "contains",
@@ -4303,9 +4516,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L382",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_contact_form",
-      "target": "context_exporting_contacts",
-      "confidence_score": 1.0
+      "target": "context_exporting_contacts"
     },
     {
       "relation": "contains",
@@ -4313,9 +4526,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L298",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_contact_form",
-      "target": "context_frontend_src_pages_contact_astro",
-      "confidence_score": 1.0
+      "target": "context_frontend_src_pages_contact_astro"
     },
     {
       "relation": "contains",
@@ -4323,9 +4536,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L332",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_contact_form",
-      "target": "context_healthcheck_endpoints",
-      "confidence_score": 1.0
+      "target": "context_healthcheck_endpoints"
     },
     {
       "relation": "contains",
@@ -4333,9 +4546,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L396",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_api_routes",
-      "target": "context_contact_form_api_contact",
-      "confidence_score": 1.0
+      "target": "context_contact_form_api_contact"
     },
     {
       "relation": "contains",
@@ -4343,9 +4556,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L425",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_api_routes",
-      "target": "context_healthcheck_endpoints_425",
-      "confidence_score": 1.0
+      "target": "context_healthcheck_endpoints_425"
     },
     {
       "relation": "contains",
@@ -4353,9 +4566,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L484",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_deployment",
-      "target": "context_build_process_484",
-      "confidence_score": 1.0
+      "target": "context_build_process_484"
     },
     {
       "relation": "contains",
@@ -4363,9 +4576,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L506",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_deployment",
-      "target": "context_docker_build",
-      "confidence_score": 1.0
+      "target": "context_docker_build"
     },
     {
       "relation": "contains",
@@ -4373,9 +4586,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L444",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_deployment",
-      "target": "context_fly_io",
-      "confidence_score": 1.0
+      "target": "context_fly_io"
     },
     {
       "relation": "contains",
@@ -4383,9 +4596,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L573",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_development_workflow",
-      "target": "context_adding_a_new_component",
-      "confidence_score": 1.0
+      "target": "context_adding_a_new_component"
     },
     {
       "relation": "contains",
@@ -4393,9 +4606,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L566",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_development_workflow",
-      "target": "context_adding_a_new_page",
-      "confidence_score": 1.0
+      "target": "context_adding_a_new_page"
     },
     {
       "relation": "contains",
@@ -4403,9 +4616,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L524",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_development_workflow",
-      "target": "context_branch_strategy",
-      "confidence_score": 1.0
+      "target": "context_branch_strategy"
     },
     {
       "relation": "contains",
@@ -4413,9 +4626,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L542",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_development_workflow",
-      "target": "context_dev_environment",
-      "confidence_score": 1.0
+      "target": "context_dev_environment"
     },
     {
       "relation": "contains",
@@ -4423,9 +4636,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L553",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_development_workflow",
-      "target": "context_local_development",
-      "confidence_score": 1.0
+      "target": "context_local_development"
     },
     {
       "relation": "contains",
@@ -4433,9 +4646,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L594",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_development_workflow",
-      "target": "context_managing_d1_database",
-      "confidence_score": 1.0
+      "target": "context_managing_d1_database"
     },
     {
       "relation": "contains",
@@ -4443,9 +4656,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L580",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_development_workflow",
-      "target": "context_testing_contact_form_locally",
-      "confidence_score": 1.0
+      "target": "context_testing_contact_form_locally"
     },
     {
       "relation": "contains",
@@ -4453,9 +4666,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L631",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_key_features",
-      "target": "context_accessibility",
-      "confidence_score": 1.0
+      "target": "context_accessibility"
     },
     {
       "relation": "contains",
@@ -4463,9 +4676,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L639",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_key_features",
-      "target": "context_mobile_responsive",
-      "confidence_score": 1.0
+      "target": "context_mobile_responsive"
     },
     {
       "relation": "contains",
@@ -4473,9 +4686,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L619",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_key_features",
-      "target": "context_performance",
-      "confidence_score": 1.0
+      "target": "context_performance"
     },
     {
       "relation": "contains",
@@ -4483,9 +4696,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L609",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_key_features",
-      "target": "context_seo_optimization",
-      "confidence_score": 1.0
+      "target": "context_seo_optimization"
     },
     {
       "relation": "contains",
@@ -4493,9 +4706,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L650",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_internationalization",
-      "target": "context_current_setup",
-      "confidence_score": 1.0
+      "target": "context_current_setup"
     },
     {
       "relation": "contains",
@@ -4503,9 +4716,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L693",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_known_issues_todos",
-      "target": "context_cleanup_items",
-      "confidence_score": 1.0
+      "target": "context_cleanup_items"
     },
     {
       "relation": "contains",
@@ -4513,9 +4726,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L673",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_known_issues_todos",
-      "target": "context_completed_cleanup_dec_17_2025",
-      "confidence_score": 1.0
+      "target": "context_completed_cleanup_dec_17_2025"
     },
     {
       "relation": "contains",
@@ -4523,9 +4736,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L723",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_known_issues_todos",
-      "target": "context_content_todos",
-      "confidence_score": 1.0
+      "target": "context_content_todos"
     },
     {
       "relation": "contains",
@@ -4533,9 +4746,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L706",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_known_issues_todos",
-      "target": "context_feature_todos",
-      "confidence_score": 1.0
+      "target": "context_feature_todos"
     },
     {
       "relation": "contains",
@@ -4543,9 +4756,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L736",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_component_inventory",
-      "target": "context_active_used_components",
-      "confidence_score": 1.0
+      "target": "context_active_used_components"
     },
     {
       "relation": "contains",
@@ -4553,9 +4766,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L764",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_component_inventory",
-      "target": "context_starwind_components",
-      "confidence_score": 1.0
+      "target": "context_starwind_components"
     },
     {
       "relation": "contains",
@@ -4563,9 +4776,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L780",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_configuration_files",
-      "target": "context_astro_config_mjs",
-      "confidence_score": 1.0
+      "target": "context_astro_config_mjs"
     },
     {
       "relation": "contains",
@@ -4573,9 +4786,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L795",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_configuration_files",
-      "target": "context_fly_dev_toml",
-      "confidence_score": 1.0
+      "target": "context_fly_dev_toml"
     },
     {
       "relation": "contains",
@@ -4583,9 +4796,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L787",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_configuration_files",
-      "target": "context_fly_toml",
-      "confidence_score": 1.0
+      "target": "context_fly_toml"
     },
     {
       "relation": "contains",
@@ -4593,9 +4806,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L819",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_configuration_files",
-      "target": "context_starwind_config_json",
-      "confidence_score": 1.0
+      "target": "context_starwind_config_json"
     },
     {
       "relation": "contains",
@@ -4603,9 +4816,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L803",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_configuration_files",
-      "target": "context_tailwind_config_mjs",
-      "confidence_score": 1.0
+      "target": "context_tailwind_config_mjs"
     },
     {
       "relation": "contains",
@@ -4613,9 +4826,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L810",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_configuration_files",
-      "target": "context_tsconfig_json",
-      "confidence_score": 1.0
+      "target": "context_tsconfig_json"
     },
     {
       "relation": "contains",
@@ -4623,9 +4836,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L814",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_configuration_files",
-      "target": "context_wrangler_toml",
-      "confidence_score": 1.0
+      "target": "context_wrangler_toml"
     },
     {
       "relation": "contains",
@@ -4633,9 +4846,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L845",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_design_system",
-      "target": "context_colors",
-      "confidence_score": 1.0
+      "target": "context_colors"
     },
     {
       "relation": "contains",
@@ -4643,9 +4856,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L879",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_design_system",
-      "target": "context_shadows",
-      "confidence_score": 1.0
+      "target": "context_shadows"
     },
     {
       "relation": "contains",
@@ -4653,9 +4866,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L872",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_design_system",
-      "target": "context_spacing",
-      "confidence_score": 1.0
+      "target": "context_spacing"
     },
     {
       "relation": "contains",
@@ -4663,9 +4876,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L828",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_design_system",
-      "target": "context_typography",
-      "confidence_score": 1.0
+      "target": "context_typography"
     },
     {
       "relation": "contains",
@@ -4673,9 +4886,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L929",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_notes_for_future_development",
-      "target": "context_maintenance",
-      "confidence_score": 1.0
+      "target": "context_maintenance"
     },
     {
       "relation": "contains",
@@ -4683,9 +4896,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L910",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_notes_for_future_development",
-      "target": "context_performance_considerations",
-      "confidence_score": 1.0
+      "target": "context_performance_considerations"
     },
     {
       "relation": "contains",
@@ -4693,9 +4906,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L898",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_notes_for_future_development",
-      "target": "context_recent_changes_december_20_2025",
-      "confidence_score": 1.0
+      "target": "context_recent_changes_december_20_2025"
     },
     {
       "relation": "contains",
@@ -4703,9 +4916,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L923",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_notes_for_future_development",
-      "target": "context_scalability_considerations",
-      "confidence_score": 1.0
+      "target": "context_scalability_considerations"
     },
     {
       "relation": "contains",
@@ -4713,9 +4926,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L916",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_notes_for_future_development",
-      "target": "context_security_considerations",
-      "confidence_score": 1.0
+      "target": "context_security_considerations"
     },
     {
       "relation": "contains",
@@ -4723,9 +4936,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup",
-      "target": "dev_setup_dev_environment_setup",
-      "confidence_score": 1.0
+      "target": "dev_setup_dev_environment_setup"
     },
     {
       "relation": "contains",
@@ -4733,9 +4946,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_dev_environment_setup",
-      "target": "dev_setup_branch_strategy",
-      "confidence_score": 1.0
+      "target": "dev_setup_branch_strategy"
     },
     {
       "relation": "contains",
@@ -4743,9 +4956,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_dev_environment_setup",
-      "target": "dev_setup_deployment",
-      "confidence_score": 1.0
+      "target": "dev_setup_deployment"
     },
     {
       "relation": "contains",
@@ -4753,9 +4966,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_dev_environment_setup",
-      "target": "dev_setup_differences_from_production",
-      "confidence_score": 1.0
+      "target": "dev_setup_differences_from_production"
     },
     {
       "relation": "contains",
@@ -4763,9 +4976,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_dev_environment_setup",
-      "target": "dev_setup_fly_io_apps",
-      "confidence_score": 1.0
+      "target": "dev_setup_fly_io_apps"
     },
     {
       "relation": "contains",
@@ -4773,9 +4986,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_dev_environment_setup",
-      "target": "dev_setup_initial_setup",
-      "confidence_score": 1.0
+      "target": "dev_setup_initial_setup"
     },
     {
       "relation": "contains",
@@ -4783,9 +4996,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_dev_environment_setup",
-      "target": "dev_setup_troubleshooting",
-      "confidence_score": 1.0
+      "target": "dev_setup_troubleshooting"
     },
     {
       "relation": "contains",
@@ -4793,9 +5006,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_dev_environment_setup",
-      "target": "dev_setup_workflow",
-      "confidence_score": 1.0
+      "target": "dev_setup_workflow"
     },
     {
       "relation": "contains",
@@ -4803,9 +5016,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_initial_setup",
-      "target": "dev_setup_1_create_dev_fly_io_app",
-      "confidence_score": 1.0
+      "target": "dev_setup_1_create_dev_fly_io_app"
     },
     {
       "relation": "contains",
@@ -4813,9 +5026,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_initial_setup",
-      "target": "dev_setup_2_set_environment_variables",
-      "confidence_score": 1.0
+      "target": "dev_setup_2_set_environment_variables"
     },
     {
       "relation": "contains",
@@ -4823,9 +5036,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_initial_setup",
-      "target": "dev_setup_3_create_dev_d1_database_optional",
-      "confidence_score": 1.0
+      "target": "dev_setup_3_create_dev_d1_database_optional"
     },
     {
       "relation": "contains",
@@ -4833,9 +5046,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_initial_setup",
-      "target": "dev_setup_4_add_custom_domain",
-      "confidence_score": 1.0
+      "target": "dev_setup_4_add_custom_domain"
     },
     {
       "relation": "contains",
@@ -4843,9 +5056,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_deployment",
-      "target": "dev_setup_automatic_deployment",
-      "confidence_score": 1.0
+      "target": "dev_setup_automatic_deployment"
     },
     {
       "relation": "contains",
@@ -4853,9 +5066,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_deployment",
-      "target": "dev_setup_manual_deployment",
-      "confidence_score": 1.0
+      "target": "dev_setup_manual_deployment"
     },
     {
       "relation": "contains",
@@ -4863,9 +5076,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_workflow",
-      "target": "dev_setup_daily_development",
-      "confidence_score": 1.0
+      "target": "dev_setup_daily_development"
     },
     {
       "relation": "contains",
@@ -4873,9 +5086,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_workflow",
-      "target": "dev_setup_syncing_from_production",
-      "confidence_score": 1.0
+      "target": "dev_setup_syncing_from_production"
     },
     {
       "relation": "contains",
@@ -4883,9 +5096,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_troubleshooting",
-      "target": "dev_setup_check_dev_app_status",
-      "confidence_score": 1.0
+      "target": "dev_setup_check_dev_app_status"
     },
     {
       "relation": "contains",
@@ -4893,9 +5106,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_troubleshooting",
-      "target": "dev_setup_ssh_into_dev_instance",
-      "confidence_score": 1.0
+      "target": "dev_setup_ssh_into_dev_instance"
     },
     {
       "relation": "contains",
@@ -4903,9 +5116,9 @@
       "source_file": "DEV_SETUP.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dev_setup_troubleshooting",
-      "target": "dev_setup_view_dev_logs",
-      "confidence_score": 1.0
+      "target": "dev_setup_view_dev_logs"
     },
     {
       "relation": "contains",
@@ -4914,7 +5127,7 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "readme",
-      "target": "readme_secunit_mercantile_website",
+      "target": "readme_secunit_llc_website",
       "confidence_score": 1.0
     },
     {
@@ -4923,7 +5136,7 @@
       "source_file": "README.md",
       "source_location": "L50",
       "weight": 1.0,
-      "source": "readme_secunit_mercantile_website",
+      "source": "readme_secunit_llc_website",
       "target": "readme_contact_form",
       "confidence_score": 1.0
     },
@@ -4933,7 +5146,7 @@
       "source_file": "README.md",
       "source_location": "L25",
       "weight": 1.0,
-      "source": "readme_secunit_mercantile_website",
+      "source": "readme_secunit_llc_website",
       "target": "readme_deployment",
       "confidence_score": 1.0
     },
@@ -4943,7 +5156,7 @@
       "source_file": "README.md",
       "source_location": "L64",
       "weight": 1.0,
-      "source": "readme_secunit_mercantile_website",
+      "source": "readme_secunit_llc_website",
       "target": "readme_environment_variables",
       "confidence_score": 1.0
     },
@@ -4953,7 +5166,7 @@
       "source_file": "README.md",
       "source_location": "L74",
       "weight": 1.0,
-      "source": "readme_secunit_mercantile_website",
+      "source": "readme_secunit_llc_website",
       "target": "readme_license",
       "confidence_score": 1.0
     },
@@ -4963,7 +5176,7 @@
       "source_file": "README.md",
       "source_location": "L16",
       "weight": 1.0,
-      "source": "readme_secunit_mercantile_website",
+      "source": "readme_secunit_llc_website",
       "target": "readme_local_development",
       "confidence_score": 1.0
     },
@@ -4973,7 +5186,7 @@
       "source_file": "README.md",
       "source_location": "L29",
       "weight": 1.0,
-      "source": "readme_secunit_mercantile_website",
+      "source": "readme_secunit_llc_website",
       "target": "readme_project_structure",
       "confidence_score": 1.0
     },
@@ -4983,7 +5196,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "readme_secunit_mercantile_website",
+      "source": "readme_secunit_llc_website",
       "target": "readme_tech_stack",
       "confidence_score": 1.0
     },
@@ -4993,9 +5206,9 @@
       "source_file": "README.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_contact_form",
-      "target": "readme_database_schema",
-      "confidence_score": 1.0
+      "target": "readme_database_schema"
     },
     {
       "relation": "contains",
@@ -5003,9 +5216,9 @@
       "source_file": "README.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_contact_form",
-      "target": "readme_exporting_contacts_wrangler",
-      "confidence_score": 1.0
+      "target": "readme_exporting_contacts_wrangler"
     },
     {
       "relation": "contains",
@@ -5014,37 +5227,37 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "deploy_readme",
-      "target": "deploy_readme_production_hetzner",
+      "target": "deploy_readme_production_cloudflare_pages",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deploy/README.md",
-      "source_location": "L25",
+      "source_location": "L29",
       "weight": 1.0,
-      "source": "deploy_readme_production_hetzner",
-      "target": "deploy_readme_github_actions_self_hosted_runner",
+      "source": "deploy_readme_production_cloudflare_pages",
+      "target": "deploy_readme_bindings",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deploy/README.md",
-      "source_location": "L42",
+      "source_location": "L7",
       "weight": 1.0,
-      "source": "deploy_readme_production_hetzner",
-      "target": "deploy_readme_manual_restart",
+      "source": "deploy_readme_production_cloudflare_pages",
+      "target": "deploy_readme_github_actions_github_hosted_runner",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deploy/README.md",
-      "source_location": "L36",
+      "source_location": "L20",
       "weight": 1.0,
-      "source": "deploy_readme_production_hetzner",
-      "target": "deploy_readme_systemd",
+      "source": "deploy_readme_production_cloudflare_pages",
+      "target": "deploy_readme_one_time_cloudflare_pages_setup",
       "confidence_score": 1.0
     },
     {
@@ -5054,16 +5267,16 @@
       "source_location": "L1",
       "weight": 1.0,
       "source": "design",
-      "target": "design_design_secunit_mercantile",
+      "target": "design_design_secunit_llc",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L49",
+      "source_location": "L41",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
+      "source": "design_design_secunit_llc",
       "target": "design_cta_voice",
       "confidence_score": 1.0
     },
@@ -5071,19 +5284,9 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L70",
+      "source_location": "L5",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_exports",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "design.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
+      "source": "design_design_secunit_llc",
       "target": "design_genre",
       "confidence_score": 1.0
     },
@@ -5091,29 +5294,29 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L10",
+      "source_location": "L8",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_macrostructure_family",
+      "source": "design_design_secunit_llc",
+      "target": "design_macrostructure",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L44",
+      "source_location": "L52",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_microinteractions_stance",
+      "source": "design_design_secunit_llc",
+      "target": "design_may_differ",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L38",
+      "source_location": "L36",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
+      "source": "design_design_secunit_llc",
       "target": "design_motion",
       "confidence_score": 1.0
     },
@@ -5121,70 +5324,40 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L66",
+      "source_location": "L46",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_per_page_allowances",
+      "source": "design_design_secunit_llc",
+      "target": "design_shared_across_pages",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L33",
+      "source_location": "L30",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_spacing",
+      "source": "design_design_secunit_llc",
+      "target": "design_spacing_surfaces",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L15",
+      "source_location": "L14",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_theme_quiet_warm_paper_single_warm_accent",
+      "source": "design_design_secunit_llc",
+      "target": "design_theme",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L27",
+      "source_location": "L25",
       "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
+      "source": "design_design_secunit_llc",
       "target": "design_typography",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "design.md",
-      "source_location": "L62",
-      "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_what_pages_may_differ_on",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "design.md",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "design_design_secunit_mercantile",
-      "target": "design_what_pages_must_share",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "design.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "source": "design_exports",
-      "target": "design_tokens_css",
       "confidence_score": 1.0
     },
     {
@@ -5193,9 +5366,9 @@
       "source_file": "docs/brand-guardrails.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_brand_guardrails",
-      "target": "docs_brand_guardrails_secunit_llc_brand_guardrails",
-      "confidence_score": 1.0
+      "target": "docs_brand_guardrails_secunit_llc_brand_guardrails"
     },
     {
       "relation": "contains",
@@ -5203,9 +5376,9 @@
       "source_file": "docs/brand-guardrails.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_brand_guardrails_secunit_llc_brand_guardrails",
-      "target": "docs_brand_guardrails_copy_voice",
-      "confidence_score": 1.0
+      "target": "docs_brand_guardrails_copy_voice"
     },
     {
       "relation": "contains",
@@ -5213,9 +5386,9 @@
       "source_file": "docs/brand-guardrails.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_brand_guardrails_secunit_llc_brand_guardrails",
-      "target": "docs_brand_guardrails_core_guardrails",
-      "confidence_score": 1.0
+      "target": "docs_brand_guardrails_core_guardrails"
     },
     {
       "relation": "contains",
@@ -5223,11 +5396,61 @@
       "source_file": "docs/brand-guardrails.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_brand_guardrails_secunit_llc_brand_guardrails",
-      "target": "docs_brand_guardrails_scoring_rubric_1_5",
+      "target": "docs_brand_guardrails_scoring_rubric_1_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_cloudflare_access_custom_pages",
+      "target": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
+      "target": "docs_cloudflare_access_custom_pages_1_login_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
+      "target": "docs_cloudflare_access_custom_pages_2_app_launcher",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
+      "target": "docs_cloudflare_access_custom_pages_3_gateway_block_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-access-custom-pages.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
+      "target": "docs_cloudflare_access_custom_pages_notes",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "39ca7fecc8a7c3e799c070ba00f8d37db0fbb4b3"
+  "built_at_commit": "05096996cebd585fd6af9d5c3bfd4db4c1943bc1"
 }

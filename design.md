@@ -1,4 +1,4 @@
-# Design — Secunit Mercantile
+# Design — secunit, llc
 
 Contemporary minimalist system. Every page reads this file before emitting code.
 

@@ -1,4 +1,4 @@
-# CONTEXT.md - Secunit Mercantile Website
+# CONTEXT.md - secunit, llc Website
 
 **Last Updated:** December 20, 2025 (End of Dev Session)  
 **Live Site:** https://secunit.io  
@@ -27,7 +27,7 @@
 
 ## 🎯 Project Overview
 
-Secunit Mercantile is a consulting website offering:
+secunit, llc is a consulting website offering:
 - **AI Enablement** - Practical AI implementation guidance
 - **FinOps & Cost Optimization** - Cloud cost reduction services
 - **Virtual DevOps & SRE** - Fractional engineering leadership
