@@ -53,8 +53,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Geist"', 'system-ui', 'sans-serif'],
-        display: ['"Geist"', 'system-ui', 'sans-serif'],
+        sans: ['"Jost"', 'system-ui', 'sans-serif'],
+        display: ['"Jost"', 'system-ui', 'sans-serif'],
+        mono: ['"Overpass Mono"', 'ui-monospace', 'monospace'],
       },
     },
   },

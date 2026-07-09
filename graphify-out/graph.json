@@ -1,0 +1,5233 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": ".prettierrc.mjs",
+      "file_type": "code",
+      "source_file": ".prettierrc.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prettierrc",
+      "community": 29,
+      "norm_label": ".prettierrc.mjs"
+    },
+    {
+      "label": "astro.config.mjs",
+      "file_type": "code",
+      "source_file": "astro.config.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "astro_config",
+      "community": 27,
+      "norm_label": "astro.config.mjs"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 2,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 2,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_version",
+      "community": 2,
+      "norm_label": "version"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_description",
+      "community": 2,
+      "norm_label": "description"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 2,
+      "norm_label": "private"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "package_type",
+      "community": 2,
+      "norm_label": "type"
+    },
+    {
+      "label": "packageManager",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_packagemanager",
+      "community": 2,
+      "norm_label": "packagemanager"
+    },
+    {
+      "label": "engines",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_engines",
+      "community": 2,
+      "norm_label": "engines"
+    },
+    {
+      "label": "node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "package_engines_node",
+      "community": 2,
+      "norm_label": "node"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 13,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_scripts_dev",
+      "community": 13,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 13,
+      "norm_label": "build"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "package_scripts_preview",
+      "community": 13,
+      "norm_label": "preview"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_scripts_start",
+      "community": 13,
+      "norm_label": "start"
+    },
+    {
+      "label": "astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_scripts_astro",
+      "community": 13,
+      "norm_label": "astro"
+    },
+    {
+      "label": "format",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "package_scripts_format",
+      "community": 13,
+      "norm_label": "format"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "package_dependencies",
+      "community": 2,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@astrojs/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "package_dependencies_astrojs_node",
+      "community": 2,
+      "norm_label": "@astrojs/node"
+    },
+    {
+      "label": "@astrojs/sitemap",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "package_dependencies_astrojs_sitemap",
+      "community": 2,
+      "norm_label": "@astrojs/sitemap"
+    },
+    {
+      "label": "astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "package_dependencies_astro",
+      "community": 2,
+      "norm_label": "astro"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "package_dependencies_tailwindcss",
+      "community": 2,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "tw-animate-css",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "package_dependencies_tw_animate_css",
+      "community": 2,
+      "norm_label": "tw-animate-css"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "package_devdependencies",
+      "community": 2,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@tailwindcss/vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "package_devdependencies_tailwindcss_vite",
+      "community": 2,
+      "norm_label": "@tailwindcss/vite"
+    },
+    {
+      "label": "prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "package_devdependencies_prettier",
+      "community": 2,
+      "norm_label": "prettier"
+    },
+    {
+      "label": "prettier-plugin-astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "package_devdependencies_prettier_plugin_astro",
+      "community": 2,
+      "norm_label": "prettier-plugin-astro"
+    },
+    {
+      "label": "prettier-plugin-tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "package_devdependencies_prettier_plugin_tailwindcss",
+      "community": 2,
+      "norm_label": "prettier-plugin-tailwindcss"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "package_devdependencies_typescript",
+      "community": 2,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "restart.sh",
+      "file_type": "code",
+      "source_file": "scripts/restart.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "scripts_restart",
+      "community": 25,
+      "norm_label": "restart.sh"
+    },
+    {
+      "label": "restart.sh script",
+      "file_type": "code",
+      "source_file": "scripts/restart.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "users_mat_documents_code_secunit_io_scripts_restart_sh__entry",
+      "community": 25,
+      "norm_label": "restart.sh script"
+    },
+    {
+      "label": "setup-cloudflare-pages.sh",
+      "file_type": "code",
+      "source_file": "setup-cloudflare-pages.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "setup_cloudflare_pages",
+      "community": 26,
+      "norm_label": "setup-cloudflare-pages.sh"
+    },
+    {
+      "label": "setup-cloudflare-pages.sh script",
+      "file_type": "code",
+      "source_file": "setup-cloudflare-pages.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "users_mat_documents_code_secunit_io_setup_cloudflare_pages_sh__entry",
+      "community": 26,
+      "norm_label": "setup-cloudflare-pages.sh script"
+    },
+    {
+      "label": "@/components/Footer.astro",
+      "file_type": "code",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "components_footer",
+      "community": 1,
+      "norm_label": "@/components/footer.astro"
+    },
+    {
+      "label": "@/components/Header.astro",
+      "file_type": "code",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "components_header",
+      "community": 1,
+      "norm_label": "@/components/header.astro"
+    },
+    {
+      "label": "ThemeToggle.astro",
+      "file_type": "code",
+      "source_file": "src/components/ThemeToggle.astro",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "source_location": "L1",
+      "id": "components_themetoggle",
+      "community": 1,
+      "norm_label": "themetoggle.astro"
+    },
+    {
+      "label": "navData.json.ts",
+      "file_type": "code",
+      "source_file": "src/config/en/navData.json.ts",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "source_location": "L1",
+      "id": "en_navdata_json",
+      "community": 1,
+      "norm_label": "navdata.json.ts"
+    },
+    {
+      "label": "@/components/contact/ContactFormCore.astro",
+      "file_type": "code",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "contact_contactformcore",
+      "community": 1,
+      "norm_label": "@/components/contact/contactformcore.astro"
+    },
+    {
+      "label": "submitText",
+      "file_type": "code",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "contact_contactformcore_submittext",
+      "community": 1,
+      "norm_label": "submittext"
+    },
+    {
+      "label": "submitSpinner",
+      "file_type": "code",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "contact_contactformcore_submitspinner",
+      "community": 1,
+      "norm_label": "submitspinner"
+    },
+    {
+      "label": "successMessage",
+      "file_type": "code",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L156",
+      "_origin": "ast",
+      "id": "contact_contactformcore_successmessage",
+      "community": 1,
+      "norm_label": "successmessage"
+    },
+    {
+      "label": "errorMessage",
+      "file_type": "code",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "contact_contactformcore_errormessage",
+      "community": 1,
+      "norm_label": "errormessage"
+    },
+    {
+      "label": "NavItem",
+      "file_type": "code",
+      "source_file": "src/config/en/navData.json.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "en_navdata_json_navitem",
+      "community": 1,
+      "norm_label": "navitem"
+    },
+    {
+      "label": "navConfig",
+      "file_type": "code",
+      "source_file": "src/config/en/navData.json.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "en_navdata_json_navconfig",
+      "community": 1,
+      "norm_label": "navconfig"
+    },
+    {
+      "label": "env.d.ts",
+      "file_type": "code",
+      "source_file": "src/env.d.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_env_d",
+      "community": 14,
+      "norm_label": "env.d.ts"
+    },
+    {
+      "label": "ImportMetaEnv",
+      "file_type": "code",
+      "source_file": "src/env.d.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_env_d_importmetaenv",
+      "community": 14,
+      "norm_label": "importmetaenv"
+    },
+    {
+      "label": "ImportMeta",
+      "file_type": "code",
+      "source_file": "src/env.d.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_env_d_importmeta",
+      "community": 14,
+      "norm_label": "importmeta"
+    },
+    {
+      "label": "D1Database",
+      "file_type": "code",
+      "source_file": "src/env.d.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_env_d_d1database",
+      "community": 14,
+      "norm_label": "d1database"
+    },
+    {
+      "label": "D1PreparedStatement",
+      "file_type": "code",
+      "source_file": "src/env.d.ts",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "src_env_d_d1preparedstatement",
+      "community": 14,
+      "norm_label": "d1preparedstatement"
+    },
+    {
+      "label": "D1Result",
+      "file_type": "code",
+      "source_file": "src/env.d.ts",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "src_env_d_d1result",
+      "community": 14,
+      "norm_label": "d1result"
+    },
+    {
+      "label": "D1ExecResult",
+      "file_type": "code",
+      "source_file": "src/env.d.ts",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "src_env_d_d1execresult",
+      "community": 14,
+      "norm_label": "d1execresult"
+    },
+    {
+      "label": "@/layouts/Base.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "layouts_base",
+      "community": 1,
+      "norm_label": "@/layouts/base.astro"
+    },
+    {
+      "label": "canonicalURL",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "layouts_base_canonicalurl",
+      "community": 1,
+      "norm_label": "canonicalurl"
+    },
+    {
+      "label": "jsonLd",
+      "file_type": "code",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "layouts_base_jsonld",
+      "community": 1,
+      "norm_label": "jsonld"
+    },
+    {
+      "label": "@/styles/global.css",
+      "file_type": "code",
+      "source_file": "src/styles/global.css",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_mat_documents_code_secunit_io_src_styles_global_css",
+      "community": 1,
+      "norm_label": "@/styles/global.css"
+    },
+    {
+      "label": "404.astro",
+      "file_type": "code",
+      "source_file": "src/pages/404.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_404",
+      "community": 28,
+      "norm_label": "404.astro"
+    },
+    {
+      "label": "about.astro",
+      "file_type": "code",
+      "source_file": "src/pages/about.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_about",
+      "community": 1,
+      "norm_label": "about.astro"
+    },
+    {
+      "label": "contact.ts",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_contact",
+      "community": 17,
+      "norm_label": "contact.ts"
+    },
+    {
+      "label": "ContactForm",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "api_contact_contactform",
+      "community": 17,
+      "norm_label": "contactform"
+    },
+    {
+      "label": "D1Response",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "api_contact_d1response",
+      "community": 17,
+      "norm_label": "d1response"
+    },
+    {
+      "label": "executeD1Query()",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "api_contact_executed1query",
+      "community": 17,
+      "norm_label": "executed1query()"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "api_contact_post",
+      "community": 17,
+      "norm_label": "post()"
+    },
+    {
+      "label": "health.ts",
+      "file_type": "code",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_health",
+      "community": 18,
+      "norm_label": "health.ts"
+    },
+    {
+      "label": "HealthCheckResult",
+      "file_type": "code",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "api_health_healthcheckresult",
+      "community": 18,
+      "norm_label": "healthcheckresult"
+    },
+    {
+      "label": "D1Response",
+      "file_type": "code",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "api_health_d1response",
+      "community": 18,
+      "norm_label": "d1response"
+    },
+    {
+      "label": "executeD1Query()",
+      "file_type": "code",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "api_health_executed1query",
+      "community": 18,
+      "norm_label": "executed1query()"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "api_health_get",
+      "community": 18,
+      "norm_label": "get()"
+    },
+    {
+      "label": "live.ts",
+      "file_type": "code",
+      "source_file": "src/pages/api/live.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_live",
+      "community": 24,
+      "norm_label": "live.ts"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/pages/api/live.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "api_live_get",
+      "community": 24,
+      "norm_label": "get()"
+    },
+    {
+      "label": "contact.astro",
+      "file_type": "code",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_contact",
+      "community": 1,
+      "norm_label": "contact.astro"
+    },
+    {
+      "label": "@/assets/images/brands/proton.svg",
+      "file_type": "code",
+      "source_file": "src/assets/images/brands/proton.svg",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_mat_documents_code_secunit_io_src_assets_images_brands_proton_svg",
+      "community": 1,
+      "norm_label": "@/assets/images/brands/proton.svg"
+    },
+    {
+      "label": "@/assets/images/brands/protondrive.svg",
+      "file_type": "code",
+      "source_file": "src/assets/images/brands/protondrive.svg",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_mat_documents_code_secunit_io_src_assets_images_brands_protondrive_svg",
+      "community": 1,
+      "norm_label": "@/assets/images/brands/protondrive.svg"
+    },
+    {
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_index",
+      "community": 1,
+      "norm_label": "index.astro"
+    },
+    {
+      "label": "privacy.astro",
+      "file_type": "code",
+      "source_file": "src/pages/privacy.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_privacy",
+      "community": 1,
+      "norm_label": "privacy.astro"
+    },
+    {
+      "label": "services.astro",
+      "file_type": "code",
+      "source_file": "src/pages/services.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_services",
+      "community": 1,
+      "norm_label": "services.astro"
+    },
+    {
+      "label": "aiTools",
+      "file_type": "code",
+      "source_file": "src/pages/services.astro",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "pages_services_aitools",
+      "community": 1,
+      "norm_label": "aitools"
+    },
+    {
+      "label": "technologies.astro",
+      "file_type": "code",
+      "source_file": "src/pages/technologies.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_technologies",
+      "community": 1,
+      "norm_label": "technologies.astro"
+    },
+    {
+      "label": "terms.astro",
+      "file_type": "code",
+      "source_file": "src/pages/terms.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_terms",
+      "community": 1,
+      "norm_label": "terms.astro"
+    },
+    {
+      "label": "tailwind.config.mjs",
+      "file_type": "code",
+      "source_file": "tailwind.config.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tailwind_config",
+      "community": 30,
+      "norm_label": "tailwind.config.mjs"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tsconfig",
+      "community": 9,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "extends",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "tsconfig_extends",
+      "community": 9,
+      "norm_label": "extends"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions",
+      "community": 9,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "baseUrl",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_baseurl",
+      "community": 9,
+      "norm_label": "baseurl"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tsconfig_compileroptions_paths",
+      "community": 9,
+      "norm_label": "paths"
+    },
+    {
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tsconfig_paths",
+      "community": 9,
+      "norm_label": "@/*"
+    },
+    {
+      "label": "@components/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tsconfig_paths_components",
+      "community": 9,
+      "norm_label": "@components/*"
+    },
+    {
+      "label": "@layouts/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tsconfig_paths_layouts",
+      "community": 9,
+      "norm_label": "@layouts/*"
+    },
+    {
+      "label": "@images/*",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tsconfig_paths_images",
+      "community": 9,
+      "norm_label": "@images/*"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tsconfig_include",
+      "community": 9,
+      "norm_label": "include"
+    },
+    {
+      "label": "exclude",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tsconfig_exclude",
+      "community": 9,
+      "norm_label": "exclude"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill",
+      "community": 4,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "contemporary Design System Skill (Universal)",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "community": 4,
+      "norm_label": "contemporary design system skill (universal)"
+    },
+    {
+      "label": "Mission",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_mission",
+      "community": 4,
+      "norm_label": "mission"
+    },
+    {
+      "label": "Brand",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_brand",
+      "community": 4,
+      "norm_label": "brand"
+    },
+    {
+      "label": "Style Foundations",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_style_foundations",
+      "community": 4,
+      "norm_label": "style foundations"
+    },
+    {
+      "label": "Accessibility",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_accessibility",
+      "community": 4,
+      "norm_label": "accessibility"
+    },
+    {
+      "label": "Writing Tone",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_writing_tone",
+      "community": 4,
+      "norm_label": "writing tone"
+    },
+    {
+      "label": "Rules: Do",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_rules_do",
+      "community": 4,
+      "norm_label": "rules: do"
+    },
+    {
+      "label": "Rules: Don't",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_rules_don_t",
+      "community": 4,
+      "norm_label": "rules: don't"
+    },
+    {
+      "label": "Expected Behavior",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_expected_behavior",
+      "community": 4,
+      "norm_label": "expected behavior"
+    },
+    {
+      "label": "Guideline Authoring Workflow",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow",
+      "community": 4,
+      "norm_label": "guideline authoring workflow"
+    },
+    {
+      "label": "Required Output Structure",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_required_output_structure",
+      "community": 4,
+      "norm_label": "required output structure"
+    },
+    {
+      "label": "Component Rule Expectations",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_component_rule_expectations",
+      "community": 4,
+      "norm_label": "component rule expectations"
+    },
+    {
+      "label": "Quality Gates",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_quality_gates",
+      "community": 4,
+      "norm_label": "quality gates"
+    },
+    {
+      "label": "Example Constraint Language",
+      "file_type": "document",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "agents_skills_design_system_skill_md_design_system_skill_example_constraint_language",
+      "community": 4,
+      "norm_label": "example constraint language"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill",
+      "community": 5,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "contemporary Design System Skill (Universal)",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "community": 5,
+      "norm_label": "contemporary design system skill (universal)"
+    },
+    {
+      "label": "Mission",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_mission",
+      "community": 5,
+      "norm_label": "mission"
+    },
+    {
+      "label": "Brand",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_brand",
+      "community": 5,
+      "norm_label": "brand"
+    },
+    {
+      "label": "Style Foundations",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_style_foundations",
+      "community": 5,
+      "norm_label": "style foundations"
+    },
+    {
+      "label": "Accessibility",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_accessibility",
+      "community": 5,
+      "norm_label": "accessibility"
+    },
+    {
+      "label": "Writing Tone",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_writing_tone",
+      "community": 5,
+      "norm_label": "writing tone"
+    },
+    {
+      "label": "Rules: Do",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_rules_do",
+      "community": 5,
+      "norm_label": "rules: do"
+    },
+    {
+      "label": "Rules: Don't",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_rules_don_t",
+      "community": 5,
+      "norm_label": "rules: don't"
+    },
+    {
+      "label": "Expected Behavior",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_expected_behavior",
+      "community": 5,
+      "norm_label": "expected behavior"
+    },
+    {
+      "label": "Guideline Authoring Workflow",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow",
+      "community": 5,
+      "norm_label": "guideline authoring workflow"
+    },
+    {
+      "label": "Required Output Structure",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_required_output_structure",
+      "community": 5,
+      "norm_label": "required output structure"
+    },
+    {
+      "label": "Component Rule Expectations",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_component_rule_expectations",
+      "community": 5,
+      "norm_label": "component rule expectations"
+    },
+    {
+      "label": "Quality Gates",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_quality_gates",
+      "community": 5,
+      "norm_label": "quality gates"
+    },
+    {
+      "label": "Example Constraint Language",
+      "file_type": "document",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "cursor_skills_design_system_skill_md_design_system_skill_example_constraint_language",
+      "community": 5,
+      "norm_label": "example constraint language"
+    },
+    {
+      "label": ".github-profile-README.md",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "github_profile_readme",
+      "community": 7,
+      "norm_label": ".github-profile-readme.md"
+    },
+    {
+      "label": "Secunit Mercantile",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "github_profile_readme_secunit_mercantile",
+      "community": 7,
+      "norm_label": "secunit mercantile"
+    },
+    {
+      "label": "What We Do",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "github_profile_readme_what_we_do",
+      "community": 7,
+      "norm_label": "what we do"
+    },
+    {
+      "label": "\ud83d\udee1\ufe0f Virtual CISO & Information Security",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "github_profile_readme_virtual_ciso_information_security",
+      "community": 7,
+      "norm_label": "\ud83d\udee1\ufe0f virtual ciso & information security"
+    },
+    {
+      "label": "\u26a1 Virtual DevOps & Site Reliability Engineering",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "github_profile_readme_virtual_devops_site_reliability_engineering",
+      "community": 7,
+      "norm_label": "\u26a1 virtual devops & site reliability engineering"
+    },
+    {
+      "label": "\ud83d\udcb0 FinOps & Cloud Cost Optimization",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "github_profile_readme_finops_cloud_cost_optimization",
+      "community": 7,
+      "norm_label": "\ud83d\udcb0 finops & cloud cost optimization"
+    },
+    {
+      "label": "\ud83e\udd16 AI Enablement",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "github_profile_readme_ai_enablement",
+      "community": 7,
+      "norm_label": "\ud83e\udd16 ai enablement"
+    },
+    {
+      "label": "Why Secunit Mercantile?",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "github_profile_readme_why_secunit_mercantile",
+      "community": 7,
+      "norm_label": "why secunit mercantile?"
+    },
+    {
+      "label": "Trusted By Teams At",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "github_profile_readme_trusted_by_teams_at",
+      "community": 7,
+      "norm_label": "trusted by teams at"
+    },
+    {
+      "label": "Engagement Models",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "github_profile_readme_engagement_models",
+      "community": 7,
+      "norm_label": "engagement models"
+    },
+    {
+      "label": "Get In Touch",
+      "file_type": "document",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "github_profile_readme_get_in_touch",
+      "community": 7,
+      "norm_label": "get in touch"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 23,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Testing",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "claude_testing",
+      "community": 23,
+      "norm_label": "testing"
+    },
+    {
+      "label": "Environment",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "claude_environment",
+      "community": 23,
+      "norm_label": "environment"
+    },
+    {
+      "label": "CONTEXT.md",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "context",
+      "community": 0,
+      "norm_label": "context.md"
+    },
+    {
+      "label": "CONTEXT.md - Secunit Mercantile Website",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "context_context_md_secunit_mercantile_website",
+      "community": 0,
+      "norm_label": "context.md - secunit mercantile website"
+    },
+    {
+      "label": "\ud83d\udccb Table of Contents",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "context_table_of_contents",
+      "community": 0,
+      "norm_label": "\ud83d\udccb table of contents"
+    },
+    {
+      "label": "\ud83c\udfaf Project Overview",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "context_project_overview",
+      "community": 0,
+      "norm_label": "\ud83c\udfaf project overview"
+    },
+    {
+      "label": "\ud83d\udee0 Tech Stack",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "context_tech_stack",
+      "community": 15,
+      "norm_label": "\ud83d\udee0 tech stack"
+    },
+    {
+      "label": "Core Framework",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "context_core_framework",
+      "community": 15,
+      "norm_label": "core framework"
+    },
+    {
+      "label": "Styling",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "context_styling",
+      "community": 15,
+      "norm_label": "styling"
+    },
+    {
+      "label": "Content Management",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "context_content_management",
+      "community": 15,
+      "norm_label": "content management"
+    },
+    {
+      "label": "Deployment & Backend",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "context_deployment_backend",
+      "community": 15,
+      "norm_label": "deployment & backend"
+    },
+    {
+      "label": "Build Tools",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "context_build_tools",
+      "community": 15,
+      "norm_label": "build tools"
+    },
+    {
+      "label": "\ud83c\udfd7 Architecture",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "context_architecture",
+      "community": 0,
+      "norm_label": "\ud83c\udfd7 architecture"
+    },
+    {
+      "label": "Build Process",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "context_build_process",
+      "community": 0,
+      "norm_label": "build process"
+    },
+    {
+      "label": "Rendering Strategy",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "context_rendering_strategy",
+      "community": 0,
+      "norm_label": "rendering strategy"
+    },
+    {
+      "label": "Data Flow",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "context_data_flow",
+      "community": 0,
+      "norm_label": "data flow"
+    },
+    {
+      "label": "\ud83d\udcc1 Project Structure",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "context_project_structure",
+      "community": 0,
+      "norm_label": "\ud83d\udcc1 project structure"
+    },
+    {
+      "label": "\ud83d\udcdd Content Management",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "context_content_management_195",
+      "community": 0,
+      "norm_label": "\ud83d\udcdd content management"
+    },
+    {
+      "label": "Content Collections",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L197",
+      "_origin": "ast",
+      "id": "context_content_collections",
+      "community": 0,
+      "norm_label": "content collections"
+    },
+    {
+      "label": "Querying Content",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L218",
+      "_origin": "ast",
+      "id": "context_querying_content",
+      "community": 0,
+      "norm_label": "querying content"
+    },
+    {
+      "label": "Adding New Blog Post",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L232",
+      "_origin": "ast",
+      "id": "context_adding_new_blog_post",
+      "community": 0,
+      "norm_label": "adding new blog post"
+    },
+    {
+      "label": "\ud83c\udfa8 Styling System",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L252",
+      "_origin": "ast",
+      "id": "context_styling_system",
+      "community": 22,
+      "norm_label": "\ud83c\udfa8 styling system"
+    },
+    {
+      "label": "Tailwind Configuration",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L254",
+      "_origin": "ast",
+      "id": "context_tailwind_configuration",
+      "community": 22,
+      "norm_label": "tailwind configuration"
+    },
+    {
+      "label": "Custom CSS Classes",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L268",
+      "_origin": "ast",
+      "id": "context_custom_css_classes",
+      "community": 22,
+      "norm_label": "custom css classes"
+    },
+    {
+      "label": "Dark Mode",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L287",
+      "_origin": "ast",
+      "id": "context_dark_mode",
+      "community": 22,
+      "norm_label": "dark mode"
+    },
+    {
+      "label": "\ud83d\udcec Contact Form",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L296",
+      "_origin": "ast",
+      "id": "context_contact_form",
+      "community": 12,
+      "norm_label": "\ud83d\udcec contact form"
+    },
+    {
+      "label": "Frontend (`src/pages/contact.astro`)",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "context_frontend_src_pages_contact_astro",
+      "community": 12,
+      "norm_label": "frontend (`src/pages/contact.astro`)"
+    },
+    {
+      "label": "Backend (`src/pages/api/contact.ts`)",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L317",
+      "_origin": "ast",
+      "id": "context_backend_src_pages_api_contact_ts",
+      "community": 12,
+      "norm_label": "backend (`src/pages/api/contact.ts`)"
+    },
+    {
+      "label": "Healthcheck Endpoints",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L332",
+      "_origin": "ast",
+      "id": "context_healthcheck_endpoints",
+      "community": 12,
+      "norm_label": "healthcheck endpoints"
+    },
+    {
+      "label": "Database Schema",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L347",
+      "_origin": "ast",
+      "id": "context_database_schema",
+      "community": 12,
+      "norm_label": "database schema"
+    },
+    {
+      "label": "Environment Variables",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L368",
+      "_origin": "ast",
+      "id": "context_environment_variables",
+      "community": 12,
+      "norm_label": "environment variables"
+    },
+    {
+      "label": "Exporting Contacts",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L382",
+      "_origin": "ast",
+      "id": "context_exporting_contacts",
+      "community": 12,
+      "norm_label": "exporting contacts"
+    },
+    {
+      "label": "\ud83d\udd0c API Routes",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L394",
+      "_origin": "ast",
+      "id": "context_api_routes",
+      "community": 0,
+      "norm_label": "\ud83d\udd0c api routes"
+    },
+    {
+      "label": "Contact Form (`/api/contact`)",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L396",
+      "_origin": "ast",
+      "id": "context_contact_form_api_contact",
+      "community": 0,
+      "norm_label": "contact form (`/api/contact`)"
+    },
+    {
+      "label": "Healthcheck Endpoints",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L425",
+      "_origin": "ast",
+      "id": "context_healthcheck_endpoints_425",
+      "community": 0,
+      "norm_label": "healthcheck endpoints"
+    },
+    {
+      "label": "\ud83d\ude80 Deployment",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L442",
+      "_origin": "ast",
+      "id": "context_deployment",
+      "community": 0,
+      "norm_label": "\ud83d\ude80 deployment"
+    },
+    {
+      "label": "Fly.io",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L444",
+      "_origin": "ast",
+      "id": "context_fly_io",
+      "community": 0,
+      "norm_label": "fly.io"
+    },
+    {
+      "label": "Build Process",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L484",
+      "_origin": "ast",
+      "id": "context_build_process_484",
+      "community": 0,
+      "norm_label": "build process"
+    },
+    {
+      "label": "Docker Build",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L506",
+      "_origin": "ast",
+      "id": "context_docker_build",
+      "community": 0,
+      "norm_label": "docker build"
+    },
+    {
+      "label": "\ud83d\udcbb Development Workflow",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L522",
+      "_origin": "ast",
+      "id": "context_development_workflow",
+      "community": 10,
+      "norm_label": "\ud83d\udcbb development workflow"
+    },
+    {
+      "label": "Branch Strategy",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L524",
+      "_origin": "ast",
+      "id": "context_branch_strategy",
+      "community": 10,
+      "norm_label": "branch strategy"
+    },
+    {
+      "label": "Dev Environment",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L542",
+      "_origin": "ast",
+      "id": "context_dev_environment",
+      "community": 10,
+      "norm_label": "dev environment"
+    },
+    {
+      "label": "Local Development",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L553",
+      "_origin": "ast",
+      "id": "context_local_development",
+      "community": 10,
+      "norm_label": "local development"
+    },
+    {
+      "label": "Adding a New Page",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L566",
+      "_origin": "ast",
+      "id": "context_adding_a_new_page",
+      "community": 10,
+      "norm_label": "adding a new page"
+    },
+    {
+      "label": "Adding a New Component",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L573",
+      "_origin": "ast",
+      "id": "context_adding_a_new_component",
+      "community": 10,
+      "norm_label": "adding a new component"
+    },
+    {
+      "label": "Testing Contact Form Locally",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L580",
+      "_origin": "ast",
+      "id": "context_testing_contact_form_locally",
+      "community": 10,
+      "norm_label": "testing contact form locally"
+    },
+    {
+      "label": "Managing D1 Database",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L594",
+      "_origin": "ast",
+      "id": "context_managing_d1_database",
+      "community": 10,
+      "norm_label": "managing d1 database"
+    },
+    {
+      "label": "\u2728 Key Features",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L607",
+      "_origin": "ast",
+      "id": "context_key_features",
+      "community": 0,
+      "norm_label": "\u2728 key features"
+    },
+    {
+      "label": "SEO Optimization",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L609",
+      "_origin": "ast",
+      "id": "context_seo_optimization",
+      "community": 0,
+      "norm_label": "seo optimization"
+    },
+    {
+      "label": "Performance",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L619",
+      "_origin": "ast",
+      "id": "context_performance",
+      "community": 0,
+      "norm_label": "performance"
+    },
+    {
+      "label": "Accessibility",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L631",
+      "_origin": "ast",
+      "id": "context_accessibility",
+      "community": 0,
+      "norm_label": "accessibility"
+    },
+    {
+      "label": "Mobile Responsive",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L639",
+      "_origin": "ast",
+      "id": "context_mobile_responsive",
+      "community": 0,
+      "norm_label": "mobile responsive"
+    },
+    {
+      "label": "\ud83c\udf0d Internationalization",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L648",
+      "_origin": "ast",
+      "id": "context_internationalization",
+      "community": 0,
+      "norm_label": "\ud83c\udf0d internationalization"
+    },
+    {
+      "label": "Current Setup",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L650",
+      "_origin": "ast",
+      "id": "context_current_setup",
+      "community": 0,
+      "norm_label": "current setup"
+    },
+    {
+      "label": "\ud83d\udc1b Known Issues & TODOs",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L671",
+      "_origin": "ast",
+      "id": "context_known_issues_todos",
+      "community": 0,
+      "norm_label": "\ud83d\udc1b known issues & todos"
+    },
+    {
+      "label": "\u2705 Completed Cleanup (Dec 17, 2025)",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L673",
+      "_origin": "ast",
+      "id": "context_completed_cleanup_dec_17_2025",
+      "community": 0,
+      "norm_label": "\u2705 completed cleanup (dec 17, 2025)"
+    },
+    {
+      "label": "Cleanup Items",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L693",
+      "_origin": "ast",
+      "id": "context_cleanup_items",
+      "community": 0,
+      "norm_label": "cleanup items"
+    },
+    {
+      "label": "Feature TODOs",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L706",
+      "_origin": "ast",
+      "id": "context_feature_todos",
+      "community": 0,
+      "norm_label": "feature todos"
+    },
+    {
+      "label": "Content TODOs",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L723",
+      "_origin": "ast",
+      "id": "context_content_todos",
+      "community": 0,
+      "norm_label": "content todos"
+    },
+    {
+      "label": "\ud83d\udce6 Component Inventory",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L734",
+      "_origin": "ast",
+      "id": "context_component_inventory",
+      "community": 0,
+      "norm_label": "\ud83d\udce6 component inventory"
+    },
+    {
+      "label": "Active/Used Components",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L736",
+      "_origin": "ast",
+      "id": "context_active_used_components",
+      "community": 0,
+      "norm_label": "active/used components"
+    },
+    {
+      "label": "Starwind Components",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L764",
+      "_origin": "ast",
+      "id": "context_starwind_components",
+      "community": 0,
+      "norm_label": "starwind components"
+    },
+    {
+      "label": "\ud83d\udd27 Configuration Files",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L778",
+      "_origin": "ast",
+      "id": "context_configuration_files",
+      "community": 11,
+      "norm_label": "\ud83d\udd27 configuration files"
+    },
+    {
+      "label": "`astro.config.mjs`",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L780",
+      "_origin": "ast",
+      "id": "context_astro_config_mjs",
+      "community": 11,
+      "norm_label": "`astro.config.mjs`"
+    },
+    {
+      "label": "`fly.toml`",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L787",
+      "_origin": "ast",
+      "id": "context_fly_toml",
+      "community": 11,
+      "norm_label": "`fly.toml`"
+    },
+    {
+      "label": "`fly.dev.toml`",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L795",
+      "_origin": "ast",
+      "id": "context_fly_dev_toml",
+      "community": 11,
+      "norm_label": "`fly.dev.toml`"
+    },
+    {
+      "label": "`tailwind.config.mjs`",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L803",
+      "_origin": "ast",
+      "id": "context_tailwind_config_mjs",
+      "community": 11,
+      "norm_label": "`tailwind.config.mjs`"
+    },
+    {
+      "label": "`tsconfig.json`",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L810",
+      "_origin": "ast",
+      "id": "context_tsconfig_json",
+      "community": 11,
+      "norm_label": "`tsconfig.json`"
+    },
+    {
+      "label": "`wrangler.toml`",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L814",
+      "_origin": "ast",
+      "id": "context_wrangler_toml",
+      "community": 11,
+      "norm_label": "`wrangler.toml`"
+    },
+    {
+      "label": "`starwind.config.json`",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L819",
+      "_origin": "ast",
+      "id": "context_starwind_config_json",
+      "community": 11,
+      "norm_label": "`starwind.config.json`"
+    },
+    {
+      "label": "\ud83c\udfaf Design System",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L826",
+      "_origin": "ast",
+      "id": "context_design_system",
+      "community": 19,
+      "norm_label": "\ud83c\udfaf design system"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L828",
+      "_origin": "ast",
+      "id": "context_typography",
+      "community": 19,
+      "norm_label": "typography"
+    },
+    {
+      "label": "Colors",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L845",
+      "_origin": "ast",
+      "id": "context_colors",
+      "community": 19,
+      "norm_label": "colors"
+    },
+    {
+      "label": "Spacing",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L872",
+      "_origin": "ast",
+      "id": "context_spacing",
+      "community": 19,
+      "norm_label": "spacing"
+    },
+    {
+      "label": "Shadows",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L879",
+      "_origin": "ast",
+      "id": "context_shadows",
+      "community": 19,
+      "norm_label": "shadows"
+    },
+    {
+      "label": "\ud83d\udcde Support & Contact",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L887",
+      "_origin": "ast",
+      "id": "context_support_contact",
+      "community": 0,
+      "norm_label": "\ud83d\udcde support & contact"
+    },
+    {
+      "label": "\ud83d\udcdd Notes for Future Development",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L896",
+      "_origin": "ast",
+      "id": "context_notes_for_future_development",
+      "community": 16,
+      "norm_label": "\ud83d\udcdd notes for future development"
+    },
+    {
+      "label": "Recent Changes (December 20, 2025)",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L898",
+      "_origin": "ast",
+      "id": "context_recent_changes_december_20_2025",
+      "community": 16,
+      "norm_label": "recent changes (december 20, 2025)"
+    },
+    {
+      "label": "Performance Considerations",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L910",
+      "_origin": "ast",
+      "id": "context_performance_considerations",
+      "community": 16,
+      "norm_label": "performance considerations"
+    },
+    {
+      "label": "Security Considerations",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L916",
+      "_origin": "ast",
+      "id": "context_security_considerations",
+      "community": 16,
+      "norm_label": "security considerations"
+    },
+    {
+      "label": "Scalability Considerations",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L923",
+      "_origin": "ast",
+      "id": "context_scalability_considerations",
+      "community": 16,
+      "norm_label": "scalability considerations"
+    },
+    {
+      "label": "Maintenance",
+      "file_type": "document",
+      "source_file": "CONTEXT.md",
+      "source_location": "L929",
+      "_origin": "ast",
+      "id": "context_maintenance",
+      "community": 16,
+      "norm_label": "maintenance"
+    },
+    {
+      "label": "DEV_SETUP.md",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dev_setup",
+      "community": 3,
+      "norm_label": "dev_setup.md"
+    },
+    {
+      "label": "Dev Environment Setup",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dev_setup_dev_environment_setup",
+      "community": 3,
+      "norm_label": "dev environment setup"
+    },
+    {
+      "label": "Branch Strategy",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "dev_setup_branch_strategy",
+      "community": 3,
+      "norm_label": "branch strategy"
+    },
+    {
+      "label": "Fly.io Apps",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "dev_setup_fly_io_apps",
+      "community": 3,
+      "norm_label": "fly.io apps"
+    },
+    {
+      "label": "Initial Setup",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "dev_setup_initial_setup",
+      "community": 3,
+      "norm_label": "initial setup"
+    },
+    {
+      "label": "1. Create Dev Fly.io App",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "dev_setup_1_create_dev_fly_io_app",
+      "community": 3,
+      "norm_label": "1. create dev fly.io app"
+    },
+    {
+      "label": "2. Set Environment Variables",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "dev_setup_2_set_environment_variables",
+      "community": 3,
+      "norm_label": "2. set environment variables"
+    },
+    {
+      "label": "3. Create Dev D1 Database (Optional)",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "dev_setup_3_create_dev_d1_database_optional",
+      "community": 3,
+      "norm_label": "3. create dev d1 database (optional)"
+    },
+    {
+      "label": "4. Add Custom Domain",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "dev_setup_4_add_custom_domain",
+      "community": 3,
+      "norm_label": "4. add custom domain"
+    },
+    {
+      "label": "Deployment",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "dev_setup_deployment",
+      "community": 3,
+      "norm_label": "deployment"
+    },
+    {
+      "label": "Manual Deployment",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "dev_setup_manual_deployment",
+      "community": 3,
+      "norm_label": "manual deployment"
+    },
+    {
+      "label": "Automatic Deployment",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "dev_setup_automatic_deployment",
+      "community": 3,
+      "norm_label": "automatic deployment"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "dev_setup_workflow",
+      "community": 3,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "Daily Development",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "dev_setup_daily_development",
+      "community": 3,
+      "norm_label": "daily development"
+    },
+    {
+      "label": "Syncing from Production",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "dev_setup_syncing_from_production",
+      "community": 3,
+      "norm_label": "syncing from production"
+    },
+    {
+      "label": "Differences from Production",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "dev_setup_differences_from_production",
+      "community": 3,
+      "norm_label": "differences from production"
+    },
+    {
+      "label": "Troubleshooting",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "dev_setup_troubleshooting",
+      "community": 3,
+      "norm_label": "troubleshooting"
+    },
+    {
+      "label": "View Dev Logs",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "dev_setup_view_dev_logs",
+      "community": 3,
+      "norm_label": "view dev logs"
+    },
+    {
+      "label": "SSH into Dev Instance",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "dev_setup_ssh_into_dev_instance",
+      "community": 3,
+      "norm_label": "ssh into dev instance"
+    },
+    {
+      "label": "Check Dev App Status",
+      "file_type": "document",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "dev_setup_check_dev_app_status",
+      "community": 3,
+      "norm_label": "check dev app status"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 8,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Secunit Mercantile Website",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_secunit_mercantile_website",
+      "community": 8,
+      "norm_label": "secunit mercantile website"
+    },
+    {
+      "label": "Tech Stack",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "readme_tech_stack",
+      "community": 8,
+      "norm_label": "tech stack"
+    },
+    {
+      "label": "Local Development",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "readme_local_development",
+      "community": 8,
+      "norm_label": "local development"
+    },
+    {
+      "label": "Deployment",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "readme_deployment",
+      "community": 8,
+      "norm_label": "deployment"
+    },
+    {
+      "label": "Project Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "readme_project_structure",
+      "community": 8,
+      "norm_label": "project structure"
+    },
+    {
+      "label": "Contact Form",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "readme_contact_form",
+      "community": 8,
+      "norm_label": "contact form"
+    },
+    {
+      "label": "Database schema",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "readme_database_schema",
+      "community": 8,
+      "norm_label": "database schema"
+    },
+    {
+      "label": "Exporting contacts (wrangler)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "readme_exporting_contacts_wrangler",
+      "community": 8,
+      "norm_label": "exporting contacts (wrangler)"
+    },
+    {
+      "label": "Environment Variables",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "readme_environment_variables",
+      "community": 8,
+      "norm_label": "environment variables"
+    },
+    {
+      "label": "License",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "readme_license",
+      "community": 8,
+      "norm_label": "license"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "deploy/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "deploy_readme",
+      "community": 20,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Production (Hetzner)",
+      "file_type": "document",
+      "source_file": "deploy/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "deploy_readme_production_hetzner",
+      "community": 20,
+      "norm_label": "production (hetzner)"
+    },
+    {
+      "label": "GitHub Actions (self-hosted runner)",
+      "file_type": "document",
+      "source_file": "deploy/README.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "deploy_readme_github_actions_self_hosted_runner",
+      "community": 20,
+      "norm_label": "github actions (self-hosted runner)"
+    },
+    {
+      "label": "Systemd",
+      "file_type": "document",
+      "source_file": "deploy/README.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "deploy_readme_systemd",
+      "community": 20,
+      "norm_label": "systemd"
+    },
+    {
+      "label": "Manual restart",
+      "file_type": "document",
+      "source_file": "deploy/README.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "deploy_readme_manual_restart",
+      "community": 20,
+      "norm_label": "manual restart"
+    },
+    {
+      "label": "design.md",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "design",
+      "community": 6,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Design \u2014 Secunit Mercantile",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "design_design_secunit_mercantile",
+      "community": 6,
+      "norm_label": "design \u2014 secunit mercantile"
+    },
+    {
+      "label": "Genre",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "design_genre",
+      "community": 6,
+      "norm_label": "genre"
+    },
+    {
+      "label": "Macrostructure family",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "design_macrostructure_family",
+      "community": 6,
+      "norm_label": "macrostructure family"
+    },
+    {
+      "label": "Theme \u2014 Quiet (warm paper \u00b7 single warm accent)",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "design_theme_quiet_warm_paper_single_warm_accent",
+      "community": 6,
+      "norm_label": "theme \u2014 quiet (warm paper \u00b7 single warm accent)"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "design_typography",
+      "community": 6,
+      "norm_label": "typography"
+    },
+    {
+      "label": "Spacing",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "design_spacing",
+      "community": 6,
+      "norm_label": "spacing"
+    },
+    {
+      "label": "Motion",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "design_motion",
+      "community": 6,
+      "norm_label": "motion"
+    },
+    {
+      "label": "Microinteractions stance",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "design_microinteractions_stance",
+      "community": 6,
+      "norm_label": "microinteractions stance"
+    },
+    {
+      "label": "CTA voice",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "design_cta_voice",
+      "community": 6,
+      "norm_label": "cta voice"
+    },
+    {
+      "label": "What pages MUST share",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "design_what_pages_must_share",
+      "community": 6,
+      "norm_label": "what pages must share"
+    },
+    {
+      "label": "What pages MAY differ on",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "design_what_pages_may_differ_on",
+      "community": 6,
+      "norm_label": "what pages may differ on"
+    },
+    {
+      "label": "Per-page allowances",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "design_per_page_allowances",
+      "community": 6,
+      "norm_label": "per-page allowances"
+    },
+    {
+      "label": "Exports",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "design_exports",
+      "community": 6,
+      "norm_label": "exports"
+    },
+    {
+      "label": "tokens.css",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "design_tokens_css",
+      "community": 6,
+      "norm_label": "tokens.css"
+    },
+    {
+      "label": "brand-guardrails.md",
+      "file_type": "document",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_brand_guardrails",
+      "community": 21,
+      "norm_label": "brand-guardrails.md"
+    },
+    {
+      "label": "secunit, llc brand guardrails",
+      "file_type": "document",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_brand_guardrails_secunit_llc_brand_guardrails",
+      "community": 21,
+      "norm_label": "secunit, llc brand guardrails"
+    },
+    {
+      "label": "Core guardrails",
+      "file_type": "document",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_brand_guardrails_core_guardrails",
+      "community": 21,
+      "norm_label": "core guardrails"
+    },
+    {
+      "label": "Scoring rubric (1-5)",
+      "file_type": "document",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "docs_brand_guardrails_scoring_rubric_1_5",
+      "community": 21,
+      "norm_label": "scoring rubric (1-5)"
+    },
+    {
+      "label": "Copy voice",
+      "file_type": "document",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "docs_brand_guardrails_copy_voice",
+      "community": 21,
+      "norm_label": "copy voice"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_engines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_packagemanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_engines",
+      "target": "package_engines_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_astrojs_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_astrojs_sitemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tw_animate_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_prettier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_prettier_plugin_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_prettier_plugin_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/restart.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_restart",
+      "target": "users_mat_documents_code_secunit_io_scripts_restart_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup-cloudflare-pages.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "setup_cloudflare_pages",
+      "target": "users_mat_documents_code_secunit_io_setup_cloudflare_pages_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "layouts_base",
+      "target": "components_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source": "components_header",
+      "target": "components_themetoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_header",
+      "target": "en_navdata_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "layouts_base",
+      "target": "components_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/en/navData.json.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "en_navdata_json",
+      "target": "en_navdata_json_navconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/en/navData.json.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "en_navdata_json",
+      "target": "en_navdata_json_navitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "contact_contactformcore",
+      "target": "contact_contactformcore_errormessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "contact_contactformcore",
+      "target": "contact_contactformcore_submitspinner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "contact_contactformcore",
+      "target": "contact_contactformcore_submittext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/contact/ContactFormCore.astro",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "contact_contactformcore",
+      "target": "contact_contactformcore_successmessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/contact.astro",
+      "source": "pages_contact",
+      "target": "contact_contactformcore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/env.d.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_env_d",
+      "target": "src_env_d_d1database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/env.d.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_env_d",
+      "target": "src_env_d_d1execresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/env.d.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_env_d",
+      "target": "src_env_d_d1preparedstatement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/env.d.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_env_d",
+      "target": "src_env_d_d1result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/env.d.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_env_d",
+      "target": "src_env_d_importmeta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/env.d.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_env_d",
+      "target": "src_env_d_importmetaenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "layouts_base",
+      "target": "layouts_base_canonicalurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "layouts_base",
+      "target": "layouts_base_jsonld",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Base.astro",
+      "source": "layouts_base",
+      "target": "users_mat_documents_code_secunit_io_src_styles_global_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/about.astro",
+      "source": "pages_about",
+      "target": "layouts_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "pages_contact",
+      "target": "layouts_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source": "pages_index",
+      "target": "layouts_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/privacy.astro",
+      "source": "pages_privacy",
+      "target": "layouts_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/services.astro",
+      "source": "pages_services",
+      "target": "layouts_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/technologies.astro",
+      "source": "pages_technologies",
+      "target": "layouts_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/terms.astro",
+      "source": "pages_terms",
+      "target": "layouts_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "api_contact",
+      "target": "api_contact_contactform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "api_contact",
+      "target": "api_contact_d1response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "api_contact",
+      "target": "api_contact_executed1query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "api_contact",
+      "target": "api_contact_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "api_contact_post",
+      "target": "api_contact_executed1query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "api_health",
+      "target": "api_health_d1response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "api_health",
+      "target": "api_health_executed1query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "api_health",
+      "target": "api_health_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "api_health",
+      "target": "api_health_healthcheckresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/health.ts",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "api_health_get",
+      "target": "api_health_executed1query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/live.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "api_live",
+      "target": "api_live_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "pages_contact",
+      "target": "users_mat_documents_code_secunit_io_src_assets_images_brands_proton_svg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pages_contact",
+      "target": "users_mat_documents_code_secunit_io_src_assets_images_brands_protondrive_svg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/services.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pages_services",
+      "target": "pages_services_aitools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_exclude",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_extends",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_baseurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions_paths",
+      "target": "tsconfig_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions_paths",
+      "target": "tsconfig_paths_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions_paths",
+      "target": "tsconfig_paths_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tsconfig_compileroptions_paths",
+      "target": "tsconfig_paths_layouts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_accessibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_brand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_component_rule_expectations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_example_constraint_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_expected_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_mission",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_quality_gates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_required_output_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_rules_do",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_rules_don_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_style_foundations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/design-system/SKILL.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "agents_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "agents_skills_design_system_skill_md_design_system_skill_writing_tone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_accessibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_brand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_component_rule_expectations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_example_constraint_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_expected_behavior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_guideline_authoring_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_mission",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_quality_gates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_required_output_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_rules_do",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_rules_don_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_style_foundations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".cursor/skills/design-system/SKILL.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "cursor_skills_design_system_skill_md_design_system_skill_contemporary_design_system_skill_universal",
+      "target": "cursor_skills_design_system_skill_md_design_system_skill_writing_tone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "github_profile_readme",
+      "target": "github_profile_readme_secunit_mercantile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "github_profile_readme_secunit_mercantile",
+      "target": "github_profile_readme_engagement_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "github_profile_readme_secunit_mercantile",
+      "target": "github_profile_readme_get_in_touch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "github_profile_readme_secunit_mercantile",
+      "target": "github_profile_readme_trusted_by_teams_at",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "github_profile_readme_secunit_mercantile",
+      "target": "github_profile_readme_what_we_do",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "github_profile_readme_secunit_mercantile",
+      "target": "github_profile_readme_why_secunit_mercantile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "github_profile_readme_what_we_do",
+      "target": "github_profile_readme_ai_enablement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "github_profile_readme_what_we_do",
+      "target": "github_profile_readme_finops_cloud_cost_optimization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "github_profile_readme_what_we_do",
+      "target": "github_profile_readme_virtual_ciso_information_security",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github-profile-README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "github_profile_readme_what_we_do",
+      "target": "github_profile_readme_virtual_devops_site_reliability_engineering",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_testing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "context",
+      "target": "context_context_md_secunit_mercantile_website",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L394",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_api_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L734",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_component_inventory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L778",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_configuration_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L296",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_contact_form",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_content_management_195",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L442",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_deployment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L826",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_design_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L522",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_development_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L648",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_internationalization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L607",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_key_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L671",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_known_issues_todos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L896",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_notes_for_future_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_project_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L252",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_styling_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L887",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_support_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_table_of_contents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "context_context_md_secunit_mercantile_website",
+      "target": "context_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "context_tech_stack",
+      "target": "context_build_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "context_tech_stack",
+      "target": "context_content_management",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "context_tech_stack",
+      "target": "context_core_framework",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "context_tech_stack",
+      "target": "context_deployment_backend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "context_tech_stack",
+      "target": "context_styling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "context_architecture",
+      "target": "context_build_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "context_architecture",
+      "target": "context_data_flow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "context_architecture",
+      "target": "context_rendering_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "context_content_management_195",
+      "target": "context_adding_new_blog_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "context_content_management_195",
+      "target": "context_content_collections",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "context_content_management_195",
+      "target": "context_querying_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "context_styling_system",
+      "target": "context_custom_css_classes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "context_styling_system",
+      "target": "context_dark_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "context_styling_system",
+      "target": "context_tailwind_configuration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L317",
+      "weight": 1.0,
+      "source": "context_contact_form",
+      "target": "context_backend_src_pages_api_contact_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L347",
+      "weight": 1.0,
+      "source": "context_contact_form",
+      "target": "context_database_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L368",
+      "weight": 1.0,
+      "source": "context_contact_form",
+      "target": "context_environment_variables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L382",
+      "weight": 1.0,
+      "source": "context_contact_form",
+      "target": "context_exporting_contacts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "context_contact_form",
+      "target": "context_frontend_src_pages_contact_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L332",
+      "weight": 1.0,
+      "source": "context_contact_form",
+      "target": "context_healthcheck_endpoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L396",
+      "weight": 1.0,
+      "source": "context_api_routes",
+      "target": "context_contact_form_api_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "context_api_routes",
+      "target": "context_healthcheck_endpoints_425",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L484",
+      "weight": 1.0,
+      "source": "context_deployment",
+      "target": "context_build_process_484",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L506",
+      "weight": 1.0,
+      "source": "context_deployment",
+      "target": "context_docker_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L444",
+      "weight": 1.0,
+      "source": "context_deployment",
+      "target": "context_fly_io",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L573",
+      "weight": 1.0,
+      "source": "context_development_workflow",
+      "target": "context_adding_a_new_component",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L566",
+      "weight": 1.0,
+      "source": "context_development_workflow",
+      "target": "context_adding_a_new_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L524",
+      "weight": 1.0,
+      "source": "context_development_workflow",
+      "target": "context_branch_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "source": "context_development_workflow",
+      "target": "context_dev_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L553",
+      "weight": 1.0,
+      "source": "context_development_workflow",
+      "target": "context_local_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L594",
+      "weight": 1.0,
+      "source": "context_development_workflow",
+      "target": "context_managing_d1_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L580",
+      "weight": 1.0,
+      "source": "context_development_workflow",
+      "target": "context_testing_contact_form_locally",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L631",
+      "weight": 1.0,
+      "source": "context_key_features",
+      "target": "context_accessibility",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L639",
+      "weight": 1.0,
+      "source": "context_key_features",
+      "target": "context_mobile_responsive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L619",
+      "weight": 1.0,
+      "source": "context_key_features",
+      "target": "context_performance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L609",
+      "weight": 1.0,
+      "source": "context_key_features",
+      "target": "context_seo_optimization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L650",
+      "weight": 1.0,
+      "source": "context_internationalization",
+      "target": "context_current_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L693",
+      "weight": 1.0,
+      "source": "context_known_issues_todos",
+      "target": "context_cleanup_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L673",
+      "weight": 1.0,
+      "source": "context_known_issues_todos",
+      "target": "context_completed_cleanup_dec_17_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L723",
+      "weight": 1.0,
+      "source": "context_known_issues_todos",
+      "target": "context_content_todos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L706",
+      "weight": 1.0,
+      "source": "context_known_issues_todos",
+      "target": "context_feature_todos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L736",
+      "weight": 1.0,
+      "source": "context_component_inventory",
+      "target": "context_active_used_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L764",
+      "weight": 1.0,
+      "source": "context_component_inventory",
+      "target": "context_starwind_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L780",
+      "weight": 1.0,
+      "source": "context_configuration_files",
+      "target": "context_astro_config_mjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L795",
+      "weight": 1.0,
+      "source": "context_configuration_files",
+      "target": "context_fly_dev_toml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L787",
+      "weight": 1.0,
+      "source": "context_configuration_files",
+      "target": "context_fly_toml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L819",
+      "weight": 1.0,
+      "source": "context_configuration_files",
+      "target": "context_starwind_config_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L803",
+      "weight": 1.0,
+      "source": "context_configuration_files",
+      "target": "context_tailwind_config_mjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L810",
+      "weight": 1.0,
+      "source": "context_configuration_files",
+      "target": "context_tsconfig_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L814",
+      "weight": 1.0,
+      "source": "context_configuration_files",
+      "target": "context_wrangler_toml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L845",
+      "weight": 1.0,
+      "source": "context_design_system",
+      "target": "context_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L879",
+      "weight": 1.0,
+      "source": "context_design_system",
+      "target": "context_shadows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L872",
+      "weight": 1.0,
+      "source": "context_design_system",
+      "target": "context_spacing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L828",
+      "weight": 1.0,
+      "source": "context_design_system",
+      "target": "context_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L929",
+      "weight": 1.0,
+      "source": "context_notes_for_future_development",
+      "target": "context_maintenance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L910",
+      "weight": 1.0,
+      "source": "context_notes_for_future_development",
+      "target": "context_performance_considerations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L898",
+      "weight": 1.0,
+      "source": "context_notes_for_future_development",
+      "target": "context_recent_changes_december_20_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L923",
+      "weight": 1.0,
+      "source": "context_notes_for_future_development",
+      "target": "context_scalability_considerations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CONTEXT.md",
+      "source_location": "L916",
+      "weight": 1.0,
+      "source": "context_notes_for_future_development",
+      "target": "context_security_considerations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "dev_setup",
+      "target": "dev_setup_dev_environment_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "dev_setup_dev_environment_setup",
+      "target": "dev_setup_branch_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "dev_setup_dev_environment_setup",
+      "target": "dev_setup_deployment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "dev_setup_dev_environment_setup",
+      "target": "dev_setup_differences_from_production",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "dev_setup_dev_environment_setup",
+      "target": "dev_setup_fly_io_apps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "dev_setup_dev_environment_setup",
+      "target": "dev_setup_initial_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "dev_setup_dev_environment_setup",
+      "target": "dev_setup_troubleshooting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "dev_setup_dev_environment_setup",
+      "target": "dev_setup_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "dev_setup_initial_setup",
+      "target": "dev_setup_1_create_dev_fly_io_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "dev_setup_initial_setup",
+      "target": "dev_setup_2_set_environment_variables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "dev_setup_initial_setup",
+      "target": "dev_setup_3_create_dev_d1_database_optional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "dev_setup_initial_setup",
+      "target": "dev_setup_4_add_custom_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "dev_setup_deployment",
+      "target": "dev_setup_automatic_deployment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "dev_setup_deployment",
+      "target": "dev_setup_manual_deployment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "dev_setup_workflow",
+      "target": "dev_setup_daily_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "dev_setup_workflow",
+      "target": "dev_setup_syncing_from_production",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "dev_setup_troubleshooting",
+      "target": "dev_setup_check_dev_app_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "dev_setup_troubleshooting",
+      "target": "dev_setup_ssh_into_dev_instance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEV_SETUP.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "dev_setup_troubleshooting",
+      "target": "dev_setup_view_dev_logs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_secunit_mercantile_website",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "readme_secunit_mercantile_website",
+      "target": "readme_contact_form",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "readme_secunit_mercantile_website",
+      "target": "readme_deployment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "readme_secunit_mercantile_website",
+      "target": "readme_environment_variables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "readme_secunit_mercantile_website",
+      "target": "readme_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "readme_secunit_mercantile_website",
+      "target": "readme_local_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "readme_secunit_mercantile_website",
+      "target": "readme_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "readme_secunit_mercantile_website",
+      "target": "readme_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "readme_contact_form",
+      "target": "readme_database_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "readme_contact_form",
+      "target": "readme_exporting_contacts_wrangler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deploy/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "deploy_readme",
+      "target": "deploy_readme_production_hetzner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deploy/README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "deploy_readme_production_hetzner",
+      "target": "deploy_readme_github_actions_self_hosted_runner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deploy/README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "deploy_readme_production_hetzner",
+      "target": "deploy_readme_manual_restart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deploy/README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "deploy_readme_production_hetzner",
+      "target": "deploy_readme_systemd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "design",
+      "target": "design_design_secunit_mercantile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_cta_voice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_exports",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_genre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_macrostructure_family",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_microinteractions_stance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_motion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_per_page_allowances",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_spacing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_theme_quiet_warm_paper_single_warm_accent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_what_pages_may_differ_on",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "design_design_secunit_mercantile",
+      "target": "design_what_pages_must_share",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "design.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "design_exports",
+      "target": "design_tokens_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_brand_guardrails",
+      "target": "docs_brand_guardrails_secunit_llc_brand_guardrails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "docs_brand_guardrails_secunit_llc_brand_guardrails",
+      "target": "docs_brand_guardrails_copy_voice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_brand_guardrails_secunit_llc_brand_guardrails",
+      "target": "docs_brand_guardrails_core_guardrails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/brand-guardrails.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "docs_brand_guardrails_secunit_llc_brand_guardrails",
+      "target": "docs_brand_guardrails_scoring_rubric_1_5",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "39ca7fecc8a7c3e799c070ba00f8d37db0fbb4b3"
+}
