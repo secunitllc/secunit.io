@@ -43,7 +43,6 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        // Legacy colors to fix build for old components
         body: "var(--color-ink)",
         dark: "var(--color-paper-3)",
         darkmode: {
