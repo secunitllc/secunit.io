@@ -5,15 +5,17 @@ Self-contained, dark secunit templates for Cloudflare Error Pages. The HTML refe
 
 ## Dashboard mapping
 
-| Cloudflare page type                      | API identifier      | Template URL                                                  |
-| ----------------------------------------- | ------------------- | ------------------------------------------------------------- |
-| WAF block                                 | `waf_block`         | `https://secunit.io/cloudflare-errors/waf-block.html`         |
-| IP/Country block                          | `ip_block`          | `https://secunit.io/cloudflare-errors/ip-block.html`          |
-| IP/Country challenge                      | `country_challenge` | `https://secunit.io/cloudflare-errors/country-challenge.html` |
-| 500 class errors                          | `500_errors`        | `https://secunit.io/cloudflare-errors/500-errors.html`        |
-| 1000 class errors                         | `1000_errors`       | `https://secunit.io/cloudflare-errors/1000-errors.html`       |
-| Managed challenge / I'm Under Attack Mode | `managed_challenge` | `https://secunit.io/cloudflare-errors/managed-challenge.html` |
-| Rate limiting block                       | `ratelimit_block`   | `https://secunit.io/cloudflare-errors/rate-limit.html`        |
+| Cloudflare page type                      | Required token                   | Template URL                                                          |
+| ----------------------------------------- | -------------------------------- | --------------------------------------------------------------------- |
+| WAF block                                 | —                                | `https://secunit.io/cloudflare-errors/waf-block.html`                 |
+| IP/Country block                          | —                                | `https://secunit.io/cloudflare-errors/ip-block.html`                  |
+| IP/Country challenge                      | `::CAPTCHA_BOX::`                | `https://secunit.io/cloudflare-errors/country-challenge.html`         |
+| Interactive Challenge                     | `::CAPTCHA_BOX::`                | `https://secunit.io/cloudflare-errors/interactive-challenge.html`     |
+| Non-Interactive / JS Challenge            | `::IM_UNDER_ATTACK_BOX::`        | `https://secunit.io/cloudflare-errors/non-interactive-challenge.html` |
+| 500 class errors                          | `::CLOUDFLARE_ERROR_500S_BOX::`  | `https://secunit.io/cloudflare-errors/500-errors.html`                |
+| 1000 class errors                         | `::CLOUDFLARE_ERROR_1000S_BOX::` | `https://secunit.io/cloudflare-errors/1000-errors.html`               |
+| Managed challenge / I'm Under Attack Mode | `::CAPTCHA_BOX::`                | `https://secunit.io/cloudflare-errors/managed-challenge.html`         |
+| Rate limiting block                       | —                                | `https://secunit.io/cloudflare-errors/rate-limit.html`                |
 
 ## Install
 
@@ -27,8 +29,13 @@ The challenge and error templates include Cloudflare's required page-specific to
 also includes `::RAY_ID::` and `::GEO::` for support context. Do not add a `referrer` meta tag:
 Cloudflare documents that it disrupts challenge pages.
 
+Interactive Challenge uses `::CAPTCHA_BOX::`. Non-Interactive / JS Challenge uses
+`::IM_UNDER_ATTACK_BOX::`. See [Challenges](https://developers.cloudflare.com/cloudflare-challenges/)
+and [error tokens](https://developers.cloudflare.com/rules/custom-errors/reference/error-tokens/).
+
 References:
 
 - [Edit Error Pages](https://developers.cloudflare.com/rules/custom-errors/edit-error-pages/)
 - [Error page types](https://developers.cloudflare.com/rules/custom-errors/reference/error-page-types/)
 - [Error tokens](https://developers.cloudflare.com/rules/custom-errors/reference/error-tokens/)
+- [Challenges](https://developers.cloudflare.com/cloudflare-challenges/)
