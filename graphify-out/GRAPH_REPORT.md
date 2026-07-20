@@ -1,16 +1,16 @@
 # Graph Report - secunit.io  (2026-07-20)
 
 ## Corpus Check
-- 48 files · ~170,245 words
+- 49 files · ~171,323 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 281 nodes · 259 edges · 32 communities (29 shown, 3 thin omitted)
+- 285 nodes · 262 edges · 33 communities (30 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e025d9e9`
+- Built from commit: `6fd7276c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,6 +41,7 @@
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -61,7 +62,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (32 total, 3 thin omitted)
+## Communities (33 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
@@ -153,28 +154,32 @@ Nodes (4): Copy voice, Core guardrails, Scoring rubric (1-5), secunit, llc brand
 
 ### Community 22 - "Community 22"
 Cohesion: 0.50
+Nodes (4): Build Process, 🚀 Deployment, Docker Build, Fly.io
+
+### Community 31 - "Community 31"
+Cohesion: 0.50
 Nodes (4): Custom CSS Classes, Dark-only theme, 🎨 Styling System, Tailwind Configuration
 
 ### Community 32 - "Community 32"
 Cohesion: 0.50
-Nodes (4): Build Process, 🚀 Deployment, Docker Build, Fly.io
+Nodes (3): Cloudflare custom error pages, Dashboard mapping, Install
 
 ## Knowledge Gaps
-- **199 isolated node(s):** `name`, `version`, `description`, `private`, `type` (+194 more)
+- **201 isolated node(s):** `name`, `version`, `description`, `private`, `type` (+196 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CONTEXT.md - secunit, llc Website` connect `Community 0` to `Community 32`, `Community 10`, `Community 11`, `Community 12`, `Community 15`, `Community 16`, `Community 22`?**
-  _High betweenness centrality (0.075) - this node is a cross-community bridge._
+- **Why does `CONTEXT.md - secunit, llc Website` connect `Community 0` to `Community 10`, `Community 11`, `Community 12`, `Community 15`, `Community 16`, `Community 22`, `Community 31`?**
+  _High betweenness centrality (0.072) - this node is a cross-community bridge._
 - **Why does `💻 Development Workflow` connect `Community 10` to `Community 0`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `🔧 Configuration Files` connect `Community 11` to `Community 0`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `description` to the rest of the system?**
-  _199 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _201 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

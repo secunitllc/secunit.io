@@ -1672,7 +1672,7 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "context_styling_system",
-      "community": 22,
+      "community": 31,
       "norm_label": "\ud83c\udfa8 styling system"
     },
     {
@@ -1682,7 +1682,7 @@
       "source_location": "L253",
       "_origin": "ast",
       "id": "context_tailwind_configuration",
-      "community": 22,
+      "community": 31,
       "norm_label": "tailwind configuration"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "context_custom_css_classes",
-      "community": 22,
+      "community": 31,
       "norm_label": "custom css classes"
     },
     {
@@ -1702,7 +1702,7 @@
       "source_location": "L284",
       "_origin": "ast",
       "id": "context_dark_only_theme",
-      "community": 22,
+      "community": 31,
       "norm_label": "dark-only theme"
     },
     {
@@ -1812,7 +1812,7 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "context_deployment",
-      "community": 32,
+      "community": 22,
       "norm_label": "\ud83d\ude80 deployment"
     },
     {
@@ -1822,7 +1822,7 @@
       "source_location": "L440",
       "_origin": "ast",
       "id": "context_fly_io",
-      "community": 32,
+      "community": 22,
       "norm_label": "fly.io"
     },
     {
@@ -1832,7 +1832,7 @@
       "source_location": "L480",
       "_origin": "ast",
       "id": "context_build_process_480",
-      "community": 32,
+      "community": 22,
       "norm_label": "build process"
     },
     {
@@ -1842,7 +1842,7 @@
       "source_location": "L502",
       "_origin": "ast",
       "id": "context_docker_build",
-      "community": 32,
+      "community": 22,
       "norm_label": "docker build"
     },
     {
@@ -2834,6 +2834,46 @@
       "id": "docs_cloudflare_access_custom_pages_notes",
       "community": 19,
       "norm_label": "notes"
+    },
+    {
+      "label": "cloudflare-error-pages.md",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-error-pages.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_cloudflare_error_pages",
+      "community": 32,
+      "norm_label": "cloudflare-error-pages.md"
+    },
+    {
+      "label": "Cloudflare custom error pages",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-error-pages.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_cloudflare_error_pages_cloudflare_custom_error_pages",
+      "community": 32,
+      "norm_label": "cloudflare custom error pages"
+    },
+    {
+      "label": "Dashboard mapping",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-error-pages.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_cloudflare_error_pages_dashboard_mapping",
+      "community": 32,
+      "norm_label": "dashboard mapping"
+    },
+    {
+      "label": "Install",
+      "file_type": "document",
+      "source_file": "docs/cloudflare-error-pages.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "docs_cloudflare_error_pages_install",
+      "community": 32,
+      "norm_label": "install"
     }
   ],
   "links": [
@@ -5410,8 +5450,38 @@
       "confidence_score": 1.0,
       "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
       "target": "docs_cloudflare_access_custom_pages_notes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-error-pages.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_cloudflare_error_pages",
+      "target": "docs_cloudflare_error_pages_cloudflare_custom_error_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-error-pages.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_cloudflare_error_pages_cloudflare_custom_error_pages",
+      "target": "docs_cloudflare_error_pages_dashboard_mapping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/cloudflare-error-pages.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "docs_cloudflare_error_pages_cloudflare_custom_error_pages",
+      "target": "docs_cloudflare_error_pages_install",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e025d9e9dc136163f100d59e57670b608062608f"
+  "built_at_commit": "6fd7276cdcbcf111e639250962aaf45d50aa7be1"
 }
