@@ -371,16 +371,6 @@
       "norm_label": "@/components/footer.astro"
     },
     {
-      "label": "icons",
-      "file_type": "code",
-      "source_file": "src/components/Footer.astro",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "components_footer_icons",
-      "community": 1,
-      "norm_label": "icons"
-    },
-    {
       "label": "@/components/Header.astro",
       "file_type": "code",
       "source_file": "src/components/Header.astro",
@@ -561,7 +551,7 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "layouts_accesslayout",
-      "community": 10,
+      "community": 1,
       "norm_label": "@/layouts/accesslayout.astro"
     },
     {
@@ -571,7 +561,7 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_mat_documents_code_secunit_io_src_styles_global_css",
-      "community": 10,
+      "community": 1,
       "norm_label": "@/styles/global.css"
     },
     {
@@ -652,7 +642,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "access_blocked",
-      "community": 10,
+      "community": 1,
       "norm_label": "blocked.astro"
     },
     {
@@ -662,7 +652,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "access_blocked_string",
-      "community": 10,
+      "community": 1,
       "norm_label": "string"
     },
     {
@@ -672,7 +662,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "access_blocked_details",
-      "community": 10,
+      "community": 1,
       "norm_label": "details"
     },
     {
@@ -682,7 +672,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "access_login",
-      "community": 10,
+      "community": 1,
       "norm_label": "login.astro"
     },
     {
@@ -692,7 +682,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "access_login_identityproviders",
-      "community": 10,
+      "community": 1,
       "norm_label": "identityproviders"
     },
     {
@@ -702,7 +692,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "access_login_redirecturl",
-      "community": 10,
+      "community": 1,
       "norm_label": "redirecturl"
     },
     {
@@ -1682,7 +1672,7 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "context_styling_system",
-      "community": 0,
+      "community": 31,
       "norm_label": "\ud83c\udfa8 styling system"
     },
     {
@@ -1692,7 +1682,7 @@
       "source_location": "L253",
       "_origin": "ast",
       "id": "context_tailwind_configuration",
-      "community": 0,
+      "community": 31,
       "norm_label": "tailwind configuration"
     },
     {
@@ -1702,7 +1692,7 @@
       "source_location": "L265",
       "_origin": "ast",
       "id": "context_custom_css_classes",
-      "community": 0,
+      "community": 31,
       "norm_label": "custom css classes"
     },
     {
@@ -1712,7 +1702,7 @@
       "source_location": "L284",
       "_origin": "ast",
       "id": "context_dark_only_theme",
-      "community": 0,
+      "community": 31,
       "norm_label": "dark-only theme"
     },
     {
@@ -1822,7 +1812,7 @@
       "source_location": "L438",
       "_origin": "ast",
       "id": "context_deployment",
-      "community": 0,
+      "community": 22,
       "norm_label": "\ud83d\ude80 deployment"
     },
     {
@@ -1832,7 +1822,7 @@
       "source_location": "L440",
       "_origin": "ast",
       "id": "context_fly_io",
-      "community": 0,
+      "community": 22,
       "norm_label": "fly.io"
     },
     {
@@ -1842,7 +1832,7 @@
       "source_location": "L480",
       "_origin": "ast",
       "id": "context_build_process_480",
-      "community": 0,
+      "community": 22,
       "norm_label": "build process"
     },
     {
@@ -1852,7 +1842,7 @@
       "source_location": "L502",
       "_origin": "ast",
       "id": "context_docker_build",
-      "community": 0,
+      "community": 22,
       "norm_label": "docker build"
     },
     {
@@ -1862,7 +1852,7 @@
       "source_location": "L518",
       "_origin": "ast",
       "id": "context_development_workflow",
-      "community": 0,
+      "community": 10,
       "norm_label": "\ud83d\udcbb development workflow"
     },
     {
@@ -1872,7 +1862,7 @@
       "source_location": "L520",
       "_origin": "ast",
       "id": "context_branch_strategy",
-      "community": 0,
+      "community": 10,
       "norm_label": "branch strategy"
     },
     {
@@ -1882,7 +1872,7 @@
       "source_location": "L538",
       "_origin": "ast",
       "id": "context_dev_environment",
-      "community": 0,
+      "community": 10,
       "norm_label": "dev environment"
     },
     {
@@ -1892,7 +1882,7 @@
       "source_location": "L549",
       "_origin": "ast",
       "id": "context_local_development",
-      "community": 0,
+      "community": 10,
       "norm_label": "local development"
     },
     {
@@ -1902,7 +1892,7 @@
       "source_location": "L562",
       "_origin": "ast",
       "id": "context_adding_a_new_page",
-      "community": 0,
+      "community": 10,
       "norm_label": "adding a new page"
     },
     {
@@ -1912,7 +1902,7 @@
       "source_location": "L569",
       "_origin": "ast",
       "id": "context_adding_a_new_component",
-      "community": 0,
+      "community": 10,
       "norm_label": "adding a new component"
     },
     {
@@ -1922,7 +1912,7 @@
       "source_location": "L576",
       "_origin": "ast",
       "id": "context_testing_contact_form_locally",
-      "community": 0,
+      "community": 10,
       "norm_label": "testing contact form locally"
     },
     {
@@ -1932,7 +1922,7 @@
       "source_location": "L590",
       "_origin": "ast",
       "id": "context_managing_d1_database",
-      "community": 0,
+      "community": 10,
       "norm_label": "managing d1 database"
     },
     {
@@ -1942,7 +1932,7 @@
       "source_location": "L603",
       "_origin": "ast",
       "id": "context_key_features",
-      "community": 22,
+      "community": 0,
       "norm_label": "\u2728 key features"
     },
     {
@@ -1952,7 +1942,7 @@
       "source_location": "L605",
       "_origin": "ast",
       "id": "context_seo_optimization",
-      "community": 22,
+      "community": 0,
       "norm_label": "seo optimization"
     },
     {
@@ -1962,7 +1952,7 @@
       "source_location": "L615",
       "_origin": "ast",
       "id": "context_performance",
-      "community": 22,
+      "community": 0,
       "norm_label": "performance"
     },
     {
@@ -1972,7 +1962,7 @@
       "source_location": "L627",
       "_origin": "ast",
       "id": "context_accessibility",
-      "community": 22,
+      "community": 0,
       "norm_label": "accessibility"
     },
     {
@@ -1982,7 +1972,7 @@
       "source_location": "L635",
       "_origin": "ast",
       "id": "context_mobile_responsive",
-      "community": 22,
+      "community": 0,
       "norm_label": "mobile responsive"
     },
     {
@@ -2012,7 +2002,7 @@
       "source_location": "L667",
       "_origin": "ast",
       "id": "context_known_issues_todos",
-      "community": 31,
+      "community": 0,
       "norm_label": "\ud83d\udc1b known issues & todos"
     },
     {
@@ -2022,7 +2012,7 @@
       "source_location": "L669",
       "_origin": "ast",
       "id": "context_completed_cleanup_dec_17_2025",
-      "community": 31,
+      "community": 0,
       "norm_label": "\u2705 completed cleanup (dec 17, 2025)"
     },
     {
@@ -2032,7 +2022,7 @@
       "source_location": "L689",
       "_origin": "ast",
       "id": "context_cleanup_items",
-      "community": 31,
+      "community": 0,
       "norm_label": "cleanup items"
     },
     {
@@ -2042,7 +2032,7 @@
       "source_location": "L702",
       "_origin": "ast",
       "id": "context_feature_todos",
-      "community": 31,
+      "community": 0,
       "norm_label": "feature todos"
     },
     {
@@ -2052,7 +2042,7 @@
       "source_location": "L719",
       "_origin": "ast",
       "id": "context_content_todos",
-      "community": 31,
+      "community": 0,
       "norm_label": "content todos"
     },
     {
@@ -2172,7 +2162,7 @@
       "source_location": "L821",
       "_origin": "ast",
       "id": "context_design_system",
-      "community": 33,
+      "community": 0,
       "norm_label": "\ud83c\udfaf design system"
     },
     {
@@ -2182,7 +2172,7 @@
       "source_location": "L823",
       "_origin": "ast",
       "id": "context_typography",
-      "community": 33,
+      "community": 0,
       "norm_label": "typography"
     },
     {
@@ -2192,7 +2182,7 @@
       "source_location": "L840",
       "_origin": "ast",
       "id": "context_colors",
-      "community": 33,
+      "community": 0,
       "norm_label": "colors"
     },
     {
@@ -2202,7 +2192,7 @@
       "source_location": "L867",
       "_origin": "ast",
       "id": "context_spacing",
-      "community": 33,
+      "community": 0,
       "norm_label": "spacing"
     },
     {
@@ -2212,7 +2202,7 @@
       "source_location": "L874",
       "_origin": "ast",
       "id": "context_shadows",
-      "community": 33,
+      "community": 0,
       "norm_label": "shadows"
     },
     {
@@ -3176,16 +3166,6 @@
       "confidence_score": 1.0,
       "source": "setup_cloudflare_pages",
       "target": "users_mat_documents_code_secunit_io_setup_cloudflare_pages_sh__entry"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/Footer.astro",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "components_footer",
-      "target": "components_footer_icons",
-      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -5503,5 +5483,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5ed501f709a07b2f5d7c6fba2b360638e7fccfe6"
+  "built_at_commit": "1f4cf3db52f1a1bdbef556f1838fa08083f24e24"
 }

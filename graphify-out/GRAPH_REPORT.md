@@ -1,16 +1,16 @@
 # Graph Report - secunit.io  (2026-07-20)
 
 ## Corpus Check
-- 49 files · ~171,741 words
+- 49 files · ~171,714 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 286 nodes · 263 edges · 34 communities (31 shown, 3 thin omitted)
+- 285 nodes · 262 edges · 33 communities (30 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5ed501f7`
+- Built from commit: `1f4cf3db`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,7 +43,6 @@
 - [[_COMMUNITY_Community 26|Community 26]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
-- [[_COMMUNITY_Community 33|Community 33]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `CONTEXT.md - secunit, llc Website` - 20 edges
@@ -63,15 +62,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (34 total, 3 thin omitted)
+## Communities (33 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (37): Active/Used Components, Adding a New Component, Adding a New Page, Adding New Blog Post, 🔌 API Routes, 🏗 Architecture, Branch Strategy, Build Process (+29 more)
+Nodes (36): Accessibility, Active/Used Components, Adding New Blog Post, 🔌 API Routes, 🏗 Architecture, Build Process, Cleanup Items, Colors (+28 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.10
-Nodes (11): @/components/Footer.astro, icons, @/components/Header.astro, navConfig, NavItem, @/layouts/Base.astro, canonicalURL, jsonLd (+3 more)
+Cohesion: 0.07
+Nodes (16): details, string, identityProviders, redirectUrl, @/components/Footer.astro, @/components/Header.astro, navConfig, NavItem (+8 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.07
@@ -107,7 +106,7 @@ Nodes (10): compilerOptions, baseUrl, paths, exclude, extends, include, @/*, @co
 
 ### Community 10 - "Community 10"
 Cohesion: 0.25
-Nodes (6): details, string, identityProviders, redirectUrl, @/layouts/AccessLayout.astro, @/styles/global.css
+Nodes (8): Adding a New Component, Adding a New Page, Branch Strategy, Dev Environment, 💻 Development Workflow, Local Development, Managing D1 Database, Testing Contact Form Locally
 
 ### Community 11 - "Community 11"
 Cohesion: 0.25
@@ -154,20 +153,16 @@ Cohesion: 0.40
 Nodes (4): Copy voice, Core guardrails, Scoring rubric (1-5), secunit, llc brand guardrails
 
 ### Community 22 - "Community 22"
-Cohesion: 0.40
-Nodes (5): Accessibility, ✨ Key Features, Mobile Responsive, Performance, SEO Optimization
+Cohesion: 0.50
+Nodes (4): Build Process, 🚀 Deployment, Docker Build, Fly.io
 
 ### Community 31 - "Community 31"
-Cohesion: 0.40
-Nodes (5): Cleanup Items, ✅ Completed Cleanup (Dec 17, 2025), Content TODOs, Feature TODOs, 🐛 Known Issues & TODOs
+Cohesion: 0.50
+Nodes (4): Custom CSS Classes, Dark-only theme, 🎨 Styling System, Tailwind Configuration
 
 ### Community 32 - "Community 32"
 Cohesion: 0.50
 Nodes (3): Cloudflare custom error pages, Dashboard mapping, Install
-
-### Community 33 - "Community 33"
-Cohesion: 0.40
-Nodes (5): Colors, 🎯 Design System, Shadows, Spacing, Typography
 
 ## Knowledge Gaps
 - **201 isolated node(s):** `name`, `version`, `description`, `private`, `type` (+196 more)
@@ -177,17 +172,17 @@ Nodes (5): Colors, 🎯 Design System, Shadows, Spacing, Typography
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CONTEXT.md - secunit, llc Website` connect `Community 0` to `Community 33`, `Community 11`, `Community 12`, `Community 15`, `Community 16`, `Community 22`, `Community 31`?**
+- **Why does `CONTEXT.md - secunit, llc Website` connect `Community 0` to `Community 10`, `Community 11`, `Community 12`, `Community 15`, `Community 16`, `Community 22`, `Community 31`?**
   _High betweenness centrality (0.072) - this node is a cross-community bridge._
+- **Why does `💻 Development Workflow` connect `Community 10` to `Community 0`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `🔧 Configuration Files` connect `Community 11` to `Community 0`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `description` to the rest of the system?**
   _201 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._

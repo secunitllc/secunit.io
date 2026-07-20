@@ -1254,10 +1254,9 @@
     display: grid;
     grid-template-columns:
       minmax(19.5rem, 1.8fr)
-      minmax(8.5rem, 0.95fr)
-      minmax(9rem, 1fr)
-      minmax(7rem, 0.8fr)
-      minmax(7.5rem, 0.9fr);
+      minmax(9.5rem, 1fr)
+      minmax(8rem, 0.8fr)
+      minmax(8rem, 0.9fr);
     gap: clamp(var(--space-xs), 1.2vw, var(--space-md));
     padding-block-start: var(--space-xl);
     border-top: 1px solid var(--border);
@@ -1339,11 +1338,6 @@
   .site-footer__kicker {
     font-size: 0.6875rem;
     letter-spacing: 0.06em;
-  }
-
-  .site-footer__col--site ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: var(--space-md);
   }
 
   .site-footer__col a {
@@ -1452,9 +1446,6 @@
     white-space: normal;
   }
 
-  .site-footer__col--site ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 48rem) {
@@ -1518,10 +1509,6 @@
 
   .site-footer__col a span {
     white-space: normal;
-  }
-
-  .site-footer__col--site ul {
-    grid-template-columns: minmax(0, 1fr);
   }
 
   .bento-tile--stat {
