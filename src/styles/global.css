@@ -1234,9 +1234,9 @@
 
   /* Footer */
   .site-footer {
-    width: min(100%, var(--page-max));
+    width: min(100%, 92rem);
     margin-inline: auto;
-    padding: var(--space-3xl) var(--page-gutter) var(--space-2xl);
+    padding: var(--space-3xl) clamp(1rem, 2.5vw, 2rem) var(--space-2xl);
     border-top: 1px solid var(--border);
   }
 
@@ -1252,8 +1252,13 @@
 
   .site-footer__directory {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: clamp(var(--space-lg), 4vw, var(--space-2xl));
+    grid-template-columns:
+      minmax(19.5rem, 1.8fr)
+      minmax(8.5rem, 0.95fr)
+      minmax(9rem, 1fr)
+      minmax(7rem, 0.8fr)
+      minmax(7.5rem, 0.9fr);
+    gap: clamp(var(--space-xs), 1.2vw, var(--space-md));
     padding-block-start: var(--space-xl);
     border-top: 1px solid var(--border);
   }
@@ -1267,10 +1272,8 @@
   }
 
   .site-footer__brand {
-    grid-column: 1 / -1;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
     align-items: start;
-    column-gap: var(--space-xl);
   }
 
   .site-footer__brand .site-wordmark {
@@ -1280,7 +1283,7 @@
   .site-footer__brand > p:not(.site-footer__copyright) {
     grid-column: 1;
     margin: 0;
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
     white-space: nowrap;
   }
 
@@ -1289,10 +1292,10 @@
   }
 
   .site-footer__copyright {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-    align-self: end;
-    justify-self: end;
+    grid-column: 1;
+    grid-row: auto;
+    align-self: auto;
+    justify-self: start;
     margin: 0;
     color: var(--muted-foreground);
     font-family: var(--font-outlier);
@@ -1333,6 +1336,11 @@
     list-style: none;
   }
 
+  .site-footer__kicker {
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+  }
+
   .site-footer__col--site ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: var(--space-md);
@@ -1344,7 +1352,7 @@
     min-height: 2.75rem;
     align-items: center;
     gap: var(--space-sm);
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
   }
 
   .site-footer__col a span {

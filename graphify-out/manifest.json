@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "src/components/Footer.astro": {
-    "mtime": 1784556228.0222688,
-    "ast_hash": "ddc259a274b6546032bad47bcb993778",
+    "mtime": 1784556429.756001,
+    "ast_hash": "25f1d9eb59c7991415f8ef83ff227e8e",
     "semantic_hash": ""
   },
   "src/components/Header.astro": {
@@ -550,8 +550,18 @@
     "semantic_hash": ""
   },
   "docs/cloudflare-error-pages.md": {
-    "mtime": 1784555118.4123871,
-    "ast_hash": "e6eacfad9dff4647fd75ebed7403a077",
+    "mtime": 1784557021.7801197,
+    "ast_hash": "11458ba363904bbdfc886abd26e68e3b",
+    "semantic_hash": ""
+  },
+  "public/cloudflare-errors/interactive-challenge.html": {
+    "mtime": 1784557021.7801583,
+    "ast_hash": "50ba7aba81f711dc57a0c85b94a344b0",
+    "semantic_hash": ""
+  },
+  "public/cloudflare-errors/non-interactive-challenge.html": {
+    "mtime": 1784557021.7801366,
+    "ast_hash": "e78c377254e292bdaa4d37b3128316f8",
     "semantic_hash": ""
   }
 }
