@@ -1252,7 +1252,7 @@
 
   .site-footer__directory {
     display: grid;
-    grid-template-columns: auto auto minmax(10rem, 1fr) auto minmax(10rem, 1.1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: clamp(var(--space-lg), 4vw, var(--space-2xl));
     padding-block-start: var(--space-xl);
     border-top: 1px solid var(--border);
@@ -1267,12 +1267,37 @@
   }
 
   .site-footer__brand {
-    min-width: max-content;
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    column-gap: var(--space-xl);
   }
 
-  .site-footer__brand p {
+  .site-footer__brand .site-wordmark {
+    grid-column: 1;
+  }
+
+  .site-footer__brand > p:not(.site-footer__copyright) {
+    grid-column: 1;
     margin: 0;
     font-size: var(--text-sm);
+    white-space: nowrap;
+  }
+
+  .site-footer__social {
+    grid-column: 1;
+  }
+
+  .site-footer__copyright {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: end;
+    justify-self: end;
+    margin: 0;
+    color: var(--muted-foreground);
+    font-family: var(--font-outlier);
+    font-size: 0.6875rem;
+    white-space: nowrap;
   }
 
   .site-footer__brand p a,
@@ -1322,6 +1347,10 @@
     font-size: var(--text-sm);
   }
 
+  .site-footer__col a span {
+    white-space: nowrap;
+  }
+
   .site-footer__col img,
   .site-footer__icon {
     width: 1.125rem;
@@ -1366,20 +1395,6 @@
       opacity: 1;
     }
   }
-
-  .site-footer__copyright {
-    color: var(--muted-foreground);
-    font-family: var(--font-outlier);
-    font-size: 0.6875rem;
-  }
-
-  @media (min-width: 60.01rem) {
-    .site-footer__brand p,
-    .site-footer__copyright,
-    .site-footer__col a span {
-      white-space: nowrap;
-    }
-  }
 }
 
 @media (max-width: 60rem) {
@@ -1415,6 +1430,22 @@
 
   .site-footer__brand {
     grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .site-footer__brand > p:not(.site-footer__copyright) {
+    white-space: normal;
+  }
+
+  .site-footer__copyright {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .site-footer__col--site ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1474,6 +1505,14 @@
   .bento-stats,
   .tech-grid,
   .site-footer__directory {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .site-footer__col a span {
+    white-space: normal;
+  }
+
+  .site-footer__col--site ul {
     grid-template-columns: minmax(0, 1fr);
   }
 
