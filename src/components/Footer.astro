@@ -1,5 +1,11 @@
 ---
 const year = new Date().getFullYear();
+const iconify = "https://api.iconify.design";
+const icons = {
+  audit: `${iconify}/catppuccin/folder-audit.svg`,
+  github: `${iconify}/line-md/github.svg?color=%23D0D5DB`,
+  securityTxt: `${iconify}/line-md/text-box-multiple.svg?color=%23D0D5DB`,
+};
 ---
 
 <footer class="site-footer">
@@ -97,57 +103,101 @@ const year = new Date().getFullYear();
       </ul>
     </section>
 
-    <div class="site-footer__stack">
-      <section class="site-footer__col" aria-labelledby="footer-site">
-        <p id="footer-site" class="site-footer__kicker">[ Site ]</p>
-        <ul>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/technologies">Technologies</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Let's Talk</a></li>
-          <li><a href="/privacy">Privacy</a></li>
-          <li><a href="/terms">Terms</a></li>
-          <li><a href="/security">Security</a></li>
-        </ul>
-      </section>
+    <section class="site-footer__col" aria-labelledby="footer-site">
+      <p id="footer-site" class="site-footer__kicker">[ Site ]</p>
+      <ul>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/technologies">Technologies</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Let's Talk</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/terms">Terms</a></li>
+        <li><a href="/security">Security</a></li>
+      </ul>
+    </section>
 
-      <section class="site-footer__col" aria-labelledby="footer-tools">
-        <p id="footer-tools" class="site-footer__kicker">[ Tools ]</p>
-        <ul>
-          <li>
-            <a href="https://srex.secunit.io" rel="noopener">
-              <span class="site-footer__tag">SRE</span>
-              <span>Reliability Audit</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </div>
+    <section class="site-footer__col" aria-labelledby="footer-tools">
+      <p id="footer-tools" class="site-footer__kicker">[ Tools ]</p>
+      <ul>
+        <li>
+          <a href="https://srex.secunit.io" rel="noopener">
+            <img src={icons.audit} alt="" width="18" height="18" loading="lazy" decoding="async" />
+            <span>Reliability Audit</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
     <section class="site-footer__col" aria-labelledby="footer-security">
       <p id="footer-security" class="site-footer__kicker">[ Security ]</p>
       <ul>
         <li>
           <a href="https://secunit.io/security/ecc.txt" rel="noopener">
-            <span class="site-footer__tag">GPG</span>
+            {
+              /* ponytail: itshover shield-check is React/Motion-only; paths + CSS hover recreate it */
+            }
+            <svg
+              class="site-footer__icon site-footer__icon--shield"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                class="site-footer__icon-body"
+                d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"
+              ></path>
+              <path class="site-footer__icon-check" d="M15 19l2 2l4 -4"></path>
+            </svg>
             <span>ECC public key</span>
           </a>
         </li>
         <li>
           <a href="https://secunit.io/security/rsa.txt" rel="noopener">
-            <span class="site-footer__tag">GPG</span>
+            <svg
+              class="site-footer__icon site-footer__icon--shield"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                class="site-footer__icon-body"
+                d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06"
+              ></path>
+              <path class="site-footer__icon-check" d="M15 19l2 2l4 -4"></path>
+            </svg>
             <span>RSA public key</span>
           </a>
         </li>
         <li>
           <a href="/.well-known/security.txt">
-            <span class="site-footer__tag">TXT</span>
+            <img
+              src={icons.securityTxt}
+              alt=""
+              width="18"
+              height="18"
+              loading="lazy"
+              decoding="async"
+            />
             <span>security.txt</span>
           </a>
         </li>
         <li>
           <a href="https://github.com/x86txt" rel="me noopener">
-            <span class="site-footer__tag">GH</span>
+            <img src={icons.github} alt="" width="18" height="18" loading="lazy" decoding="async" />
             <span>x86txt</span>
           </a>
         </li>

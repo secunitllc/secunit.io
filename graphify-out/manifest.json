@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "src/components/Footer.astro": {
-    "mtime": 1784554196.6528044,
-    "ast_hash": "2dbb83a05d55873ce4d6ce40503b3498",
+    "mtime": 1784556228.0222688,
+    "ast_hash": "ddc259a274b6546032bad47bcb993778",
     "semantic_hash": ""
   },
   "src/components/Header.astro": {
@@ -515,43 +515,43 @@
     "semantic_hash": ""
   },
   "public/cloudflare-errors/1000-errors.html": {
-    "mtime": 1784554898.572399,
+    "mtime": 1784555118.41787,
     "ast_hash": "b86877ecae59f024e32993fa4a6fc9be",
     "semantic_hash": ""
   },
   "public/cloudflare-errors/500-errors.html": {
-    "mtime": 1784554873.0817277,
+    "mtime": 1784555118.412402,
     "ast_hash": "63fb72356a8bc389ff6f1f0e7e2d29ca",
     "semantic_hash": ""
   },
   "public/cloudflare-errors/country-challenge.html": {
-    "mtime": 1784554853.156654,
+    "mtime": 1784555118.41797,
     "ast_hash": "e11d4f998f26209eec4f18495b9646b2",
     "semantic_hash": ""
   },
   "public/cloudflare-errors/ip-block.html": {
-    "mtime": 1784554933.8180208,
+    "mtime": 1784555118.4210556,
     "ast_hash": "3e0617e67f12c1c6b0185f4070c169e9",
     "semantic_hash": ""
   },
   "public/cloudflare-errors/managed-challenge.html": {
-    "mtime": 1784554862.3962665,
+    "mtime": 1784555118.4124503,
     "ast_hash": "64d434b8d675a9373c4ddcd9e2060d6b",
     "semantic_hash": ""
   },
   "public/cloudflare-errors/rate-limit.html": {
-    "mtime": 1784554906.6573348,
+    "mtime": 1784555118.4124007,
     "ast_hash": "b86245d1ed91d8db9de8b6ae82e9434d",
     "semantic_hash": ""
   },
   "public/cloudflare-errors/waf-block.html": {
-    "mtime": 1784554933.843661,
+    "mtime": 1784555118.4210446,
     "ast_hash": "477e88c3d3ad70f30a607a83ab3bc754",
     "semantic_hash": ""
   },
   "docs/cloudflare-error-pages.md": {
-    "mtime": 1784555066.7664945,
-    "ast_hash": "90681cffb1d13630b6e5e3e6cbd87bfd",
+    "mtime": 1784555118.4123871,
+    "ast_hash": "e6eacfad9dff4647fd75ebed7403a077",
     "semantic_hash": ""
   }
 }

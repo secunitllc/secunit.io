@@ -1252,23 +1252,18 @@
 
   .site-footer__directory {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1.35fr) repeat(4, minmax(0, 1fr));
     gap: clamp(var(--space-lg), 4vw, var(--space-2xl));
     padding-block-start: var(--space-xl);
     border-top: 1px solid var(--border);
   }
 
   .site-footer__brand,
-  .site-footer__col,
-  .site-footer__stack {
+  .site-footer__col {
     display: grid;
     gap: var(--space-md);
     align-content: start;
     min-width: 0;
-  }
-
-  .site-footer__stack {
-    gap: var(--space-xl);
   }
 
   .site-footer__brand p {
@@ -1319,24 +1314,49 @@
     font-size: var(--text-sm);
   }
 
-  .site-footer__col img {
+  .site-footer__col img,
+  .site-footer__icon {
     width: 1.125rem;
     height: 1.125rem;
     flex: 0 0 auto;
     object-fit: contain;
   }
 
-  .site-footer__tag {
-    display: inline-flex;
-    min-width: 2.25rem;
-    justify-content: center;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-pill);
-    color: var(--muted-foreground);
-    padding-inline: var(--space-2xs);
-    font-family: var(--font-outlier);
-    font-size: 0.6875rem;
-    line-height: 1.6;
+  .site-footer__icon {
+    color: var(--color-ink-2);
+    overflow: visible;
+  }
+
+  .site-footer__icon-body {
+    transform-origin: 50% 50%;
+    transition: transform var(--dur-short) var(--ease-out);
+  }
+
+  .site-footer__icon-check {
+    stroke-dasharray: 12;
+    stroke-dashoffset: 0;
+    transition:
+      stroke-dashoffset 0.3s var(--ease-out),
+      opacity 0.3s var(--ease-out);
+  }
+
+  .site-footer__col a:hover .site-footer__icon-body,
+  .site-footer__col a:focus-visible .site-footer__icon-body {
+    transform: scale(1.05);
+  }
+
+  .site-footer__col a:hover .site-footer__icon-check,
+  .site-footer__col a:focus-visible .site-footer__icon-check {
+    stroke-dashoffset: 12;
+    opacity: 0;
+    animation: footer-shield-check 0.3s var(--ease-out) 0.05s forwards;
+  }
+
+  @keyframes footer-shield-check {
+    to {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
   }
 
   .site-footer__copyright {
