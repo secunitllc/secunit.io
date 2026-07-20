@@ -12,7 +12,7 @@ const { title, description, kicker, tone = "default" } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="arcbox-root">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -21,32 +21,21 @@ const { title, description, kicker, tone = "default" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/images/brand/icon.png" />
 
-    <title>{title} | Secunit</title>
+    <title>{title} | secunit, llc</title>
     <meta name="description" content={description} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&family=Overpass+Mono:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <script is:inline>
-      (function () {
-        const t = localStorage.getItem("theme") || "system";
-        const d =
-          t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
-        if (d) document.documentElement.classList.add("dark");
-      })();
-    </script>
   </head>
   <body class="access-body">
     <main class="access-shell">
-      <a
-        href="https://secunit.io"
-        class="site-wordmark access-brand"
-        aria-label="secunit, llc home"
-      ><span>secunit</span>, llc</a>
+      <a href="https://secunit.io" class="site-wordmark access-brand" aria-label="secunit, llc home"
+        ><span>secunit</span>, llc</a
+      >
 
       <div class="access-card" data-tone={tone}>
         <p class="home-kicker access-kicker">[ {kicker} ]</p>
@@ -61,7 +50,7 @@ const { title, description, kicker, tone = "default" } = Astro.props;
     <style>
       .access-body {
         display: flex;
-        min-height: 100vh;
+        min-height: 100dvh;
         align-items: center;
         justify-content: center;
         background: var(--color-paper);
@@ -88,7 +77,6 @@ const { title, description, kicker, tone = "default" } = Astro.props;
         border: var(--rule-hair) solid var(--color-rule);
         border-radius: var(--radius-card);
         background: var(--color-surface);
-        box-shadow: var(--shadow-bento);
         padding: var(--space-xl);
       }
 
@@ -97,7 +85,7 @@ const { title, description, kicker, tone = "default" } = Astro.props;
       }
 
       .access-kicker {
-        color: var(--color-muted);
+        color: var(--color-accent);
       }
 
       .access-card[data-tone="danger"] .access-kicker {

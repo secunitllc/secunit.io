@@ -127,7 +127,6 @@ secunit-website/
 │   ├── components/
 │   │   ├── Header.astro         # Main navigation
 │   │   ├── Footer.astro         # Site footer
-│   │   ├── ThemeToggle.astro    # Dark mode toggle
 │   │   ├── about/               # About page components
 │   │   ├── hero/                # Hero section variants
 │   │   ├── faq/                 # FAQ accordion components
@@ -253,16 +252,14 @@ Content goes here...
 
 ### Tailwind Configuration
 
-**Theme Colors** (defined in `src/styles/global.css`):
+**Theme Colors** (defined in `src/styles/tokens.css`):
 ```css
-/* Light mode */
---color-primary: 17 96 232        /* #1160e8 - blue */
---color-secondary: 247 147 30     /* #f7931e - orange */
---color-body: 74 74 74            /* #4a4a4a */
-
-/* Dark mode */
---color-darkmode-primary: 56 139 255
---color-darkmode-body: 200 200 200
+--background: #020202
+--card: #070707
+--foreground: #fafafa
+--muted-foreground: #8f8f8f
+--border: #292929
+--accent: #ed7940
 ```
 
 ### Custom CSS Classes
@@ -284,12 +281,11 @@ Content goes here...
 **Utility Classes:**
 - `.text-gradient` - Gradient text effect
 
-### Dark Mode
+### Dark-only theme
 
-- Implementation: Tailwind's `class` strategy
-- Toggle: Floating button (bottom-right) via `ThemeToggle.astro`
-- Storage: `localStorage` with system preference fallback
-- Prevention: Inline script in `<head>` prevents flash
+- Implementation: native `color-scheme: dark` and semantic CSS tokens
+- Typography: IBM Plex Sans + IBM Plex Mono
+- No theme toggle, client-side theme script, or preference storage
 
 ---
 
@@ -738,7 +734,6 @@ wrangler d1 execute secunit-contacts --command="SELECT * FROM contacts" --json >
 **Layout Components:**
 - `Header.astro` - Main navigation with mobile menu
 - `Footer.astro` - Site footer with links and social
-- `ThemeToggle.astro` - Dark mode toggle button
 
 **Page Sections:**
 - `hero/` - Hero section variants

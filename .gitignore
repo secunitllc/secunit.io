@@ -28,5 +28,11 @@ pnpm-debug.log*
 .vercel
 .wrangler
 
-# antigravity skils override
+# antigravity skills override
 .agent/
+
+# local design reference (contains captured third-party artifacts)
+extractdesign/
+
+# generated graph parser cache
+graphify-out/cache/ast/

@@ -4,89 +4,84 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 
 interface Props {
- title: string;
- description?: string;
- ogImage?: string;
+  title: string;
+  description?: string;
+  ogImage?: string;
 }
 
-const { 
- title, 
- description = "Enterprise-grade security, DevOps, SRE, and AI consulting for small and mid-sized businesses.",
- ogImage = "/images/og-image.png"
+const {
+  title,
+  description = "Enterprise-grade security, DevOps, SRE, and AI consulting for small and mid-sized businesses.",
+  ogImage = "/images/og-image.png",
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const jsonLd = {
- "@context": "https://schema.org",
- "@type": "ProfessionalService",
- name: "secunit, llc",
- url: Astro.site?.toString(),
- description:
-  "Enterprise-grade security, DevOps, SRE, and AI consulting for small and mid-sized businesses.",
- email: "hello@secunit.io",
- address: {
-  "@type": "PostalAddress",
-  addressLocality: "Charlotte",
-  addressRegion: "NC",
-  addressCountry: "US",
- },
- areaServed: "US",
- sameAs: ["https://linkedin.com/company/secunit-mercantile", "https://github.com/x86txt"],
- knowsAbout: [
-  "AI Enablement",
-  "FinOps & Cloud Cost Optimization",
-  "DevOps & Site Reliability Engineering",
-  "Virtual CISO & Information Security",
- ],
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "secunit, llc",
+  url: Astro.site?.toString(),
+  description:
+    "Enterprise-grade security, DevOps, SRE, and AI consulting for small and mid-sized businesses.",
+  email: "hello@secunit.io",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Charlotte",
+    addressRegion: "NC",
+    addressCountry: "US",
+  },
+  areaServed: "US",
+  sameAs: ["https://linkedin.com/company/secunit-mercantile", "https://github.com/x86txt"],
+  knowsAbout: [
+    "AI Enablement",
+    "FinOps & Cloud Cost Optimization",
+    "DevOps & Site Reliability Engineering",
+    "Virtual CISO & Information Security",
+  ],
 };
 ---
 
 <!doctype html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <link rel="icon" type="image/png" href="/images/brand/icon.png" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="apple-touch-icon" href="/images/brand/icon.png" />
-  <link rel="canonical" href={canonicalURL} />
-  
-  <title>{title} | secunit, llc</title>
-  <meta name="description" content={description} />
-  
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content={canonicalURL} />
-  <meta property="og:title" content={`${title} | secunit, llc`} />
-  <meta property="og:description" content={description} />
-  <meta property="og:image" content={new URL(ogImage, Astro.site)} />
-  
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content={canonicalURL} />
-  <meta property="twitter:title" content={`${title} | secunit, llc`} />
-  <meta property="twitter:description" content={description} />
-  <meta property="twitter:image" content={new URL(ogImage, Astro.site)} />
-  
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&family=Overpass+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  
-  <script is:inline>
-    (function () {
-      const t = localStorage.getItem('theme') || 'system';
-      const d = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
-      if (d) document.documentElement.classList.add('dark');
-    })();
-  </script>
- </head>
- <body class="min-h-screen flex flex-col">
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <Header />
-  <main id="main-content" class="flex-1" tabindex="-1">
-   <slot />
-  </main>
-  <Footer />
- </body>
+<html lang="en" class="arcbox-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" type="image/png" href="/images/brand/icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/images/brand/icon.png" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <title>{title} | secunit, llc</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${title} | secunit, llc`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={`${title} | secunit, llc`} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(ogImage, Astro.site)} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <Header />
+    <main id="main-content" class="flex-1" tabindex="-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>

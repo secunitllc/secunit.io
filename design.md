@@ -1,54 +1,63 @@
 # Design — secunit, llc
 
-Contemporary minimalist system. Every page reads this file before emitting code.
+Dark technical marketing system derived from the local `extractdesign` reference.
 
-## Genre
-contemporary — bento grids, gradient accent, glass nav, dark mode
+## Direction
 
-## Macrostructure
-- **Home:** bento hero (copy tile + 2×2 stat grid) → service bento → step bento → client chips → gradient CTA tile
-- **Content pages** (services, technologies, about): page-header + split sections; cards use bento surfaces
-- **Utility pages** (contact, privacy, terms, security): centered column (`.prose-page`, `.contact-*`)
-- **Access pages:** standalone card shell (`AccessLayout`)
+- Matte near-black canvas with slightly lighter panels.
+- IBM Plex Sans for display/body; IBM Plex Mono for labels and technical metadata.
+- Burnt orange is the only interaction and emphasis color.
+- Defined edges, low radius, minimal shadow, no gradients or glass effects.
+- Dense information hierarchy without reducing 44px control targets.
 
-## Theme
-Token source: [src/styles/tokens.css](src/styles/tokens.css)
+## Structure
 
-| Token | Light | Role |
-|-------|-------|------|
-| `--color-primary` | `#C800DF` | Brand magenta |
-| `--color-secondary` | `#E60076` | Accent pink |
-| `--color-surface` | `#FFFFFF` | Bento tile fill |
-| `--color-ink` | `#111827` | Body text |
-| `--gradient-brand` | primary → secondary | CTAs, accent tiles |
+- **Home:** open split hero + compact proof grid → bordered service modules → numbered workflow → client registry → restrained CTA band.
+- **Services:** open page header → two-column service rows with operational callouts → compact engagement grid.
+- **Technologies:** registry rows with category metadata and dense full-color logo chips.
+- **About:** compact image rail + biography/logbook content → values grid.
+- **Contact:** open header → trust panel → single bordered form panel → contact metadata.
+- **Legal/security:** narrow document column with mono metadata and ruled sections.
+- **Access:** standalone bordered card using the same dark tokens.
+- **404:** sanctioned DOS terminal one-off, recolored and made responsive.
+
+## Tokens
+
+Source: [src/styles/tokens.css](src/styles/tokens.css)
+
+| Token                | Value     | Role                         |
+| -------------------- | --------- | ---------------------------- |
+| `--background`       | `#020202` | Site canvas                  |
+| `--card`             | `#070707` | Panels and modules           |
+| `--secondary`        | `#1B1B1B` | Controls and recessed fields |
+| `--border`           | `#292929` | Structural rules             |
+| `--foreground`       | `#FAFAFA` | Primary text                 |
+| `--muted-foreground` | `#8F8F8F` | Secondary text               |
+| `--accent`           | `#ED7940` | CTA, focus, active state     |
 
 ## Typography
-- **Display & body:** Jost (400–800)
-- **Mono / kickers:** Overpass Mono
-- **Scale anchor:** `--text-display` = clamp(2.75rem … 4.75rem)
 
-## Spacing & surfaces
-- Named scale: `--space-3xs` … `--space-4xl`
-- Bento radius: `--radius-card` = 1.25rem
-- Shadow: `--shadow-bento`
-- Page shell: `--page-max` 76rem, `--page-gutter` clamp(1rem, 4vw, 3.5rem)
+- **Display/body:** IBM Plex Sans (400–700).
+- **Labels/metadata:** IBM Plex Mono (400–700).
+- **Hero ceiling:** `--text-display` caps at `3rem`.
+- Labels are uppercase, compact, and reserved for navigation or technical metadata.
 
-## Motion
-- Hover: −1px lift on tiles/buttons; border brightens toward primary
-- Focus: 3px `--color-focus` ring, 4px offset
-- Reduced motion: global 150ms clamp
+## Surfaces and motion
 
-## CTA voice
-- Primary: gradient pill (`.home-button--primary`)
-- Secondary: surface pill with hairline border
-- Copy: short imperatives — "Let's Talk", "View Services"
+- Card radius: `1rem`; control radius: `0.5rem`; pills only for compact actions/tags.
+- Borders define structure. Shadows are limited to a subtle 1px depth cue.
+- Interaction motion is a 100–150ms state change or 1px button movement.
+- `prefers-reduced-motion` disables decorative motion and the About photo rotation.
 
-## Shared across pages
-- Gradient wordmark (`Secunit` in brand gradient)
-- Bento tiles: surface + border + shadow
-- Magenta kickers (`.home-kicker`)
-- Dark mode via `.dark` on `<html>`
+## Accessibility
 
-## May differ
-- Home uses full bento macrostructure; inner pages reuse tile styling on existing components
-- 404 remains a sanctioned one-off (DOS terminal)
+- Orange focus rings remain visible against all surfaces.
+- Interactive controls retain at least 44×44px targets.
+- The mobile menu exposes `aria-expanded`; current routes use `aria-current="page"`.
+- Full-color technology logos keep readable text labels.
+- Dark-only presentation uses `color-scheme: dark`; there is no theme preference or client storage.
+
+## Exceptions
+
+- The secure file-share template is standalone but uses the same tokens and fonts.
+- The 404 page keeps its DOS boot sequence as intentional product personality.

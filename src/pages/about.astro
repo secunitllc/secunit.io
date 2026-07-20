@@ -19,181 +19,235 @@ const mattPhotos = [
 ];
 ---
 
-<Base 
- title="About" 
- description="Meet the team behind secunit, llc. Senior engineers with 20+ years of experience in cloud, security, and reliability."
+<Base
+  title="About"
+  description="Meet the team behind secunit, llc. Senior engineers with 20+ years of experience in cloud, security, and reliability."
 >
- <section class="page-header" aria-labelledby="about-title">
-  <div class="page-header__copy">
-   <p class="home-kicker">Meet the Team</p>
-   <h1 id="about-title">Built by Engineers Who've Been There</h1>
-   <p>
-    We started secunit, llc because small businesses deserve access to the same caliber of expertise that enterprises take for granted.
-   </p>
-   <div class="page-header__stats">
-    <span class="page-header__stat">40+ Combined Years</span>
-    <span class="page-header__stat">CISSP Certified</span>
-    <span class="page-header__stat">Enterprise Background</span>
-   </div>
-  </div>
- </section>
+  <section class="page-header" aria-labelledby="about-title">
+    <div class="page-header__copy">
+      <p class="home-kicker">Meet the Team</p>
+      <h1 id="about-title">Built by Engineers Who've Been There</h1>
+      <p>
+        We started secunit, llc because small businesses deserve access to the same caliber of
+        expertise that enterprises take for granted.
+      </p>
+      <div class="page-header__stats">
+        <span class="page-header__stat">40+ Combined Years</span>
+        <span class="page-header__stat">CISSP Certified</span>
+        <span class="page-header__stat">Enterprise Background</span>
+      </div>
+    </div>
+  </section>
 
- <!-- Matthew Evans -->
- <section class="profile-section" aria-labelledby="matt-name">
-  <div class="profile-sidebar">
-   <img
-    id="matt-photo"
-    class="profile-photo"
-    src={mattPhotos[0]}
-    alt="Matthew Evans"
-    width="480"
-    height="480"
-    data-photos={JSON.stringify(mattPhotos)}
-   />
-   <ul class="profile-sidebar__links">
-    <li>
-     <a
-      href="https://www.linkedin.com/in/sregeek/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="LinkedIn"
-     >
-      <img src={icons.linkedin} alt="" width="20" height="20" loading="lazy" decoding="async" />
-     </a>
-    </li>
-    <li>
-     <a
-      href="https://github.com/x86txt"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="GitHub"
-     >
-      <img src={icons.github} alt="" width="20" height="20" loading="lazy" decoding="async" data-dark-invert />
-     </a>
-    </li>
-    <li>
-     <a href="mailto:matthew@secunit.io" aria-label="Email">
-      <img src={icons.email} alt="" width="20" height="20" loading="lazy" decoding="async" />
-     </a>
-    </li>
-   </ul>
-  </div>
+  <!-- Matthew Evans -->
+  <section class="profile-section" aria-labelledby="matt-name">
+    <div class="profile-sidebar">
+      <img
+        id="matt-photo"
+        class="profile-photo"
+        src={mattPhotos[0]}
+        alt="Matthew Evans"
+        width="480"
+        height="480"
+        data-photos={JSON.stringify(mattPhotos)}
+      />
+      <ul class="profile-sidebar__links">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/sregeek/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img
+              src={icons.linkedin}
+              alt=""
+              width="20"
+              height="20"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/x86txt"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img
+              src={icons.github}
+              alt=""
+              width="20"
+              height="20"
+              loading="lazy"
+              decoding="async"
+              data-dark-invert
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:matthew@secunit.io" aria-label="Email">
+            <img src={icons.email} alt="" width="20" height="20" loading="lazy" decoding="async" />
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="profile-body">
-   <p class="profile-body__role">Founder, Chief Geek</p>
-   <h2 class="profile-body__name" id="matt-name">Matthew Evans</h2>
-   <p>
-    I've spent over two decades designing, securing, and operating production systems for organizations where failure wasn't an option. My work has spanned hands-on engineering and executive leadership roles at companies including The Hartford, Cyware, Prometheus Alternative Investments, and earlier in my career IBM, Wells Fargo, AIG, and Honda Aircraft.
-   </p>
-   <p>
-    My background sits at the intersection of security, reliability, and cloud engineering. I've led large-scale cloud migrations, built SOC2-aligned security and disaster recovery programs, and helped teams adopt DevOps and SRE practices that reduced outages, noise, and cost. I'm a CISSP and have served in acting CISO and director-level roles, working directly with executives while remaining deeply technical.
-   </p>
-   <div class="profile-body__quote">
-    <h3>Why I started secunit, llc</h3>
-    <p>
-     "Most small businesses don't need more tools or junior consultants — they need experienced guidance. I started secunit, llc to give small and mid-sized companies access to enterprise-level security, DevOps, and reliability expertise, without the overhead and pricing of large consulting firms. By operating as a fully remote, expatriate team, we deliver enterprise-grade outcomes at a cost that actually makes sense for growing businesses."
-    </p>
-   </div>
-   <div class="profile-badges">
-    <span class="profile-badge profile-badge--accent">CISSP (since 2017)</span>
-    <span class="profile-badge">20+ years experience</span>
-    <span class="profile-badge">AWS & GCP</span>
-    <span class="profile-badge">Kubernetes</span>
-   </div>
-  </div>
- </section>
+    <div class="profile-body">
+      <p class="profile-body__role">Founder, Chief Geek</p>
+      <h2 class="profile-body__name" id="matt-name">Matthew Evans</h2>
+      <p>
+        I've spent over two decades designing, securing, and operating production systems for
+        organizations where failure wasn't an option. My work has spanned hands-on engineering and
+        executive leadership roles at companies including The Hartford, Cyware, Prometheus
+        Alternative Investments, and earlier in my career IBM, Wells Fargo, AIG, and Honda Aircraft.
+      </p>
+      <p>
+        My background sits at the intersection of security, reliability, and cloud engineering. I've
+        led large-scale cloud migrations, built SOC2-aligned security and disaster recovery
+        programs, and helped teams adopt DevOps and SRE practices that reduced outages, noise, and
+        cost. I'm a CISSP and have served in acting CISO and director-level roles, working directly
+        with executives while remaining deeply technical.
+      </p>
+      <div class="profile-body__quote">
+        <h3>Why I started secunit, llc</h3>
+        <p>
+          "Most small businesses don't need more tools or junior consultants — they need experienced
+          guidance. I started secunit, llc to give small and mid-sized companies access to
+          enterprise-level security, DevOps, and reliability expertise, without the overhead and
+          pricing of large consulting firms. By operating as a fully remote, expatriate team, we
+          deliver enterprise-grade outcomes at a cost that actually makes sense for growing
+          businesses."
+        </p>
+      </div>
+      <div class="profile-badges">
+        <span class="profile-badge profile-badge--accent">CISSP (since 2017)</span>
+        <span class="profile-badge">20+ years experience</span>
+        <span class="profile-badge">AWS & GCP</span>
+        <span class="profile-badge">Kubernetes</span>
+      </div>
+    </div>
+  </section>
 
- <!-- Jason Dinges -->
- <section class="profile-section" aria-labelledby="jason-name">
-  <div class="profile-sidebar">
-   <img
-    class="profile-photo"
-    src="/people/jason-headshot.jpg"
-    alt="Jason Dinges"
-    width="480"
-    height="480"
-    loading="lazy"
-    decoding="async"
-   />
-   <ul class="profile-sidebar__links">
-    <li>
-     <a
-      href="https://www.linkedin.com/in/jason-dinges/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="LinkedIn"
-     >
-      <img src={icons.linkedin} alt="" width="20" height="20" loading="lazy" decoding="async" />
-     </a>
-    </li>
-    <li>
-     <a href="mailto:jason@secunit.io" aria-label="Email">
-      <img src={icons.email} alt="" width="20" height="20" loading="lazy" decoding="async" />
-     </a>
-    </li>
-   </ul>
-  </div>
+  <!-- Jason Dinges -->
+  <section class="profile-section" aria-labelledby="jason-name">
+    <div class="profile-sidebar">
+      <img
+        class="profile-photo"
+        src="/people/jason-headshot.jpg"
+        alt="Jason Dinges"
+        width="480"
+        height="480"
+        loading="lazy"
+        decoding="async"
+      />
+      <ul class="profile-sidebar__links">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jason-dinges/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img
+              src={icons.linkedin}
+              alt=""
+              width="20"
+              height="20"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:jason@secunit.io" aria-label="Email">
+            <img src={icons.email} alt="" width="20" height="20" loading="lazy" decoding="async" />
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="profile-body">
-   <p class="profile-body__role">Senior Engineer</p>
-   <h2 class="profile-body__name" id="jason-name">Jason Dinges</h2>
-   <p>
-    With over 20 years of experience, Jason brings deep expertise in cloud infrastructure, DevOps practices, and systems engineering to secunit, llc. With a strong focus on automation and reliability, he helps businesses build scalable, maintainable infrastructure that supports growth.
-   </p>
-   <p>
-    His expertise spans container orchestration, infrastructure as code, and modern deployment pipelines. Jason's practical approach to solving complex technical challenges makes him an invaluable partner for organizations looking to modernize their operations.
-   </p>
-   <div class="profile-badges">
-    <span class="profile-badge">20+ years experience</span>
-    <span class="profile-badge">Cloud Infrastructure</span>
-    <span class="profile-badge">DevOps & Automation</span>
-    <span class="profile-badge">Kubernetes</span>
-   </div>
-  </div>
- </section>
+    <div class="profile-body">
+      <p class="profile-body__role">Senior Engineer</p>
+      <h2 class="profile-body__name" id="jason-name">Jason Dinges</h2>
+      <p>
+        With over 20 years of experience, Jason brings deep expertise in cloud infrastructure,
+        DevOps practices, and systems engineering to secunit, llc. With a strong focus on automation
+        and reliability, he helps businesses build scalable, maintainable infrastructure that
+        supports growth.
+      </p>
+      <p>
+        His expertise spans container orchestration, infrastructure as code, and modern deployment
+        pipelines. Jason's practical approach to solving complex technical challenges makes him an
+        invaluable partner for organizations looking to modernize their operations.
+      </p>
+      <div class="profile-badges">
+        <span class="profile-badge">20+ years experience</span>
+        <span class="profile-badge">Cloud Infrastructure</span>
+        <span class="profile-badge">DevOps & Automation</span>
+        <span class="profile-badge">Kubernetes</span>
+      </div>
+    </div>
+  </section>
 
- <!-- Values -->
- <section class="values-section" aria-labelledby="values-title">
-  <h2 id="values-title">How We Work</h2>
-  <div class="values-grid">
-   <div class="value-card">
-    <h3>Senior Expertise, Always</h3>
-    <p>You'll never be handed off to junior staff. Every engagement is led by experienced engineers.</p>
-   </div>
-   <div class="value-card">
-    <h3>Clear Communication</h3>
-    <p>We explain technical concepts in plain language. You'll always understand what we're doing and why.</p>
-   </div>
-   <div class="value-card">
-    <h3>Practical, Not Perfect</h3>
-    <p>We focus on pragmatic solutions that fit your budget and timeline — not theoretical ideals.</p>
-   </div>
-   <div class="value-card">
-    <h3>Your Success Is Our Success</h3>
-    <p>We operate as an extension of your team, not outside consultants. Your wins are our wins.</p>
-   </div>
-  </div>
- </section>
+  <!-- Values -->
+  <section class="values-section" aria-labelledby="values-title">
+    <h2 id="values-title">How We Work</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <h3>Senior Expertise, Always</h3>
+        <p>
+          You'll never be handed off to junior staff. Every engagement is led by experienced
+          engineers.
+        </p>
+      </div>
+      <div class="value-card">
+        <h3>Clear Communication</h3>
+        <p>
+          We explain technical concepts in plain language. You'll always understand what we're doing
+          and why.
+        </p>
+      </div>
+      <div class="value-card">
+        <h3>Practical, Not Perfect</h3>
+        <p>
+          We focus on pragmatic solutions that fit your budget and timeline — not theoretical
+          ideals.
+        </p>
+      </div>
+      <div class="value-card">
+        <h3>Your Success Is Our Success</h3>
+        <p>
+          We operate as an extension of your team, not outside consultants. Your wins are our wins.
+        </p>
+      </div>
+    </div>
+  </section>
 
- <!-- CTA -->
- <section class="home-cta" aria-labelledby="about-cta-title">
-  <div>
-   <p class="home-kicker">Ready to get started?</p>
-   <h2 id="about-cta-title">Let's Work Together</h2>
-   <p>Ready to bring senior-level expertise to your team?</p>
-  </div>
-  <div class="home-actions">
-   <a class="home-button home-button--primary" href="/contact">Get in Touch</a>
-  </div>
- </section>
+  <!-- CTA -->
+  <section class="home-cta" aria-labelledby="about-cta-title">
+    <div>
+      <p class="home-kicker">Ready to get started?</p>
+      <h2 id="about-cta-title">Let's Work Together</h2>
+      <p>Ready to bring senior-level expertise to your team?</p>
+    </div>
+    <div class="home-actions">
+      <a class="home-button home-button--primary" href="/contact">Get in Touch</a>
+    </div>
+  </section>
 </Base>
 
 <script>
   // Cycle Matt's photo every 30s (no-op until more photos are added)
   const img = document.getElementById("matt-photo") as HTMLImageElement | null;
   const photos: string[] = JSON.parse(img?.dataset.photos ?? "[]");
-  if (img && photos.length > 1) {
-    photos.forEach((p) => { new Image().src = p; });
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (img && photos.length > 1 && !reducedMotion) {
+    photos.forEach((p) => {
+      new Image().src = p;
+    });
     img.style.transition = "opacity 0.4s ease";
     let i = 0;
     setInterval(() => {

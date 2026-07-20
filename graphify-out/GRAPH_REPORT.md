@@ -1,16 +1,16 @@
-# Graph Report - secunit.io  (2026-07-09)
+# Graph Report - secunit.io  (2026-07-20)
 
 ## Corpus Check
-- 49 files · ~149,864 words
+- 48 files · ~170,245 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 283 nodes · 261 edges · 33 communities (30 shown, 3 thin omitted)
+- 281 nodes · 259 edges · 32 communities (29 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `05096996`
+- Built from commit: `e025d9e9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,7 +41,6 @@
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
-- [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -49,11 +48,11 @@
 2. `contemporary Design System Skill (Universal)` - 14 edges
 3. `contemporary Design System Skill (Universal)` - 14 edges
 4. `@/layouts/Base.astro` - 13 edges
-5. `Design — secunit, llc` - 10 edges
-6. `💻 Development Workflow` - 8 edges
-7. `🔧 Configuration Files` - 8 edges
-8. `Dev Environment Setup` - 8 edges
-9. `secunit, llc Website` - 8 edges
+5. `💻 Development Workflow` - 8 edges
+6. `🔧 Configuration Files` - 8 edges
+7. `Dev Environment Setup` - 8 edges
+8. `secunit, llc Website` - 8 edges
+9. `Design — secunit, llc` - 8 edges
 10. `scripts` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -62,15 +61,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (33 total, 3 thin omitted)
+## Communities (32 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
-Nodes (39): Accessibility, Active/Used Components, Adding New Blog Post, 🔌 API Routes, 🏗 Architecture, `astro.config.mjs`, Build Process, Colors (+31 more)
+Nodes (36): Accessibility, Active/Used Components, Adding New Blog Post, 🔌 API Routes, 🏗 Architecture, Build Process, Cleanup Items, Colors (+28 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.11
-Nodes (10): @/components/Footer.astro, @/components/Header.astro, navConfig, NavItem, @/layouts/Base.astro, canonicalURL, jsonLd, icons (+2 more)
+Cohesion: 0.07
+Nodes (16): details, string, identityProviders, redirectUrl, @/components/Footer.astro, @/components/Header.astro, navConfig, NavItem (+8 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.07
@@ -89,8 +88,8 @@ Cohesion: 0.13
 Nodes (14): Accessibility, Brand, Component Rule Expectations, contemporary Design System Skill (Universal), Example Constraint Language, Expected Behavior, Guideline Authoring Workflow, Mission (+6 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.18
-Nodes (10): CTA voice, Design — secunit, llc, Genre, Macrostructure, May differ, Motion, Shared across pages, Spacing & surfaces (+2 more)
+Cohesion: 0.22
+Nodes (8): Accessibility, Design — secunit, llc, Direction, Exceptions, Structure, Surfaces and motion, Tokens, Typography
 
 ### Community 7 - "Community 7"
 Cohesion: 0.18
@@ -110,7 +109,7 @@ Nodes (8): Adding a New Component, Adding a New Page, Branch Strategy, Dev Envir
 
 ### Community 11 - "Community 11"
 Cohesion: 0.25
-Nodes (6): details, string, identityProviders, redirectUrl, @/layouts/AccessLayout.astro, @/styles/global.css
+Nodes (8): `astro.config.mjs`, 🔧 Configuration Files, `fly.dev.toml`, `fly.toml`, `starwind.config.json`, `tailwind.config.mjs`, `tsconfig.json`, `wrangler.toml`
 
 ### Community 12 - "Community 12"
 Cohesion: 0.29
@@ -154,35 +153,31 @@ Nodes (4): Copy voice, Core guardrails, Scoring rubric (1-5), secunit, llc brand
 
 ### Community 22 - "Community 22"
 Cohesion: 0.50
-Nodes (4): Custom CSS Classes, Dark Mode, 🎨 Styling System, Tailwind Configuration
-
-### Community 31 - "Community 31"
-Cohesion: 0.40
-Nodes (5): Cleanup Items, ✅ Completed Cleanup (Dec 17, 2025), Content TODOs, Feature TODOs, 🐛 Known Issues & TODOs
+Nodes (4): Custom CSS Classes, Dark-only theme, 🎨 Styling System, Tailwind Configuration
 
 ### Community 32 - "Community 32"
 Cohesion: 0.50
 Nodes (4): Build Process, 🚀 Deployment, Docker Build, Fly.io
 
 ## Knowledge Gaps
-- **201 isolated node(s):** `name`, `version`, `description`, `private`, `type` (+196 more)
+- **199 isolated node(s):** `name`, `version`, `description`, `private`, `type` (+194 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CONTEXT.md - secunit, llc Website` connect `Community 0` to `Community 32`, `Community 10`, `Community 12`, `Community 15`, `Community 16`, `Community 22`, `Community 31`?**
-  _High betweenness centrality (0.074) - this node is a cross-community bridge._
+- **Why does `CONTEXT.md - secunit, llc Website` connect `Community 0` to `Community 32`, `Community 10`, `Community 11`, `Community 12`, `Community 15`, `Community 16`, `Community 22`?**
+  _High betweenness centrality (0.075) - this node is a cross-community bridge._
 - **Why does `💻 Development Workflow` connect `Community 10` to `Community 0`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **Why does `🔧 Configuration Files` connect `Community 11` to `Community 0`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `description` to the rest of the system?**
-  _201 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _199 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._

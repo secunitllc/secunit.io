@@ -1,41 +1,59 @@
-/* Contemporary design tokens · secunit, llc
- * Skill: contemporary — Jost + Overpass Mono, magenta/pink accent, bento surfaces.
+/* ArcBox-derived dark tokens · secunit, llc
+ * Matte near-black surfaces, defined edges, and one burnt-orange accent.
  * Imported by global.css — single source of truth.
  */
 :root {
-  --color-primary: #c800df;
-  --color-secondary: #c6538c;
-  --color-success: #16a34a;
-  --color-warning: #d97706;
-  --color-danger: #dc2626;
+  color-scheme: dark;
 
-  --color-paper: #fafafc;
-  --color-paper-2: #f3f4f8;
-  --color-paper-3: #e8eaf0;
-  --color-surface: #ffffff;
-  --color-ink: #111827;
-  --color-ink-2: #374151;
-  --color-muted: #6b7280;
-  --color-rule: #e5e7eb;
+  /* Semantic palette */
+  --background: #020202;
+  --foreground: #fafafa;
+  --card: #070707;
+  --card-foreground: #fafafa;
+  --popover: #070707;
+  --popover-foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #020202;
+  --secondary: #1b1b1b;
+  --secondary-foreground: #fafafa;
+  --muted: #1b1b1b;
+  --muted-foreground: #8f8f8f;
+  --accent: #ed7940;
+  --accent-foreground: #020202;
+  --destructive: #e40014;
+  --destructive-foreground: #fafafa;
+  --border: #292929;
+  --input: #1b1b1b;
+  --ring: #ed7940;
 
-  --color-accent: var(--color-primary);
-  --color-accent-ink: #ffffff;
-  --color-accent-text: #9d00b0;
-  --color-focus: var(--color-primary);
+  /* Existing secunit aliases */
+  --color-primary: var(--accent);
+  --color-secondary: #f49157;
+  --color-success: #31de74;
+  --color-warning: #febc2e;
+  --color-danger: var(--destructive);
+  --color-paper: var(--background);
+  --color-paper-2: #060606;
+  --color-paper-3: #121212;
+  --color-surface: var(--card);
+  --color-ink: var(--foreground);
+  --color-ink-2: #d0d5db;
+  --color-muted: var(--muted-foreground);
+  --color-rule: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-foreground);
+  --color-accent-text: var(--accent);
+  --color-focus: var(--ring);
 
-  --gradient-brand: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  --gradient-surface: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--color-surface) 96%, transparent) 0%,
-    var(--color-paper) 100%
-  );
-  --gradient-mesh:
-    radial-gradient(ellipse 70% 55% at 8% -8%, color-mix(in srgb, var(--color-primary) 14%, transparent), transparent 55%),
-    radial-gradient(ellipse 55% 45% at 92% 2%, color-mix(in srgb, var(--color-secondary) 12%, transparent), transparent 50%);
+  /* Compatibility values intentionally resolve to flat surfaces */
+  --gradient-brand: var(--accent);
+  --gradient-surface: var(--card);
+  --gradient-mesh: none;
 
-  --font-display: "Jost", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Jost", ui-sans-serif, system-ui, sans-serif;
-  --font-outlier: "Overpass Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-outlier:
+    "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
 
   --space-3xs: 0.125rem;
   --space-2xs: 0.25rem;
@@ -43,97 +61,38 @@
   --space-sm: 0.75rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
-  --space-xl: 2.5rem;
-  --space-2xl: 4rem;
-  --space-3xl: 6rem;
-  --space-4xl: 9rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-md: 1.125rem;
-  --text-lg: 1.375rem;
+  --text-lg: 1.25rem;
   --text-xl: 1.75rem;
   --text-2xl: 2.25rem;
   --text-3xl: 3rem;
-  --text-display: clamp(2.75rem, 5vw + 0.75rem, 4.75rem);
+  --text-display: clamp(2.25rem, 5vw, 3rem);
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --dur-micro: 120ms;
-  --dur-short: 220ms;
-  --dur-long: 420ms;
+  --dur-micro: 100ms;
+  --dur-short: 150ms;
+  --dur-long: 300ms;
   --rule-hair: 1px;
-  --radius-card: 1.25rem;
-  --radius-pill: 999px;
-  --shadow-bento: 0 1px 2px color-mix(in srgb, var(--color-ink) 4%, transparent),
-    0 8px 24px color-mix(in srgb, var(--color-ink) 6%, transparent);
+  --radius: 1rem;
+  --radius-card: 1rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-pill: 9999px;
+  --shadow-bento: 0 1px 2px rgb(0 0 0 / 25%);
 
   --page-gutter: clamp(1rem, 4vw, 3.5rem);
-  --page-max: 76rem;
+  --page-max: 72rem;
+  --page-prose: 44rem;
   --banner-height: 4.5rem;
   --z-sticky-nav: 300;
-
-  /* Tailwind/shadcn compatibility */
-  --background: 240 20% 98%;
-  --foreground: 220 26% 10%;
-  --card: 0 0% 100%;
-  --card-foreground: 220 26% 10%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 220 26% 10%;
-  --primary: 292 100% 43%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 330 51% 55%;
-  --secondary-foreground: 0 0% 100%;
-  --muted: 220 14% 94%;
-  --muted-foreground: 220 9% 46%;
-  --accent: 292 100% 43%;
-  --accent-foreground: 0 0% 100%;
-  --destructive: 0 72% 51%;
-  --destructive-foreground: 0 0% 100%;
-  --border: 220 13% 91%;
-  --input: 220 13% 91%;
-  --ring: 292 100% 43%;
-  --radius: 1.25rem;
-}
-
-.dark {
-  --color-paper: #0c0c10;
-  --color-paper-2: #14141a;
-  --color-paper-3: #1c1c24;
-  --color-surface: #16161c;
-  --color-ink: #f9fafb;
-  --color-ink-2: #d1d5db;
-  --color-muted: #9ca3af;
-  --color-rule: #27272f;
-  --color-accent-text: #e879f9;
-  --color-focus: #e879f9;
-  --color-accent-ink: #ffffff;
-
-  --gradient-mesh:
-    radial-gradient(ellipse 70% 55% at 8% -8%, color-mix(in srgb, var(--color-primary) 22%, transparent), transparent 55%),
-    radial-gradient(ellipse 55% 45% at 92% 2%, color-mix(in srgb, var(--color-secondary) 18%, transparent), transparent 50%);
-  --shadow-bento: 0 1px 2px color-mix(in srgb, #000 30%, transparent),
-    0 12px 32px color-mix(in srgb, #000 35%, transparent);
-
-  --background: 240 10% 6%;
-  --foreground: 210 20% 98%;
-  --card: 240 8% 10%;
-  --card-foreground: 210 20% 98%;
-  --popover: 240 8% 10%;
-  --popover-foreground: 210 20% 98%;
-  --primary: 292 85% 58%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 330 51% 58%;
-  --secondary-foreground: 0 0% 100%;
-  --muted: 240 6% 14%;
-  --muted-foreground: 220 8% 65%;
-  --accent: 292 85% 58%;
-  --accent-foreground: 0 0% 100%;
-  --destructive: 0 62% 58%;
-  --destructive-foreground: 0 0% 100%;
-  --border: 240 6% 18%;
-  --input: 240 6% 18%;
-  --ring: 292 85% 58%;
 }

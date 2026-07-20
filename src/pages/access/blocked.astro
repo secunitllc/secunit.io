@@ -71,7 +71,7 @@ const knownFields: Record<string, string> = {
     color: var(--color-ink);
     font-family: var(--font-display);
     font-size: var(--text-2xl);
-    font-weight: 750;
+    font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1.05;
   }
@@ -89,7 +89,7 @@ const knownFields: Record<string, string> = {
     gap: var(--space-2xs) var(--space-md);
     border: var(--rule-hair) solid var(--color-rule);
     border-radius: calc(var(--radius-card) - 0.25rem);
-    background: var(--color-paper);
+    background: var(--color-paper-2);
     padding: var(--space-md);
     font-size: var(--text-sm);
   }
@@ -118,10 +118,10 @@ const knownFields: Record<string, string> = {
     align-items: center;
     justify-content: center;
     gap: var(--space-xs);
-    border: var(--rule-hair) solid var(--color-ink);
+    border: var(--rule-hair) solid var(--color-accent);
     border-radius: var(--radius-pill);
-    background: var(--color-ink);
-    color: var(--color-paper);
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
     font-size: var(--text-sm);
     font-weight: 650;
     line-height: 1;
@@ -134,9 +134,7 @@ const knownFields: Record<string, string> = {
   }
 
   .access-idp-button:hover {
-    background: var(--color-accent);
-    border-color: var(--color-accent);
-    color: var(--color-accent-ink);
+    opacity: 0.92;
     transform: translateY(-1px);
   }
 
@@ -148,6 +146,7 @@ const knownFields: Record<string, string> = {
     background: transparent;
     border-color: var(--color-rule);
     color: var(--color-ink);
+    opacity: 1;
   }
 
   .access-idp-button--secondary:hover {

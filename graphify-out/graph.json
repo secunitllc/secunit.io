@@ -382,15 +382,14 @@
       "norm_label": "@/components/header.astro"
     },
     {
-      "label": "ThemeToggle.astro",
+      "label": "isCurrent()",
       "file_type": "code",
-      "source_file": "src/components/ThemeToggle.astro",
-      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L5",
       "_origin": "ast",
-      "source_location": "L1",
-      "id": "components_themetoggle",
+      "id": "components_header_iscurrent",
       "community": 1,
-      "norm_label": "themetoggle.astro"
+      "norm_label": "iscurrent()"
     },
     {
       "label": "navData.json.ts",
@@ -552,7 +551,7 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "layouts_accesslayout",
-      "community": 11,
+      "community": 1,
       "norm_label": "@/layouts/accesslayout.astro"
     },
     {
@@ -562,7 +561,7 @@
       "confidence": "EXTRACTED",
       "_origin": "ast",
       "id": "users_mat_documents_code_secunit_io_src_styles_global_css",
-      "community": 11,
+      "community": 1,
       "norm_label": "@/styles/global.css"
     },
     {
@@ -643,7 +642,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "access_blocked",
-      "community": 11,
+      "community": 1,
       "norm_label": "blocked.astro"
     },
     {
@@ -653,7 +652,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "access_blocked_string",
-      "community": 11,
+      "community": 1,
       "norm_label": "string"
     },
     {
@@ -663,7 +662,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "access_blocked_details",
-      "community": 11,
+      "community": 1,
       "norm_label": "details"
     },
     {
@@ -673,7 +672,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "access_login",
-      "community": 11,
+      "community": 1,
       "norm_label": "login.astro"
     },
     {
@@ -683,17 +682,17 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "access_login_identityproviders",
-      "community": 11,
+      "community": 1,
       "norm_label": "identityproviders"
     },
     {
       "label": "redirectUrl",
       "file_type": "code",
       "source_file": "src/pages/access/login.astro",
-      "source_location": "L78",
+      "source_location": "L81",
       "_origin": "ast",
       "id": "access_login_redirecturl",
-      "community": 11,
+      "community": 1,
       "norm_label": "redirecturl"
     },
     {
@@ -1630,9 +1629,9 @@
       "label": "\ud83d\udcdd Content Management",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L195",
+      "source_location": "L194",
       "_origin": "ast",
-      "id": "context_content_management_195",
+      "id": "context_content_management_194",
       "community": 0,
       "norm_label": "\ud83d\udcdd content management"
     },
@@ -1640,7 +1639,7 @@
       "label": "Content Collections",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L197",
+      "source_location": "L196",
       "_origin": "ast",
       "id": "context_content_collections",
       "community": 0,
@@ -1650,7 +1649,7 @@
       "label": "Querying Content",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L218",
+      "source_location": "L217",
       "_origin": "ast",
       "id": "context_querying_content",
       "community": 0,
@@ -1660,7 +1659,7 @@
       "label": "Adding New Blog Post",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L232",
+      "source_location": "L231",
       "_origin": "ast",
       "id": "context_adding_new_blog_post",
       "community": 0,
@@ -1670,7 +1669,7 @@
       "label": "\ud83c\udfa8 Styling System",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L252",
+      "source_location": "L251",
       "_origin": "ast",
       "id": "context_styling_system",
       "community": 22,
@@ -1680,7 +1679,7 @@
       "label": "Tailwind Configuration",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L254",
+      "source_location": "L253",
       "_origin": "ast",
       "id": "context_tailwind_configuration",
       "community": 22,
@@ -1690,27 +1689,27 @@
       "label": "Custom CSS Classes",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L268",
+      "source_location": "L265",
       "_origin": "ast",
       "id": "context_custom_css_classes",
       "community": 22,
       "norm_label": "custom css classes"
     },
     {
-      "label": "Dark Mode",
+      "label": "Dark-only theme",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L287",
+      "source_location": "L284",
       "_origin": "ast",
-      "id": "context_dark_mode",
+      "id": "context_dark_only_theme",
       "community": 22,
-      "norm_label": "dark mode"
+      "norm_label": "dark-only theme"
     },
     {
       "label": "\ud83d\udcec Contact Form",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L296",
+      "source_location": "L292",
       "_origin": "ast",
       "id": "context_contact_form",
       "community": 12,
@@ -1720,7 +1719,7 @@
       "label": "Frontend (`src/pages/contact.astro`)",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L298",
+      "source_location": "L294",
       "_origin": "ast",
       "id": "context_frontend_src_pages_contact_astro",
       "community": 12,
@@ -1730,7 +1729,7 @@
       "label": "Backend (`src/pages/api/contact.ts`)",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L317",
+      "source_location": "L313",
       "_origin": "ast",
       "id": "context_backend_src_pages_api_contact_ts",
       "community": 12,
@@ -1740,7 +1739,7 @@
       "label": "Healthcheck Endpoints",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L332",
+      "source_location": "L328",
       "_origin": "ast",
       "id": "context_healthcheck_endpoints",
       "community": 12,
@@ -1750,7 +1749,7 @@
       "label": "Database Schema",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L347",
+      "source_location": "L343",
       "_origin": "ast",
       "id": "context_database_schema",
       "community": 12,
@@ -1760,7 +1759,7 @@
       "label": "Environment Variables",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L368",
+      "source_location": "L364",
       "_origin": "ast",
       "id": "context_environment_variables",
       "community": 12,
@@ -1770,7 +1769,7 @@
       "label": "Exporting Contacts",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L382",
+      "source_location": "L378",
       "_origin": "ast",
       "id": "context_exporting_contacts",
       "community": 12,
@@ -1780,7 +1779,7 @@
       "label": "\ud83d\udd0c API Routes",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L394",
+      "source_location": "L390",
       "_origin": "ast",
       "id": "context_api_routes",
       "community": 0,
@@ -1790,7 +1789,7 @@
       "label": "Contact Form (`/api/contact`)",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L396",
+      "source_location": "L392",
       "_origin": "ast",
       "id": "context_contact_form_api_contact",
       "community": 0,
@@ -1800,9 +1799,9 @@
       "label": "Healthcheck Endpoints",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L425",
+      "source_location": "L421",
       "_origin": "ast",
-      "id": "context_healthcheck_endpoints_425",
+      "id": "context_healthcheck_endpoints_421",
       "community": 0,
       "norm_label": "healthcheck endpoints"
     },
@@ -1810,7 +1809,7 @@
       "label": "\ud83d\ude80 Deployment",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L442",
+      "source_location": "L438",
       "_origin": "ast",
       "id": "context_deployment",
       "community": 32,
@@ -1820,7 +1819,7 @@
       "label": "Fly.io",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L444",
+      "source_location": "L440",
       "_origin": "ast",
       "id": "context_fly_io",
       "community": 32,
@@ -1830,9 +1829,9 @@
       "label": "Build Process",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L484",
+      "source_location": "L480",
       "_origin": "ast",
-      "id": "context_build_process_484",
+      "id": "context_build_process_480",
       "community": 32,
       "norm_label": "build process"
     },
@@ -1840,7 +1839,7 @@
       "label": "Docker Build",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L506",
+      "source_location": "L502",
       "_origin": "ast",
       "id": "context_docker_build",
       "community": 32,
@@ -1850,7 +1849,7 @@
       "label": "\ud83d\udcbb Development Workflow",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L522",
+      "source_location": "L518",
       "_origin": "ast",
       "id": "context_development_workflow",
       "community": 10,
@@ -1860,7 +1859,7 @@
       "label": "Branch Strategy",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L524",
+      "source_location": "L520",
       "_origin": "ast",
       "id": "context_branch_strategy",
       "community": 10,
@@ -1870,7 +1869,7 @@
       "label": "Dev Environment",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L542",
+      "source_location": "L538",
       "_origin": "ast",
       "id": "context_dev_environment",
       "community": 10,
@@ -1880,7 +1879,7 @@
       "label": "Local Development",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L553",
+      "source_location": "L549",
       "_origin": "ast",
       "id": "context_local_development",
       "community": 10,
@@ -1890,7 +1889,7 @@
       "label": "Adding a New Page",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L566",
+      "source_location": "L562",
       "_origin": "ast",
       "id": "context_adding_a_new_page",
       "community": 10,
@@ -1900,7 +1899,7 @@
       "label": "Adding a New Component",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L573",
+      "source_location": "L569",
       "_origin": "ast",
       "id": "context_adding_a_new_component",
       "community": 10,
@@ -1910,7 +1909,7 @@
       "label": "Testing Contact Form Locally",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L580",
+      "source_location": "L576",
       "_origin": "ast",
       "id": "context_testing_contact_form_locally",
       "community": 10,
@@ -1920,7 +1919,7 @@
       "label": "Managing D1 Database",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L594",
+      "source_location": "L590",
       "_origin": "ast",
       "id": "context_managing_d1_database",
       "community": 10,
@@ -1930,7 +1929,7 @@
       "label": "\u2728 Key Features",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L607",
+      "source_location": "L603",
       "_origin": "ast",
       "id": "context_key_features",
       "community": 0,
@@ -1940,7 +1939,7 @@
       "label": "SEO Optimization",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L609",
+      "source_location": "L605",
       "_origin": "ast",
       "id": "context_seo_optimization",
       "community": 0,
@@ -1950,7 +1949,7 @@
       "label": "Performance",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L619",
+      "source_location": "L615",
       "_origin": "ast",
       "id": "context_performance",
       "community": 0,
@@ -1960,7 +1959,7 @@
       "label": "Accessibility",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L631",
+      "source_location": "L627",
       "_origin": "ast",
       "id": "context_accessibility",
       "community": 0,
@@ -1970,7 +1969,7 @@
       "label": "Mobile Responsive",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L639",
+      "source_location": "L635",
       "_origin": "ast",
       "id": "context_mobile_responsive",
       "community": 0,
@@ -1980,7 +1979,7 @@
       "label": "\ud83c\udf0d Internationalization",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L648",
+      "source_location": "L644",
       "_origin": "ast",
       "id": "context_internationalization",
       "community": 0,
@@ -1990,7 +1989,7 @@
       "label": "Current Setup",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L650",
+      "source_location": "L646",
       "_origin": "ast",
       "id": "context_current_setup",
       "community": 0,
@@ -2000,57 +1999,57 @@
       "label": "\ud83d\udc1b Known Issues & TODOs",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L671",
+      "source_location": "L667",
       "_origin": "ast",
       "id": "context_known_issues_todos",
-      "community": 31,
+      "community": 0,
       "norm_label": "\ud83d\udc1b known issues & todos"
     },
     {
       "label": "\u2705 Completed Cleanup (Dec 17, 2025)",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L673",
+      "source_location": "L669",
       "_origin": "ast",
       "id": "context_completed_cleanup_dec_17_2025",
-      "community": 31,
+      "community": 0,
       "norm_label": "\u2705 completed cleanup (dec 17, 2025)"
     },
     {
       "label": "Cleanup Items",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L693",
+      "source_location": "L689",
       "_origin": "ast",
       "id": "context_cleanup_items",
-      "community": 31,
+      "community": 0,
       "norm_label": "cleanup items"
     },
     {
       "label": "Feature TODOs",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L706",
+      "source_location": "L702",
       "_origin": "ast",
       "id": "context_feature_todos",
-      "community": 31,
+      "community": 0,
       "norm_label": "feature todos"
     },
     {
       "label": "Content TODOs",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L723",
+      "source_location": "L719",
       "_origin": "ast",
       "id": "context_content_todos",
-      "community": 31,
+      "community": 0,
       "norm_label": "content todos"
     },
     {
       "label": "\ud83d\udce6 Component Inventory",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L734",
+      "source_location": "L730",
       "_origin": "ast",
       "id": "context_component_inventory",
       "community": 0,
@@ -2060,7 +2059,7 @@
       "label": "Active/Used Components",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L736",
+      "source_location": "L732",
       "_origin": "ast",
       "id": "context_active_used_components",
       "community": 0,
@@ -2070,7 +2069,7 @@
       "label": "Starwind Components",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L764",
+      "source_location": "L759",
       "_origin": "ast",
       "id": "context_starwind_components",
       "community": 0,
@@ -2080,87 +2079,87 @@
       "label": "\ud83d\udd27 Configuration Files",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L778",
+      "source_location": "L773",
       "_origin": "ast",
       "id": "context_configuration_files",
-      "community": 0,
+      "community": 11,
       "norm_label": "\ud83d\udd27 configuration files"
     },
     {
       "label": "`astro.config.mjs`",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L780",
+      "source_location": "L775",
       "_origin": "ast",
       "id": "context_astro_config_mjs",
-      "community": 0,
+      "community": 11,
       "norm_label": "`astro.config.mjs`"
     },
     {
       "label": "`fly.toml`",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L787",
+      "source_location": "L782",
       "_origin": "ast",
       "id": "context_fly_toml",
-      "community": 0,
+      "community": 11,
       "norm_label": "`fly.toml`"
     },
     {
       "label": "`fly.dev.toml`",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L795",
+      "source_location": "L790",
       "_origin": "ast",
       "id": "context_fly_dev_toml",
-      "community": 0,
+      "community": 11,
       "norm_label": "`fly.dev.toml`"
     },
     {
       "label": "`tailwind.config.mjs`",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L803",
+      "source_location": "L798",
       "_origin": "ast",
       "id": "context_tailwind_config_mjs",
-      "community": 0,
+      "community": 11,
       "norm_label": "`tailwind.config.mjs`"
     },
     {
       "label": "`tsconfig.json`",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L810",
+      "source_location": "L805",
       "_origin": "ast",
       "id": "context_tsconfig_json",
-      "community": 0,
+      "community": 11,
       "norm_label": "`tsconfig.json`"
     },
     {
       "label": "`wrangler.toml`",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L814",
+      "source_location": "L809",
       "_origin": "ast",
       "id": "context_wrangler_toml",
-      "community": 0,
+      "community": 11,
       "norm_label": "`wrangler.toml`"
     },
     {
       "label": "`starwind.config.json`",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L819",
+      "source_location": "L814",
       "_origin": "ast",
       "id": "context_starwind_config_json",
-      "community": 0,
+      "community": 11,
       "norm_label": "`starwind.config.json`"
     },
     {
       "label": "\ud83c\udfaf Design System",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L826",
+      "source_location": "L821",
       "_origin": "ast",
       "id": "context_design_system",
       "community": 0,
@@ -2170,7 +2169,7 @@
       "label": "Typography",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L828",
+      "source_location": "L823",
       "_origin": "ast",
       "id": "context_typography",
       "community": 0,
@@ -2180,7 +2179,7 @@
       "label": "Colors",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L845",
+      "source_location": "L840",
       "_origin": "ast",
       "id": "context_colors",
       "community": 0,
@@ -2190,7 +2189,7 @@
       "label": "Spacing",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L872",
+      "source_location": "L867",
       "_origin": "ast",
       "id": "context_spacing",
       "community": 0,
@@ -2200,7 +2199,7 @@
       "label": "Shadows",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L879",
+      "source_location": "L874",
       "_origin": "ast",
       "id": "context_shadows",
       "community": 0,
@@ -2210,7 +2209,7 @@
       "label": "\ud83d\udcde Support & Contact",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L887",
+      "source_location": "L882",
       "_origin": "ast",
       "id": "context_support_contact",
       "community": 0,
@@ -2220,7 +2219,7 @@
       "label": "\ud83d\udcdd Notes for Future Development",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L896",
+      "source_location": "L891",
       "_origin": "ast",
       "id": "context_notes_for_future_development",
       "community": 16,
@@ -2230,7 +2229,7 @@
       "label": "Recent Changes (December 20, 2025)",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L898",
+      "source_location": "L893",
       "_origin": "ast",
       "id": "context_recent_changes_december_20_2025",
       "community": 16,
@@ -2240,7 +2239,7 @@
       "label": "Performance Considerations",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L910",
+      "source_location": "L905",
       "_origin": "ast",
       "id": "context_performance_considerations",
       "community": 16,
@@ -2250,7 +2249,7 @@
       "label": "Security Considerations",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L916",
+      "source_location": "L911",
       "_origin": "ast",
       "id": "context_security_considerations",
       "community": 16,
@@ -2260,7 +2259,7 @@
       "label": "Scalability Considerations",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L923",
+      "source_location": "L918",
       "_origin": "ast",
       "id": "context_scalability_considerations",
       "community": 16,
@@ -2270,7 +2269,7 @@
       "label": "Maintenance",
       "file_type": "document",
       "source_file": "CONTEXT.md",
-      "source_location": "L929",
+      "source_location": "L924",
       "_origin": "ast",
       "id": "context_maintenance",
       "community": 16,
@@ -2657,94 +2656,74 @@
       "norm_label": "design \u2014 secunit, llc"
     },
     {
-      "label": "Genre",
+      "label": "Direction",
       "file_type": "document",
       "source_file": "design.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "design_genre",
+      "id": "design_direction",
       "community": 6,
-      "norm_label": "genre"
+      "norm_label": "direction"
     },
     {
-      "label": "Macrostructure",
+      "label": "Structure",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L8",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "design_macrostructure",
+      "id": "design_structure",
       "community": 6,
-      "norm_label": "macrostructure"
+      "norm_label": "structure"
     },
     {
-      "label": "Theme",
+      "label": "Tokens",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L14",
+      "source_location": "L24",
       "_origin": "ast",
-      "id": "design_theme",
+      "id": "design_tokens",
       "community": 6,
-      "norm_label": "theme"
+      "norm_label": "tokens"
     },
     {
       "label": "Typography",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L25",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "design_typography",
       "community": 6,
       "norm_label": "typography"
     },
     {
-      "label": "Spacing & surfaces",
+      "label": "Surfaces and motion",
       "file_type": "document",
       "source_file": "design.md",
-      "source_location": "L30",
+      "source_location": "L45",
       "_origin": "ast",
-      "id": "design_spacing_surfaces",
+      "id": "design_surfaces_and_motion",
       "community": 6,
-      "norm_label": "spacing & surfaces"
+      "norm_label": "surfaces and motion"
     },
     {
-      "label": "Motion",
-      "file_type": "document",
-      "source_file": "design.md",
-      "source_location": "L36",
-      "_origin": "ast",
-      "id": "design_motion",
-      "community": 6,
-      "norm_label": "motion"
-    },
-    {
-      "label": "CTA voice",
-      "file_type": "document",
-      "source_file": "design.md",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "design_cta_voice",
-      "community": 6,
-      "norm_label": "cta voice"
-    },
-    {
-      "label": "Shared across pages",
-      "file_type": "document",
-      "source_file": "design.md",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "design_shared_across_pages",
-      "community": 6,
-      "norm_label": "shared across pages"
-    },
-    {
-      "label": "May differ",
+      "label": "Accessibility",
       "file_type": "document",
       "source_file": "design.md",
       "source_location": "L52",
       "_origin": "ast",
-      "id": "design_may_differ",
+      "id": "design_accessibility",
       "community": 6,
-      "norm_label": "may differ"
+      "norm_label": "accessibility"
+    },
+    {
+      "label": "Exceptions",
+      "file_type": "document",
+      "source_file": "design.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "design_exceptions",
+      "community": 6,
+      "norm_label": "exceptions"
     },
     {
       "label": "brand-guardrails.md",
@@ -3160,18 +3139,20 @@
       "target": "components_footer"
     },
     {
-      "relation": "imports_from",
+      "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Header.astro",
+      "source_location": "L5",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_header",
-      "target": "components_themetoggle"
+      "target": "components_header_iscurrent"
     },
     {
       "relation": "imports_from",
-      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Header.astro",
+      "context": "import",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3321,25 +3302,25 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/access/blocked.astro",
+      "confidence_score": 1.0,
       "source": "access_blocked",
-      "target": "layouts_accesslayout",
-      "confidence_score": 1.0
+      "target": "layouts_accesslayout"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/access/login.astro",
+      "confidence_score": 1.0,
       "source": "access_login",
-      "target": "layouts_accesslayout",
-      "confidence_score": 1.0
+      "target": "layouts_accesslayout"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/AccessLayout.astro",
+      "confidence_score": 1.0,
       "source": "layouts_accesslayout",
-      "target": "users_mat_documents_code_secunit_io_src_styles_global_css",
-      "confidence_score": 1.0
+      "target": "users_mat_documents_code_secunit_io_src_styles_global_css"
     },
     {
       "relation": "imports_from",
@@ -3408,9 +3389,9 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/security.astro",
+      "confidence_score": 1.0,
       "source": "pages_security",
-      "target": "layouts_base",
-      "confidence_score": 1.0
+      "target": "layouts_base"
     },
     {
       "relation": "imports_from",
@@ -3442,9 +3423,9 @@
       "source_file": "src/pages/about.astro",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_about",
-      "target": "pages_about_icons",
-      "confidence_score": 1.0
+      "target": "pages_about_icons"
     },
     {
       "relation": "contains",
@@ -3452,9 +3433,9 @@
       "source_file": "src/pages/about.astro",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_about",
-      "target": "pages_about_mattphotos",
-      "confidence_score": 1.0
+      "target": "pages_about_mattphotos"
     },
     {
       "relation": "contains",
@@ -3462,9 +3443,9 @@
       "source_file": "src/pages/access/blocked.astro",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "access_blocked",
-      "target": "access_blocked_details",
-      "confidence_score": 1.0
+      "target": "access_blocked_details"
     },
     {
       "relation": "contains",
@@ -3472,9 +3453,9 @@
       "source_file": "src/pages/access/blocked.astro",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "access_blocked",
-      "target": "access_blocked_string",
-      "confidence_score": 1.0
+      "target": "access_blocked_string"
     },
     {
       "relation": "contains",
@@ -3482,9 +3463,9 @@
       "source_file": "src/pages/access/login.astro",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "access_login",
-      "target": "access_login_identityproviders",
-      "confidence_score": 1.0
+      "target": "access_login_identityproviders"
     },
     {
       "relation": "contains",
@@ -3492,9 +3473,9 @@
       "source_file": "src/pages/access/login.astro",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "access_login",
-      "target": "access_login_redirecturl",
-      "confidence_score": 1.0
+      "target": "access_login_redirecturl"
     },
     {
       "relation": "contains",
@@ -4026,9 +4007,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme",
-      "target": "github_profile_readme_secunit_llc",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_secunit_llc"
     },
     {
       "relation": "contains",
@@ -4036,9 +4017,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_secunit_llc",
-      "target": "github_profile_readme_engagement_models",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_engagement_models"
     },
     {
       "relation": "contains",
@@ -4046,9 +4027,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_secunit_llc",
-      "target": "github_profile_readme_get_in_touch",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_get_in_touch"
     },
     {
       "relation": "contains",
@@ -4056,9 +4037,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_secunit_llc",
-      "target": "github_profile_readme_trusted_by_teams_at",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_trusted_by_teams_at"
     },
     {
       "relation": "contains",
@@ -4066,9 +4047,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_secunit_llc",
-      "target": "github_profile_readme_what_we_do",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_what_we_do"
     },
     {
       "relation": "contains",
@@ -4076,9 +4057,9 @@
       "source_file": ".github-profile-README.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "github_profile_readme_secunit_llc",
-      "target": "github_profile_readme_why_secunit_llc",
-      "confidence_score": 1.0
+      "target": "github_profile_readme_why_secunit_llc"
     },
     {
       "relation": "contains",
@@ -4146,9 +4127,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context",
-      "target": "context_context_md_secunit_llc_website",
-      "confidence_score": 1.0
+      "target": "context_context_md_secunit_llc_website"
     },
     {
       "relation": "contains",
@@ -4156,9 +4137,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L394",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_api_routes",
-      "confidence_score": 1.0
+      "target": "context_api_routes"
     },
     {
       "relation": "contains",
@@ -4166,9 +4147,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_architecture",
-      "confidence_score": 1.0
+      "target": "context_architecture"
     },
     {
       "relation": "contains",
@@ -4176,9 +4157,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L734",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_component_inventory",
-      "confidence_score": 1.0
+      "target": "context_component_inventory"
     },
     {
       "relation": "contains",
@@ -4186,9 +4167,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L778",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_configuration_files",
-      "confidence_score": 1.0
+      "target": "context_configuration_files"
     },
     {
       "relation": "contains",
@@ -4196,19 +4177,19 @@
       "source_file": "CONTEXT.md",
       "source_location": "L296",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_contact_form",
-      "confidence_score": 1.0
+      "target": "context_contact_form"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CONTEXT.md",
-      "source_location": "L195",
+      "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_content_management_195",
-      "confidence_score": 1.0
+      "target": "context_content_management_194"
     },
     {
       "relation": "contains",
@@ -4216,9 +4197,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L442",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_deployment",
-      "confidence_score": 1.0
+      "target": "context_deployment"
     },
     {
       "relation": "contains",
@@ -4226,9 +4207,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L826",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_design_system",
-      "confidence_score": 1.0
+      "target": "context_design_system"
     },
     {
       "relation": "contains",
@@ -4236,9 +4217,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L522",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_development_workflow",
-      "confidence_score": 1.0
+      "target": "context_development_workflow"
     },
     {
       "relation": "contains",
@@ -4246,9 +4227,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L648",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_internationalization",
-      "confidence_score": 1.0
+      "target": "context_internationalization"
     },
     {
       "relation": "contains",
@@ -4256,9 +4237,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L607",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_key_features",
-      "confidence_score": 1.0
+      "target": "context_key_features"
     },
     {
       "relation": "contains",
@@ -4266,9 +4247,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L671",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_known_issues_todos",
-      "confidence_score": 1.0
+      "target": "context_known_issues_todos"
     },
     {
       "relation": "contains",
@@ -4276,9 +4257,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L896",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_notes_for_future_development",
-      "confidence_score": 1.0
+      "target": "context_notes_for_future_development"
     },
     {
       "relation": "contains",
@@ -4286,9 +4267,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_project_overview",
-      "confidence_score": 1.0
+      "target": "context_project_overview"
     },
     {
       "relation": "contains",
@@ -4296,9 +4277,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_project_structure",
-      "confidence_score": 1.0
+      "target": "context_project_structure"
     },
     {
       "relation": "contains",
@@ -4306,9 +4287,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L252",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_styling_system",
-      "confidence_score": 1.0
+      "target": "context_styling_system"
     },
     {
       "relation": "contains",
@@ -4316,9 +4297,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L887",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_support_contact",
-      "confidence_score": 1.0
+      "target": "context_support_contact"
     },
     {
       "relation": "contains",
@@ -4326,9 +4307,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_table_of_contents",
-      "confidence_score": 1.0
+      "target": "context_table_of_contents"
     },
     {
       "relation": "contains",
@@ -4336,9 +4317,9 @@
       "source_file": "CONTEXT.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_context_md_secunit_llc_website",
-      "target": "context_tech_stack",
-      "confidence_score": 1.0
+      "target": "context_tech_stack"
     },
     {
       "relation": "contains",
@@ -4424,30 +4405,30 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CONTEXT.md",
-      "source_location": "L232",
+      "source_location": "L231",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "context_content_management_195",
+      "source": "context_content_management_194",
       "target": "context_adding_new_blog_post"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CONTEXT.md",
-      "source_location": "L197",
+      "source_location": "L196",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "context_content_management_195",
+      "source": "context_content_management_194",
       "target": "context_content_collections"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CONTEXT.md",
-      "source_location": "L218",
+      "source_location": "L217",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "context_content_management_195",
+      "source": "context_content_management_194",
       "target": "context_querying_content"
     },
     {
@@ -4464,11 +4445,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CONTEXT.md",
-      "source_location": "L287",
+      "source_location": "L284",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "context_styling_system",
-      "target": "context_dark_mode"
+      "target": "context_dark_only_theme"
     },
     {
       "relation": "contains",
@@ -4554,21 +4535,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CONTEXT.md",
-      "source_location": "L425",
+      "source_location": "L421",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "context_api_routes",
-      "target": "context_healthcheck_endpoints_425"
+      "target": "context_healthcheck_endpoints_421"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CONTEXT.md",
-      "source_location": "L484",
+      "source_location": "L480",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "context_deployment",
-      "target": "context_build_process_484"
+      "target": "context_build_process_480"
     },
     {
       "relation": "contains",
@@ -5126,9 +5107,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_secunit_llc_website",
-      "confidence_score": 1.0
+      "target": "readme_secunit_llc_website"
     },
     {
       "relation": "contains",
@@ -5136,9 +5117,9 @@
       "source_file": "README.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_secunit_llc_website",
-      "target": "readme_contact_form",
-      "confidence_score": 1.0
+      "target": "readme_contact_form"
     },
     {
       "relation": "contains",
@@ -5146,9 +5127,9 @@
       "source_file": "README.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_secunit_llc_website",
-      "target": "readme_deployment",
-      "confidence_score": 1.0
+      "target": "readme_deployment"
     },
     {
       "relation": "contains",
@@ -5156,9 +5137,9 @@
       "source_file": "README.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_secunit_llc_website",
-      "target": "readme_environment_variables",
-      "confidence_score": 1.0
+      "target": "readme_environment_variables"
     },
     {
       "relation": "contains",
@@ -5166,9 +5147,9 @@
       "source_file": "README.md",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_secunit_llc_website",
-      "target": "readme_license",
-      "confidence_score": 1.0
+      "target": "readme_license"
     },
     {
       "relation": "contains",
@@ -5176,9 +5157,9 @@
       "source_file": "README.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_secunit_llc_website",
-      "target": "readme_local_development",
-      "confidence_score": 1.0
+      "target": "readme_local_development"
     },
     {
       "relation": "contains",
@@ -5186,9 +5167,9 @@
       "source_file": "README.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_secunit_llc_website",
-      "target": "readme_project_structure",
-      "confidence_score": 1.0
+      "target": "readme_project_structure"
     },
     {
       "relation": "contains",
@@ -5196,9 +5177,9 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_secunit_llc_website",
-      "target": "readme_tech_stack",
-      "confidence_score": 1.0
+      "target": "readme_tech_stack"
     },
     {
       "relation": "contains",
@@ -5226,9 +5207,9 @@
       "source_file": "deploy/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "deploy_readme",
-      "target": "deploy_readme_production_cloudflare_pages",
-      "confidence_score": 1.0
+      "target": "deploy_readme_production_cloudflare_pages"
     },
     {
       "relation": "contains",
@@ -5236,9 +5217,9 @@
       "source_file": "deploy/README.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "deploy_readme_production_cloudflare_pages",
-      "target": "deploy_readme_bindings",
-      "confidence_score": 1.0
+      "target": "deploy_readme_bindings"
     },
     {
       "relation": "contains",
@@ -5246,9 +5227,9 @@
       "source_file": "deploy/README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "deploy_readme_production_cloudflare_pages",
-      "target": "deploy_readme_github_actions_github_hosted_runner",
-      "confidence_score": 1.0
+      "target": "deploy_readme_github_actions_github_hosted_runner"
     },
     {
       "relation": "contains",
@@ -5256,9 +5237,9 @@
       "source_file": "deploy/README.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "deploy_readme_production_cloudflare_pages",
-      "target": "deploy_readme_one_time_cloudflare_pages_setup",
-      "confidence_score": 1.0
+      "target": "deploy_readme_one_time_cloudflare_pages_setup"
     },
     {
       "relation": "contains",
@@ -5266,19 +5247,19 @@
       "source_file": "design.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design",
-      "target": "design_design_secunit_llc",
-      "confidence_score": 1.0
+      "target": "design_design_secunit_llc"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L41",
+      "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_secunit_llc",
-      "target": "design_cta_voice",
-      "confidence_score": 1.0
+      "target": "design_accessibility"
     },
     {
       "relation": "contains",
@@ -5286,69 +5267,49 @@
       "source_file": "design.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_secunit_llc",
-      "target": "design_genre",
-      "confidence_score": 1.0
+      "target": "design_direction"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L8",
+      "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_secunit_llc",
-      "target": "design_macrostructure",
-      "confidence_score": 1.0
+      "target": "design_exceptions"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L52",
+      "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_secunit_llc",
-      "target": "design_may_differ",
-      "confidence_score": 1.0
+      "target": "design_structure"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L36",
+      "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_secunit_llc",
-      "target": "design_motion",
-      "confidence_score": 1.0
+      "target": "design_surfaces_and_motion"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "design.md",
-      "source_location": "L46",
+      "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_secunit_llc",
-      "target": "design_shared_across_pages",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "design.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "design_design_secunit_llc",
-      "target": "design_spacing_surfaces",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "design.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "design_design_secunit_llc",
-      "target": "design_theme",
-      "confidence_score": 1.0
+      "target": "design_tokens"
     },
     {
       "relation": "contains",
@@ -5356,9 +5317,9 @@
       "source_file": "design.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "design_design_secunit_llc",
-      "target": "design_typography",
-      "confidence_score": 1.0
+      "target": "design_typography"
     },
     {
       "relation": "contains",
@@ -5406,9 +5367,9 @@
       "source_file": "docs/cloudflare-access-custom-pages.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_cloudflare_access_custom_pages",
-      "target": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
-      "confidence_score": 1.0
+      "target": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages"
     },
     {
       "relation": "contains",
@@ -5416,9 +5377,9 @@
       "source_file": "docs/cloudflare-access-custom-pages.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
-      "target": "docs_cloudflare_access_custom_pages_1_login_page",
-      "confidence_score": 1.0
+      "target": "docs_cloudflare_access_custom_pages_1_login_page"
     },
     {
       "relation": "contains",
@@ -5426,9 +5387,9 @@
       "source_file": "docs/cloudflare-access-custom-pages.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
-      "target": "docs_cloudflare_access_custom_pages_2_app_launcher",
-      "confidence_score": 1.0
+      "target": "docs_cloudflare_access_custom_pages_2_app_launcher"
     },
     {
       "relation": "contains",
@@ -5436,9 +5397,9 @@
       "source_file": "docs/cloudflare-access-custom-pages.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
-      "target": "docs_cloudflare_access_custom_pages_3_gateway_block_page",
-      "confidence_score": 1.0
+      "target": "docs_cloudflare_access_custom_pages_3_gateway_block_page"
     },
     {
       "relation": "contains",
@@ -5446,11 +5407,11 @@
       "source_file": "docs/cloudflare-access-custom-pages.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_cloudflare_access_custom_pages_cloudflare_access_gateway_custom_pages",
-      "target": "docs_cloudflare_access_custom_pages_notes",
-      "confidence_score": 1.0
+      "target": "docs_cloudflare_access_custom_pages_notes"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "05096996cebd585fd6af9d5c3bfd4db4c1943bc1"
+  "built_at_commit": "e025d9e9dc136163f100d59e57670b608062608f"
 }

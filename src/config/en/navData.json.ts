@@ -7,7 +7,6 @@ const navConfig: NavItem[] = [
   { text: "Services", link: "/services/" },
   { text: "Technologies", link: "/technologies/" },
   { text: "About", link: "/about/" },
-  { text: "Contact", link: "/contact/" },
 ];
 
 export default navConfig;

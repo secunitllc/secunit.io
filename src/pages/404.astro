@@ -2,57 +2,70 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>404 - Page not found | Secunit</title>
-    <meta
-      name="description"
-      content="The page you requested could not be found."
+    <title>404 - Page not found | secunit, llc</title>
+    <meta name="description" content="The page you requested could not be found." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
     />
     <style>
-      *, *:before, *:after {
+      *,
+      *:before,
+      *:after {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
-      html, body {
+      html,
+      body {
         height: 100%;
         overflow: hidden;
-        background: #000;
+        background: #020202;
       }
       @keyframes dos-blink {
-        0%, 49% { opacity: 1 }
-        50%, to { opacity: 0 }
+        0%,
+        49% {
+          opacity: 1;
+        }
+        50%,
+        to {
+          opacity: 0;
+        }
       }
       .dos-cursor {
         display: inline-block;
         width: 8px;
-        height: .85em;
-        background: #aaa;
+        height: 0.85em;
+        background: #8f8f8f;
         vertical-align: text-bottom;
         animation: dos-blink 1s step-end infinite;
         margin-left: 1px;
       }
-      .dos-scrollarea::-webkit-scrollbar { display: none }
-      .dos-scrollarea { scrollbar-width: none }
+      .dos-scrollarea::-webkit-scrollbar {
+        display: none;
+      }
+      .dos-scrollarea {
+        scrollbar-width: none;
+      }
       .dos-backdrop {
         position: fixed;
         inset: 0;
         z-index: 50;
-        background: #000000bf;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        background: #020202;
         display: flex;
         align-items: center;
         justify-content: center;
       }
       .dos-terminal {
         position: relative;
-        width: 75vw;
-        height: 75vh;
-        background: #000;
-        border: 1px solid #2a2a2a;
-        outline: 1px solid #333333;
-        outline-offset: 3px;
-        box-shadow: 0 0 40px #00aaaa0f, 0 30px 60px #000000f2;
+        width: min(calc(100vw - 2rem), 72rem);
+        height: min(75dvh, 48rem);
+        min-height: 24rem;
+        background: #070707;
+        border: 1px solid #292929;
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -66,8 +79,8 @@
           0deg,
           transparent,
           transparent 2px,
-          rgba(0, 0, 0, .055) 2px,
-          rgba(0, 0, 0, .055) 4px
+          rgba(0, 0, 0, 0.055) 2px,
+          rgba(0, 0, 0, 0.055) 4px
         );
       }
       .dos-scrollarea {
@@ -75,7 +88,8 @@
         overflow-y: auto;
         overflow-x: hidden;
         padding: 16px 18px 22px;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-family:
+          "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         font-size: 13px;
         line-height: 1.65;
         position: relative;
@@ -85,16 +99,20 @@
         min-height: 1.65em;
         white-space: pre;
       }
-      .dos-link { margin-top: 16px }
+      .dos-link {
+        margin-top: 16px;
+      }
       .dos-link a {
-        color: #0aa;
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        color: #ed7940;
+        font-family:
+          "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         font-size: 13px;
         text-decoration: none;
-        border-bottom: 1px solid rgba(0,170,170,.45);
-        text-shadow: 0 0 8px rgba(0,170,170,.5);
+        border-bottom: 1px solid color-mix(in srgb, #ed7940 45%, transparent);
       }
-      .dos-link a:hover { color: #3dc }
+      .dos-link a:hover {
+        color: #f49157;
+      }
       .sr-only {
         position: absolute;
         width: 1px;
@@ -105,6 +123,26 @@
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
         border: 0;
+      }
+      @media (max-width: 40rem) {
+        .dos-backdrop {
+          align-items: stretch;
+          padding: 0.75rem;
+        }
+        .dos-terminal {
+          width: 100%;
+          height: calc(100dvh - 1.5rem);
+          min-height: 0;
+          border-radius: 0.75rem;
+        }
+        .dos-scrollarea {
+          padding: 14px;
+          font-size: 11px;
+          line-height: 1.55;
+        }
+        .dos-line {
+          min-height: 1.55em;
+        }
       }
     </style>
   </head>
@@ -121,8 +159,14 @@
     <script>
       // @ts-nocheck
       (function () {
-        const P = { gray: "#AAAAAA", yellow: "#FFFF55", white: "#FFFFFF", red: "#FF5555", dim: "#555555" };
-        const MEM_COLOR = "#00AAAA";
+        const P = {
+          gray: "#8F8F8F",
+          yellow: "#ED7940",
+          white: "#FAFAFA",
+          red: "#FF6466",
+          dim: "#555555",
+        };
+        const MEM_COLOR = "#ED7940";
         const term = document.getElementById("dos-term");
         const pathname = window.location.pathname;
         const cmd = " resolve --route " + pathname;
@@ -134,7 +178,6 @@
           const div = document.createElement("div");
           div.className = "dos-line";
           div.style.color = P[color] || P.gray;
-          if (color === "yellow") div.style.textShadow = "0 0 8px rgba(255,255,85,0.3)";
           div.textContent = text || "\u00A0";
           term.appendChild(div);
           term.scrollTop = term.scrollHeight;
@@ -145,7 +188,7 @@
           div.className = "dos-line";
           div.style.color = P.gray;
           div.style.whiteSpace = "pre";
-          div.innerHTML = "Memory Test : <span style=\"color:" + MEM_COLOR + "\">0K</span>";
+          div.innerHTML = 'Memory Test : <span style="color:' + MEM_COLOR + '">0K</span>';
           term.appendChild(div);
           memLine = div;
           term.scrollTop = term.scrollHeight;
@@ -154,7 +197,8 @@
         function updateMemory(k) {
           if (!memLine) return;
           const suffix = k >= 640 ? " OK" : "";
-          memLine.innerHTML = "Memory Test : <span style=\"color:" + MEM_COLOR + "\">" + k + "K</span>" + suffix;
+          memLine.innerHTML =
+            'Memory Test : <span style="color:' + MEM_COLOR + '">' + k + "K</span>" + suffix;
         }
 
         function startTypewriter(onDone) {
@@ -168,9 +212,12 @@
           let i = 0;
           const iv = setInterval(function () {
             i++;
-            div.innerHTML = "<span style=\"color:" + P.gray + "\">C:\\SECUNIT&gt;</span>" +
+            div.innerHTML =
+              '<span style="color:' +
+              P.gray +
+              '">C:\\SECUNIT&gt;</span>' +
               escapeHtml(cmd.slice(0, i)) +
-              "<span class=\"dos-cursor\"></span>";
+              '<span class="dos-cursor"></span>';
             term.scrollTop = term.scrollHeight;
             if (i >= cmd.length) {
               clearInterval(iv);
@@ -195,7 +242,7 @@
           div.className = "dos-line";
           div.style.color = P.gray;
           div.style.whiteSpace = "pre";
-          div.innerHTML = "C:\\SECUNIT&gt;<span class=\"dos-cursor\"></span>";
+          div.innerHTML = 'C:\\SECUNIT&gt;<span class="dos-cursor"></span>';
           term.appendChild(div);
           term.scrollTop = term.scrollHeight;
         }
@@ -225,7 +272,7 @@
           addMemoryLine();
           updateMemory(640);
           addLine("");
-          addLine("\"640K ought to be enough for anybody.\"", "yellow");
+          addLine('"640K ought to be enough for anybody."', "yellow");
           addLine("                                   -- B. Gates, 1981", "dim");
           addLine("");
           addLine("Award Plug and Play BIOS Extension v1.0A");
@@ -256,17 +303,29 @@
           timers.push(setTimeout(fn, t));
         }
 
-        after(0,   function () { addLine("Award Modular BIOS v4.51PG, An Energy Star Ally"); });
-        after(60,  function () { addLine("Copyright (C) 1984-98, Award Software, Inc."); });
-        after(80,  function () { addLine(""); });
-        after(40,  function () { addLine("Secunit ACPI BIOS Revision 1011 Beta 005"); });
-        after(120, function () { addLine(""); });
-        after(40,  function () { addLine("Intel(R) 386DX-33MHz Processor"); });
+        after(0, function () {
+          addLine("Award Modular BIOS v4.51PG, An Energy Star Ally");
+        });
+        after(60, function () {
+          addLine("Copyright (C) 1984-98, Award Software, Inc.");
+        });
+        after(80, function () {
+          addLine("");
+        });
+        after(40, function () {
+          addLine("Secunit ACPI BIOS Revision 1011 Beta 005");
+        });
+        after(120, function () {
+          addLine("");
+        });
+        after(40, function () {
+          addLine("Intel(R) 386DX-33MHz Processor");
+        });
 
         after(80, function () {
           addMemoryLine();
           const iv = setInterval(function () {
-            const current = (parseInt(memLine?.textContent?.match(/(\d+)K/)?.[1] || "0", 10) || 0);
+            const current = parseInt(memLine?.textContent?.match(/(\d+)K/)?.[1] || "0", 10) || 0;
             const next = Math.min(current + 32, 640);
             updateMemory(next);
             if (next >= 640) clearInterval(iv);
@@ -276,34 +335,58 @@
 
         after(320, function () {
           addLine("");
-          addLine("\"640K ought to be enough for anybody.\"", "yellow");
+          addLine('"640K ought to be enough for anybody."', "yellow");
         });
-        after(60, function () { addLine("                                   -- B. Gates, 1981", "dim"); });
+        after(60, function () {
+          addLine("                                   -- B. Gates, 1981", "dim");
+        });
         after(500, function () {
           addLine("");
           addLine("Award Plug and Play BIOS Extension v1.0A");
         });
-        after(50,  function () { addLine("Initialize Plug and Play Cards..."); });
-        after(280, function () { addLine("PNP Init Completed"); });
+        after(50, function () {
+          addLine("Initialize Plug and Play Cards...");
+        });
+        after(280, function () {
+          addLine("PNP Init Completed");
+        });
         after(600, function () {
           addLine("");
           addLine("Starting MS-DOS...");
         });
-        after(420, function () { addLine(""); });
-        after(30,  function () { addLine("HIMEM is testing extended memory...done."); });
-        after(280, function () { addLine(""); });
-        after(60,  function () { addLine("MS-DOS Version 5.00", "white"); });
-        after(60,  function () { addLine("(C)Copyright Microsoft Corp 1981-1991"); });
-        after(380, function () { addLine(""); });
+        after(420, function () {
+          addLine("");
+        });
+        after(30, function () {
+          addLine("HIMEM is testing extended memory...done.");
+        });
+        after(280, function () {
+          addLine("");
+        });
+        after(60, function () {
+          addLine("MS-DOS Version 5.00", "white");
+        });
+        after(60, function () {
+          addLine("(C)Copyright Microsoft Corp 1981-1991");
+        });
+        after(380, function () {
+          addLine("");
+        });
         after(80, function () {
           const typeIv = startTypewriter(function () {});
           intervals.push(typeIv);
         });
 
         const typingMs = Math.min(cmd.length * 35, 1800) + 400;
-        after(typingMs, function () { commitCommand(); });
-        after(200, function () { showIdleCursor(); });
-        after(400, function () { showReturnLink(); });
+        after(typingMs, function () {
+          commitCommand();
+        });
+        after(200, function () {
+          showIdleCursor();
+        });
+        after(400, function () {
+          showReturnLink();
+        });
       })();
     </script>
   </body>
