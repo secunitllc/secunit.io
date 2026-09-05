@@ -4,15 +4,21 @@
 Contact: mailto:security@secunit.io
 Contact: mailto:runmatt@pm.me
 
-Expires: 2027-06-28T23:59:59Z
+Expires: 2036-06-28T05:33:00Z
 
 Encryption: https://secunit.io/security/ecc.txt
 Encryption: https://secunit.io/security/rsa.txt
 Encryption: https://drive.proton.me/urls/ZCT38S06DC#MLabIOOv8E4H
 Encryption: https://drive.proton.me/urls/CYP40Y7A6C#7APglnZ0vfla
 
-Preferred-Languages: en
+Acknowledgements: https://secunit.io/security/acknowledgements
 
 Canonical: https://secunit.io/.well-known/security.txt
 
+Hiring: https://secunit.io/careers
+
 Policy: https://secunit.io/security
+Policy: https://secunit.io/privacy/
+Policy: https://secunit.io/terms/
+
+Preferred-Languages: en
